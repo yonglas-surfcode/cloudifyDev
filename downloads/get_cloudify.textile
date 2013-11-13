@@ -1,0 +1,206 @@
+---
+layout: index
+title: Get Cloudify
+cat: User Guide
+---
+<notextile>
+<div class="contentNoRight">
+<br />
+<br />
+<br />
+<h1 class="text-align: center">Welcome to the Cloudify Download Center </h1>
+    <ul class="downloadList">
+        <li>			
+           <div class="dwnListLeft">
+                <img src="/images/imgDwnTheLatest.png"  alt="Download the Latest GA Release"  width="145" height="164"/>
+            </div>
+            <div class="dwnListRight">
+                <h3>Download the Latest GA Release</h3>
+                <p>Get the latest Cloudify GA release - version 2.6.2 !</p>
+                <!--<a href="/thank_you.htm" class="dwnGoBtn" onclick="trigger_download();"></a>-->
+ 		<!--<div class="dwnGoBtn"></div>-->		         
+                <a class="dwnGoBtn" id="downloadme" href="http://repository.cloudifysource.org/org/cloudifysource/community/gigaspaces-cloudify-2.6.2-ga-b5400.zip" style="display: block;"></a>                
+		<br/>
+		<p><a href="/guide/2.6/release_notes/release_notes" target="_blank" >View the <b>release notes</b></a>.</p>
+            </div>
+            <div class="clear"></div>
+        </li>
+		
+        <li>
+            <div class="dwnListLeft">
+                <img src="/images/imgDwnGetReady.png"  alt="Test Drive Early Access Builds" width="145" height="152"/>
+            </div>
+            <div class="dwnListRight">
+                <h3>Get Early Access Builds</h3>
+				
+				<!--<p>We just released the GA of version 2.5.1 and we're now working on our next build.  Stay tuned.</p> -->
+				
+				
+				<p>Test drive the newest stuff we're working on, share your feedback, and help us shape the next versions of Cloudify</p>
+                <a class="dwnGoBtn" href="/downloads/early_access"></a>
+            </div>
+            <div class="clear"></div>
+        </li>		
+
+        <li>
+            <div class="dwnListLeft">
+                <img src="/images/imgDwnGetReady.png"  alt="Test Drive Early Access Builds" width="145" height="152"/>
+            </div>
+            <div class="dwnListRight">
+                <h3>Previous GA versions of Cloudify</h3>
+				
+				<!--<p>We just released the GA of version 2.5.1 and we're now working on our next build.  Stay tuned.</p> -->
+				
+				
+				<p>Get Previous GA versions of Cloudify</p>
+                <a class="dwnGoBtn" href="/downloads/previous_ga_versions"></a>
+            </div>
+            <div class="clear"></div>
+        </li>
+
+        <li>
+            <div class="dwnListLeft">
+                <img src="/images/imgDwnForkUsOnGithub.png"  alt="Fork Cloudify on GitHub" width="145" height="148"/>
+            </div>
+            <div class="dwnListRight">
+                <h3>Fork Us on GitHub</h3>
+                <p>Get involved by browsing, forking and contributing to the Cloudify source code on GitHub</p>
+                <a class="dwnGoBtn" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
+            </div>
+            <div class="clear"></div>
+        </li>
+   
+<li><h3>Downloading Cloudify indicates that you agree to the <a href="/cloudify_software_license_agreement">Cloudify Software License</a>.</h3></li>
+ </ul>
+    <div class="clear"></div>
+</div>
+<script text="javascript">
+$(function(){
+
+//start captcha Code
+	function randomgen()
+	{
+    var rannumber='';
+		for(ranNum=1; ranNum<=6; ranNum++){
+			rannumber+=Math.floor(Math.random()*10).toString();
+		}
+		$('#verifyNumGat').html(rannumber);
+		$('#verifyNumHiddenGat').val(rannumber);
+	}
+	randomgen();
+		
+//end captcha Code; 
+
+
+//$("a.gattingWrapperClose").bind("click",function(){
+$('ul.downloadList li').on("click", "a.gattingWrapperClose", function() {
+		$("div.gattingWrapper").remove();
+		$(".blockBg").hide();
+		
+	});	
+	
+
+$("a#downloadme,a.eaTitle").click(function(e) {
+    downloadHref = $(this).attr('href'); 
+	//$(this).prev().css("visibility","visible");
+	$(this).before(strVar);
+	$(this).prev().css("visibility","visible");
+	$(".blockBg").show();
+	GrabOldMessages();
+	formEmail = mixpanel.cookie.props.$people_distinct_id;
+	if(formEmail==undefined){
+		downloadFile(e);
+	}else{
+		directDownload(e);//works only when user already once sign in ;
+	}
+});
+
+function directDownload(e){
+e.preventDefault();
+$("div.gattingWrapper").remove();
+$(".blockBg").hide();
+var verName="";
+var downloadHref = $('a#downloadme').attr('href');
+verName=downloadHref.split("/")[6]; 
+//track google and mixpanel 
+track_download(downloadHref);
+//self.delay(500); 
+setTimeout(function() {
+	window.location.href = downloadHref; 
+	setTimeout(function() {
+		window.location.href = "/thank_you.htm";
+	}, 4000);
+}, 500);
+
+//
+}
+
+
+function downloadFile(e)
+	{
+	//$("a#downloadme").click(function(e) {
+		try  {
+			e.preventDefault();
+			//Gating PopUp
+			
+			
+			if(gotName == false){
+				randomgen();
+				if ($("#regiterToDownload").validate()==true){
+				gotName = true;
+				//track mixpanel
+				var verName="";
+				var downloadHref = $('a#downloadme').attr('href');
+				verName=downloadHref.split("/")[6]; 
+				//track google and mixpanel 
+				track_download(downloadHref);
+				//self.delay(500); 
+				setTimeout(function() {
+					window.location.href = downloadHref; 
+					setTimeout(function() {
+						window.location.href = "/thank_you.htm";
+					}, 4000);
+				}, 500);
+
+				
+				}
+						   
+			}
+	    } catch(e) {
+	    	console.log(["Error while tracking download", e]);
+	    }
+	    return false; 
+	//});
+}
+
+	
+function track_download(downloadHref) {
+		var downloadme=downloadHref.split("cloudify-")[1];
+		downloadme="/downloads/cloudify-" + downloadme.split("\.zip")[0] + "/get_cloudify";
+		_gaq.push(['_trackPageview', downloadme]);
+       	//track mixpanel
+		var zipName="";
+		zipName=downloadHref.split("/")[6]; 
+		mixpanel.track('GA Product Download', {'Zip Name':zipName, 'Source':'cloudifysource.org'});
+		formEmail = mixpanel.cookie.props.$people_distinct_id;
+		formName=mixpanel.cookie.props.mp_name_tag;
+		mixpanel.people.identify(formEmail);
+		mixpanel.people.set({
+		"resource": zipName, // sets the property 'Resource' for this user to the boolean value true		
+		$email: formEmail,
+		$first_name: formName,
+		$created: new Date(),
+		$last_seen:new Date(),
+		});
+		mixpanel.track('Resource', {'Zip Name':zipName, 'Source':'Download Page'});
+		mixpanel.people.increment({
+			"Number Of Downloads": 1
+		}); 
+	}
+
+});
+
+
+
+</script>
+</notextile>

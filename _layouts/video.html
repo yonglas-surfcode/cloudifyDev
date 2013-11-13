@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% include head_section_video.html %}
+<body>
+<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
+<div class="WrapperBg">
+    	
+    <div class="Wrapper">
+        {% include header.html %}
+        <div class="contentWrap  cloudifysourcetv">
+			<div class="breadcrumbs">Home Page > {{ page.title }}</div>            
+            <div class="clear"></div>
+			
+
+            <!--Search-->			
+	
+			{% assign searchHdr="Watch and Learn" %}
+            {% include search.html %}
+            
+                <!--Start left content -->                 		
+		<h1 class="pageTitle">{{ page.title }}</h1>
+		<div id="alTag_videoTopText"></div>
+		    <div id="resultsDiv" class="DocumentsWrap"></div> 
+                    {{content}}
+                    <div id="alTag_videoBottomText"></div>
+                <div class="clear"></div>
+                
+        </div>
+        <!--Start pagination -->
+
+        <div class="clear"></div>
+
+        <!--Start Footer -->
+
+        {% include footer.html %}
+
+    </div>
+    <!--End site wrapper -->
+
+
+</div>
+<!--End site bg top wrapper -->
+</body>
+</html>

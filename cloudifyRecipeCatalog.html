@@ -1,0 +1,30 @@
+---
+layout: widget
+title: Cloudify Recipe Catalog. Cloudify - The Open Source PaaS Stack
+cat: cloudifyRecipeCatalog
+---
+
+<script type="text/javascript">
+if ( $(location).attr("href").match("^.*/guide/.*$") )  {
+  if ( !( $(location).attr("href").match("^.*/guide/\\d+\.\\d+.*$") ) ) {
+		var parts = $(location).attr("href").split("/guide/");
+		var newPage = parts[0] + "/guide/2.5/" + parts[1];
+		//alert("true3: " + newPage);
+		$(location).attr("href", newPage);
+	}
+}
+$(function() {
+
+
+});
+
+</script>
+
+<div class="demoAppWrap">
+	<iframe src="http://launch.cloudifysource.org/demos/embedded/default_demo@gigaspaces.com" scrolling="no">
+	</iframe>
+</div>
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% include head_section.html %}
+<body>
+<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>	
+<div class="WrapperBg">    
+    <div class="Wrapper">
+        {% include header.html %}
+        <div class="contentWrap">            
+			<div class="breadcrumbs">Home Page > Cloudify Blogs > {{ page.title }}</div>
+            <div class="clear"></div>
+
+            <!--Search-->
+			{% assign searchHdr="Blog Posts and Updates" %}
+            {% include search.html %}
+
+
+            <div class="content">
+                <div class="left" id="alTag_LeftBlog">
+                    
+                    {% include posts_toc.html %}
+
+                </div>
+
+                <!--Start left content -->
+
+                <div id="resultsDiv" class="DocumentsWrap"></div>
+                <div id="pageContent" class="DocumentsWrapRight">
+                    <h1 class="pageTitle">{{ page.title }}</h1>					
+{% assign posts = paginator.posts %}
+{% include post-listing.html %}														
+                    {{content}}
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--Start pagination -->
+
+        <div class="clear"></div>
+
+        <!--Start Footer -->
+
+        {% include footer.html %}
+
+    </div>
+    <!--End site wrapper -->
+
+
+</div>
+<!--End site bg top wrapper -->
+</body>
+</html>
