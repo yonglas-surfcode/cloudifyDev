@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+{% assign needVersions="needVersions" %}
+{% assign needExpandBtn="needExpandBtn" %}
+{% include btBasicHead.html %}
+<body>
+<div id="wrapper">
+	<!-- start header -->
+	{% include header.html %}
+	<!-- end headers -->
+	<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2>{{ page.title }}</h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Pages</a><i class="icon-angle-right"></i></li>
+					<li class="active">{{ page.title }}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section id="content">
+	
+	<div class="container ">
+		<div class="row">
+			<div class="span8">
+			{{content}}
+			</div>
+			<div class="span4">
+				<aside class="right-sidebar">
+					<div class="widget">
+						<h5 class="widgetheading">Previous Events</h5>
+						{% include webinar_toc.html %}
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+
+	</section>
+	<!-- start footer-->
+	{% include footer.html %}
+	<!-- end footer-->
+
+</div>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+
+<!-- javascript footer_scripts-->
+{% include footer_scripts.html %}
+
+<script type="text/javascript">
+$(function() {
+$('#sidebar > a').on('click', function (e) {
+		e.preventDefault();
+
+		if(!$(this).hasClass("active")){
+			var lastActive = $(this).closest("#sidebar").children(".active");
+			lastActive.removeClass("active");
+			lastActive.next('div').collapse('hide');
+			$(this).addClass("active");
+			$(this).next('div').collapse('show');
+
+		}
+
+	});
+});
+</script>
+
+<!-- javascript footer_scripts-->
+
+</body>
+</html>

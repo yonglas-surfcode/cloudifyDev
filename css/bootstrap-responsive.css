@@ -78,6 +78,8 @@
   .hidden-tablet {
     display: none !important;
   }
+
+
 }
 
 @media (max-width: 767px) {
@@ -93,6 +95,7 @@
   .hidden-phone {
     display: none !important;
   }
+
 }
 
 .visible-print {
@@ -279,6 +282,8 @@
     width: 14.52991452991453%;
     *width: 14.476723040552828%;
   }
+ 
+
   .row-fluid .span1 {
     width: 5.982905982905983%;
     *width: 5.929714493544281%;
@@ -459,7 +464,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  .row {
+    .row {
     margin-left: -20px;
     *zoom: 1;
   }
@@ -481,7 +486,7 @@
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 724px;
+    width: /*724px*/766px;
   }
   .span12 {
     width: 724px;
@@ -516,9 +521,12 @@
   .span2 {
     width: 104px;
   }
+    .cdnavbar{ position:relative;top:6px !important}
+    .cdsearch{top: 2px !important;}
   .span1 {
     width: 42px;
   }
+
   .offset12 {
     margin-left: 764px;
   }
@@ -800,6 +808,8 @@
 }
 
 @media (max-width: 767px) {
+    .cdnavbar{ position:relative;top:22px !important;right:0}
+.cdnavbar .navigation-bottom{ float:right !important}
   body {
     padding-right: 20px;
     padding-left: 20px;
@@ -947,9 +957,12 @@
   .carousel-caption {
     position: static;
   }
+
+    .cdnavbar{ position:relative;top:0px !important}
 }
 
 @media (max-width: 979px) {
+   
   body {
     padding-top: 0;
   }
@@ -1102,8 +1115,12 @@
 }
 
 @media (min-width: 980px) {
+   
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
   }
+}
+@media (min-width: 980px) and (max-width: 1200px) {
+   .cdnavbar{ position:relative;/*top:39px !important*/;right:0} 
 }

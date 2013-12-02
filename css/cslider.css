@@ -1,3 +1,5 @@
+.hpslider{background: #fbfbfb url(../img/slides/parallax/bg1.jpg) repeat 0% 0% !important;width: 100%;height: 450px;}
+
 .da-slider{
 	width: 100%;
 	min-width: 300px;
@@ -5,7 +7,7 @@
 	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
-	background: #fbfbfb url(../img/slides/parallax/bg1.jpg) repeat 0% 0%;
+	/*background: #fbfbfb url(../img/slides/parallax/bg1.jpg) repeat 0% 0% ;*/
 	-webkit-transition: background-position 1s ease-out 0.3s;
 	-moz-transition: background-position 1s ease-out 0.3s;
 	-o-transition: background-position 1s ease-out 0.3s;
@@ -20,6 +22,8 @@
 	left: 0px;
 	text-align: left;
 }
+
+
 .da-slide-current{
 	z-index: 1000;
 }

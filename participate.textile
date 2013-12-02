@@ -1,5 +1,5 @@
 --- 
-layout: participate 
+layout: bt_events 
 title: Upcoming Events and Webinars 
 category: Events 
 ---
@@ -7,6 +7,29 @@ category: Events
 
 
 <!-- Webinar Start -->
+
+<div id="eventsWrapper">
+				<article>
+				<div class="row">
+					<div class="span8">
+                       <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title"><i class="icon-calendar"></i> Industry Event: OpenStack Summit Hong Kong</h3>
+                            </div>
+                            <div class="panel-body">
+                                 <p>The Cloudify team will be on the ground in Hong Kong to take part in the upcoming OpenStack Summit. Find us in booth C27! Hope to see you there!</p>
+								 <p>Venue: AsiaWorld Expo, Hong Kong International Airport, Lantau, Hong Kong</p>
+                                 <p class="text-left">
+								 <a href="http://www.openstack.org/summit/openstack-summit-hong-kong-2013/" class="btn btn-default">Register &raquo;</a>
+                                 <a href="http://twitter.com/home?status=I'm%20psyched%20to%20see%20GigaSpaces'%20Cloudify%20at%20the%20%23OpenStack%20Summit%20in%20Hong%20Kong!%20For%20more%20and%20to%20register%20visit:%20http://www.cloudifysource.org/participate" class="btn btn-blue btn-sm"><i class="icon-twitter"></i>&nbsp;Tweet</a> <a href="https://maps.google.co.uk/maps?oe=&safe=active&ie=UTF-8&q=Sheraton+Hotel+%26+Towers,+Hong+Kong&fb=1&gl=uk&hq=Sheraton+Hotel+%26+Towers,&hnear=0x3403e2eda332980f:0xf08ab3badbeac97c,Hong+Kong&cid=0,0,1066229719427909721&ei=tIL7UfXsBOmb0QXjtIGgAg&ved=0CNYBEPwSMAo" class="btn btn-warning btn-sm"><i class="icon-map-marker"></i>&nbsp;Map</a></p>
+                            </div>
+                        </div>
+					</div>
+				</div>
+				</article>
+</div>
+
+
                       <div class="eventBox">
                            <div class="eventInfoLeft">
                                 <div class="eventDate"><span class="eventDay">5</span><span class="eventMonth">NOV 2013</span></div>
