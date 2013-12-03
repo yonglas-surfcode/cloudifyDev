@@ -538,8 +538,9 @@ Vous pouvez t?l?charger Cloudify sur http://www.gigaspaces.com/cloudify">
 	</div>
 	</section>
 <script type="text/javascript">
-$(function() {    
-//how much items per page to show
+//$(function() {    
+ $(window).bind("load", function () {
+    //how much items per page to show
     var show_per_page = 8; 
     //getting the amount of elements inside content div
     var number_of_items = $('#thumbs').children().size();
