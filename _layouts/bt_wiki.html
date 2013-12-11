@@ -2,7 +2,7 @@
 <html lang="en">
 {% assign needVersions="needVersions" %}
 {% assign needExpandBtn="needExpandBtn" %}
-{% include btBasicHead.html %}
+{% include head_section.html %}
 <body>
 <div id="wrapper">
 	<!-- start header -->
@@ -11,25 +11,29 @@
 	<section id="inner-headline">
 	<div class="container">
 		<div class="row">
-			<div class="span4">
+			<div class="span8">
 				<div class="inner-heading">
-					<h2>{{ page.title }}</h2>
+					<h2>Documentation <strong>{{ page.title }}</strong></h2>
 				</div>
 			</div>
-			<div class="span8">
+			<div class="span4">
 				<ul class="breadcrumb">
 					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
-					<li><a href="#">Pages</a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Cloudify Documentation</a><i class="icon-angle-right"></i></li>
+					<li><a href="#">2.6</a><i class="icon-angle-right"></i></li>
 					<li class="active">{{ page.title }}</li>
 				</ul>
 			</div>
 		</div>
-	</div>
+	<div>
 	</section>
 	<section id="content">
 	<div class="container ">
-		<div class="panel panel-default span3">
-			<div class="panel-heading">
+		<div class="row">
+			<div class="span3">
+				<aside class="left-sidebar">
+				<h5 class="widgetheading">Cloudify 2.6</h5>
+                <div id="sidebar" class="list-group docMenu"> 
 								{% capture currentVersion %}{{ page.url | remove: "/guide/" | split:"/" | first }}{% endcapture %}
 								
 								{% if currentVersion contains '2.1' %}
@@ -62,14 +66,16 @@
 									{% endif %}
 								{% endif %}							
 			</div>
-		</div>
+		
+				</aside>
+			</div>
 
 
-	<div class="span8">
+	<div class="span9">
 		{{content}}
 		</div>
 	</div>
-
+</div>
 	</section>
 	<!-- start footer-->
 	{% include footer.html %}
