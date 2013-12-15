@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - AWS Outage - Moving from Multi-Availability-Zone to Multi-Cloud</title>
+	<script src="//cdn.optimizely.com/js/59503762.js"></script>
+	
+	<link rel="canonical" href="http://www.cloudifysource.org/posts/2012-10-24-aws-outage-multi-availability-zone-multi-cloud.html"/>	
+	<!-- custom -->
+	<!--<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/atom.xml" />-->
+	<link rel="canonical" href="http://www.cloudifysource.org/index.html"/>	
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/x-icon" />
+	<!-- css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" />
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="/css/jcarousel.css" rel="stylesheet" />
+	<link href="/css/flexslider.css" rel="stylesheet" />
+	<link href="/css/cslider.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Theme skin -->
+	<link id="t-colors" href="/skins/blue.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="/bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="/ico/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="/js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	
+	
+
+</head>
+
+<body>
+<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
+<div class="WrapperBg">    
+    <div class="Wrapper">
+        <!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="goPro.html"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="download.html" data-toggle="tooltip" data-placement="bottom" title="Get the GA Release"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="download.html" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="index.html"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="index.html"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown active">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums</a>
+										</li>
+										<li class="dropdown">
+										<a href="doc.html">Docs<i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="#">2.3</a></li>
+											<li><a href="#">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg.html">2.6</a></li>
+											<li><a href="#">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works</a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="blog-right-sidebar.html">Blog</a></li>
+										<li><a href="#">The Cloudify Player</a></li>
+										<li><a href="video.htm">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com</strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+		<h1>Test</h1>
+        <div class="contentWrap">            
+			<div class="breadcrumbs">Home Page > Cloudify Blogs > AWS Outage - Moving from Multi-Availability-Zone to Multi-Cloud</div>
+            <div class="clear"></div>
+
+            <!--Search-->
+			
+            
+ 
+
+<div class="learnFrom">
+    <h2>Blog Posts and Updates</h2>
+
+    <div class="searchWrap">
+        <form id="searchForm" action="#" method="get">
+            <input id="search" class="searchTxt" type="text" placeholder="Search..."/>
+            <input id="goBtn" class="searchBtn" type="button" value="Go"/>
+        </form>
+    </div>
+</div>
+ 
+<div class="hp-right-col">
+ 		<a class="hp-btn-getCloudify" href="/downloads/get_cloudify">Get Cloudify!</a>
+</div>
+
+
+
+
+			
+            <div class="content">
+                <div id="alTag_LeftBlog" class="left">
+                    
+                    <!--Event groups-->
+
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Recent Posts</h3>
+</div>
+
+
+<div class="leftContentBox blogLeftBox"> 
+ 		
+</div>
+
+               <!--start -->
+                 <div class="leftContentBox blogLeft-topTitle blog-left-title2 tumblr">
+                        <h3>CloudifySource on Tumblr</h3>
+                 </div>   
+                <div class="leftContentBox tumblrFeed">                     
+                
+                </div>
+<!--end-->
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Archived Posts</h3>
+</div>
+
+ <ul class="blog-archive-list">
+ 
+ 
+
+
+
+
+ 
+ </ul>
+
+                </div>
+
+                <!--Start left content -->
+
+                <div id="resultsDiv" class="DocumentsWrap"></div>
+                <div id="pageContent" class="DocumentsWrapRight">
+                    <h1 class="pageTitle">AWS Outage - Moving from Multi-Availability-Zone to Multi-Cloud</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Dotan Horovits</a>  on  ,   
+					  </span>
+					  <br/><br/><br/>
+					 
+                    <p>A couple of days ago Amazon Web Services (<span class="caps">AWS</span>) suffered a significant outage in their US-<span class="caps">EAST</span>-1 region. This has been the 5th major outage in that region in the past 18 months. The outage <a href="http://www.datacenterknowledge.com/archives/2012/10/22/amazon-cloud-outage-affecting-many-sites/">affected leading services</a> such as Reddit, Netflix, Foursquare and Heroku. How should you architect your cloud-hosted system to sustain such outages? Much has been written on this question during this outage, as well as past outages. Many recommend basing your architecture on multiple <span class="caps">AWS</span> Availability Zones (AZ) to spread the risk. But during this outage we saw even multi-Availability Zone applications severely affected. Even Amazon published during the outage that</p><blockquote>Customers can launch replacement instances in the unaffected availability zones but may experience elevated launch latencies or receive ResourceLimitExceeded errors on their <span class="caps">API</span> calls, which are being issued to manage load on the system during recovery.</blockquote>
+<p>The reason is that there is an underlying infrastructure that escalates the traffic from the affected AZ to other AZ in a way that overwhelms the system. In the case of this outage it was the <span class="caps">AWS</span> <span class="caps">API</span> Platform that was rendered unavailable, as nicely explained in this <a href="http://www.systemswatch.com/blog/2012/10/amazon-web-services-outages-even-in-multi-az/">great post</a>:</p>
+<p><code>The waterfall effect seems to happen, where the AWS API stack gets overwhelmed to the point of being useless for any management task in the region.</code><br />
+<p>But it doesn&#39;t really matter for us as users which exact infrastructure it was that failed on this specific outage. 18 months ago, during the first major outage, the reason was another infastructure component, the Elastic Block Store (&ldquo;<span class="caps">EBS</span>&rdquo;) volumes, that cascaded the problem. Back then I wrote a post on <a href="http://horovits.wordpress.com/2011/05/16/retrospect-on-recent-aws-outage-and-resilient-cloud-based-architecture/" title="Retrospect on recent AWS Outage and Resilient Cloud-Based Architecture">how to architect your system to sustain such outages</a>, and one of my recommendations was:</p><br />
+<code>Spread across several public cloud vendors and/or private cloud</code><br />
+<p>The rule of thumb in IT is that there will <strong>always</strong> be extreme and rare situations (and don&#39;t forget, Amazon only commits to 99.995% <span class="caps">SLA</span>) causing such major outages. And there will <strong>always</strong> be some common infrastructure that under that extreme and rare situation will carry the ripple effect of the outage to other Availability Zones in the region. Of course, you can mitigate risk by spreading your system across several <span class="caps">AWS</span> Regions (e.g. between US-<span class="caps">EAST</span> and US-<span class="caps">WEST</span>), as they have much looser coupling, but as I stated on my <a href="http://horovits.wordpress.com/2011/05/16/retrospect-on-recent-aws-outage-and-resilient-cloud-based-architecture/">previous post</a>, that loose coupling comes with a price: it is up to your application to replicate data, using a separate set of APIs for each region. As Amazon themselves state: &quot;it requires effort on the part of application builders to take advantage of this isolation&quot;. The most resilient architecture would therefore be to mitigate risk by <strong>spreading your system across different cloud vendors</strong>, to provide the best isolation level. The advantages in terms resilience are clear. But how can that be implemented, given that the vendors are so different in their characteristics and APIs? There are 2 approaches to deploying across multiple cloud vendors and keeping cloud-vendor-agnostic:</p><br />
+<ol><br />
+                <li><strong>Open Standards and APIs</strong> for cloud <span class="caps">API</span> that will be supported by multiple cloud vendors. That way you write your application using a common standard and have immediate support by all conforming cloud vendors. Examples for such emerging standards are <a href="http://www.openstack.org/" target="_blank">OpenStack </a>and <a href="http://www.jclouds.org/" target="_blank">JClouds</a>. However, the Cloud is still a young domain with <a href="http://www.infoworld.com/d/cloud-computing/the-open-cloud-getting-awfully-confusing-201364" target="_blank">many competing standards and APIs</a> and it is yet to be determined which one shall become the de-facto standard of the industry and where to &quot;place our bet&quot;.</li><br />
+                <li><strong>Open PaaS Platforms</strong> that abstract the underlying cloud infrastructure and provide transparent support for all major vendors. You build your application on top of the platform, and leave it up to the platform to communicate to the underlying cloud vendors (whether public or private clouds, or even a hybrid). Examples of such platforms, are <a href="http://www.cloudfoundry.com/">CloudFoundry</a> and <a href="http://www.cloudifysource.org/">Cloudify</a>. I dedicated one of my posts for exploring <a href="http://horovits.wordpress.com/2011/05/31/building-cloud-applications-the-easy-way-using-elastic-application-platforms/" title="Building Cloud Applications the Easy Way Using Elastic Application Platforms">how to build your application using such platforms</a>.</li></p>
+</ol>
+<h3>Conclusion</h3>
+<p>System architects need to face the reality of the Service Level Agreement provided by Amazon and other cloud vendors and their limitations, and start designing for resilience by spreading across isolated environments, deploying <a href="http://horovits.wordpress.com/2012/06/17/aws-outage-thoughts-on-disaster-recovery-policies/">DR sites</a>, and by similar redundancy measures to keep their service up-and-running and their data safe. Only that way can we guarantee that we will not be the next one to fall off the 99.995% <span class="caps">SLA</span>. This post was originally posted <a target="_blank" href="http://horovits.wordpress.com/2012/10/24/aws-outage-multi-cloud-disaster-recovery/">here</a>.</p>
+<p><img align="left" alt="1311765722_picons03" class="asset  asset-image at-xid-6a00d835457b7453ef017c329cd14f970b" src="http://natishalom.typepad.com/.a/6a00d835457b7453ef017c329cd14f970b-75wi" style="width: 55px; margin: 0px 5px 5px 0px; " title="1311765722_picons03" width="55" /><br />
+<a href="https://twitter.com/intent/follow?screen_name=horovits" target="_blank" title="Follow Dotan Horovits on Twitter!">Follow Dotan&nbsp;</a>on Twitter!</p>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/posts/2012-10-24-aws-outage-multi-availability-zone-multi-cloud.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!--Start pagination -->
+
+        <div class="clear"></div>
+
+        <!--Start Footer -->
+
+        	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="goPro.html">Enterprise Cloudify</a></li>
+						<li><a href="cloudifyrecipecatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="how.html">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="http://www.cloudifysource.org/terms_of_use">Terms of Use</a></li>
+						<li><a href="http://www.cloudifysource.org/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+
+    </div>
+    <!--End site wrapper -->
+
+
+</div>
+<!--End site bg top wrapper -->
+</body>
+</html>

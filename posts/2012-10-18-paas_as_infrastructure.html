@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - PaaS as Infrastructure</title>
+	<script src="//cdn.optimizely.com/js/59503762.js"></script>
+	
+	<link rel="canonical" href="http://www.cloudifysource.org/posts/2012-10-18-paas_as_infrastructure.html"/>	
+	<!-- custom -->
+	<!--<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/atom.xml" />-->
+	<link rel="canonical" href="http://www.cloudifysource.org/index.html"/>	
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/x-icon" />
+	<!-- css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" />
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="/css/jcarousel.css" rel="stylesheet" />
+	<link href="/css/flexslider.css" rel="stylesheet" />
+	<link href="/css/cslider.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Theme skin -->
+	<link id="t-colors" href="/skins/blue.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="/bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="/ico/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="/js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	
+	
+
+</head>
+
+<body>
+<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
+<div class="WrapperBg">    
+    <div class="Wrapper">
+        <!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="goPro.html"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="download.html" data-toggle="tooltip" data-placement="bottom" title="Get the GA Release"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="download.html" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="index.html"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="index.html"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown active">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums</a>
+										</li>
+										<li class="dropdown">
+										<a href="doc.html">Docs<i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="#">2.3</a></li>
+											<li><a href="#">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg.html">2.6</a></li>
+											<li><a href="#">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works</a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="blog-right-sidebar.html">Blog</a></li>
+										<li><a href="#">The Cloudify Player</a></li>
+										<li><a href="video.htm">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com</strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+		<h1>Test</h1>
+        <div class="contentWrap">            
+			<div class="breadcrumbs">Home Page > Cloudify Blogs > PaaS as Infrastructure</div>
+            <div class="clear"></div>
+
+            <!--Search-->
+			
+            
+ 
+
+<div class="learnFrom">
+    <h2>Blog Posts and Updates</h2>
+
+    <div class="searchWrap">
+        <form id="searchForm" action="#" method="get">
+            <input id="search" class="searchTxt" type="text" placeholder="Search..."/>
+            <input id="goBtn" class="searchBtn" type="button" value="Go"/>
+        </form>
+    </div>
+</div>
+ 
+<div class="hp-right-col">
+ 		<a class="hp-btn-getCloudify" href="/downloads/get_cloudify">Get Cloudify!</a>
+</div>
+
+
+
+
+			
+            <div class="content">
+                <div id="alTag_LeftBlog" class="left">
+                    
+                    <!--Event groups-->
+
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Recent Posts</h3>
+</div>
+
+
+<div class="leftContentBox blogLeftBox"> 
+ 		
+</div>
+
+               <!--start -->
+                 <div class="leftContentBox blogLeft-topTitle blog-left-title2 tumblr">
+                        <h3>CloudifySource on Tumblr</h3>
+                 </div>   
+                <div class="leftContentBox tumblrFeed">                     
+                
+                </div>
+<!--end-->
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Archived Posts</h3>
+</div>
+
+ <ul class="blog-archive-list">
+ 
+ 
+
+
+
+
+ 
+ </ul>
+
+                </div>
+
+                <!--Start left content -->
+
+                <div id="resultsDiv" class="DocumentsWrap"></div>
+                <div id="pageContent" class="DocumentsWrapRight">
+                    <h1 class="pageTitle">PaaS as Infrastructure</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Nati Shalom</a>  on  ,   
+					  </span>
+					  <br/><br/><br/>
+					 
+                    <p class="p1"><strong>The blurring line between PaaS and IaaS&nbsp;</strong></p>
+<p class="p3">The core of IaaS services is centered around &nbsp;Compute, Storage Network however over the past years the infrastructure moved up the stack and includes more application services such as Database as a Service, Hadoop Map/Reduce, and application lifecycle services.&nbsp;</p>
+<p class="p2">On the other hand, PaaS services offer similar services through the PaaS platform itself with the main difference being that quite often those services were designed to fit only the application that runs on that particular PaaS.</p>
+<p class="p2">So rather than the traditional view, where we draw a clear line between the IaaS and PaaS layer we need to view them differently, where the PaaS and IaaS layers overlap each other on the software services layer.</p>
+<p class="p2">&nbsp;</p>
+<p class="p2">
+<p><a class="asset-img-link" style="display: inline;" href="http://natishalom.typepad.com/.a/6a00d835457b7453ef017c3296558d970b-pi"><img class="asset  asset-image at-xid-6a00d835457b7453ef017c3296558d970b" title="Screen Shot 2012-10-17 at 4.54.54 AM" src="http://natishalom.typepad.com/.a/6a00d835457b7453ef017c3296558d970b-500wi" alt="Screen Shot 2012-10-17 at 4.54.54 AM" /></a></p><br />
+<p class="p2"><strong>IaaS and PaaS share a similar technology stack</strong></p><br />
+<p class="p2">A close look into the OpenStack infrastructure shows that even on the infrastructure level running the compute, storage and network services relies on messaging services such as RabbitMQ, databases such as Postgress, a load balancer such as Nginx and other software services. Running these software services for our infrastructure is not much different than running our apps. &nbsp;With both the infrastructure and application we would need to address the scalability and high availabilityof these services and manage them through our infrastructure.</p><br />
+<p class="p2">If that is the case wouldn&#8217;t it make sense to share the same underlying technology to run our infrastructure and our apps?</p><br />
+<p class="p2"><strong>Sharing the software services between your IaaS and PaaS</strong></p><br />
+<p class="p2">A typical public PaaS platform is built out of two main parts &#8211; a self-service portal, and a backend system that runs our apps.</p><br />
+<p class="p2">With many of the public PaaS solutions such as <span class="caps">GAE</span>, Heroku the backend that runs our PaaS is treated as a blackbox.</p><br />
+<p class="p2">Amazon Elastic Beanstalk does things differently in that respect &#8211; as it took a bottom-up approach. It uses the same <span class="caps">AWS</span> infrastructure to run Elastic Beanstalk and the infrastructure &#8211; this provides a lot of flexibility to its users, and equally as important, consistency between the way they run and manage their app and infrastructure. VMware took even a bigger step in this regard with CloudFoundry and <span class="caps">BOSH</span> and made their entire PaaS backend open source which gives users even greater flexibility. With Cloudify we took this idea a step further by introducing the concept of recipes into the core of the Cloudify infrastructure, and recently introduced our&nbsp;<a href="http://www.cloudifysource.org/guide/2.2/integrations/chef_documentation.html">integration with Chef</a>&nbsp;in a way that will enable users to run their Chef cookbooks as part of Cloudify. Chef has already gained popularity as a configuration and automation framework for setting up many of the OpenStack cloud deployments. Having Chef tightly integrated into the PaaS layer, simply put, makes perfect sense.</p><br />
+<p>&nbsp;</p><br />
+<hr /><br />
+<h3>Don&#8217;t miss Nati Shalom speak about&nbsp;<a href="http://www.meetup.com/The-Bay-Area-Chef-User-Group/events/86568132/" target="_blank">Chef as a foundation for PaaS: How Cloudify Uses Chef&nbsp;</a>at the upcoming Bay Area Chef User Group, this coming Friday, October 19th.&nbsp;</h3><br />
+<p><strong>For those not in the area&#8230;stay tuned, we just might be streaming live to the<a href="http://www.cloudifysource.org/blog/"> CloudifySource Blog.</a></strong></p><br />
+<hr /></p>
+<p class="p2"><strong>Example &#8211; Building your own <span class="caps">RDS</span> with Cloudify</strong></p>
+<p class="p2">To illustrate the idea of how we can use share the same deployment framework between our IaaS and PaaS layer I&#8217;ll pick one of these software services to demonstrate the idea with. In this particular case, I&#8217;ve chosen to use a database as a service. Database as a service is often a good reference for a service that fits in both our infrastructure and application. Here is how we can easily set a database as a service with Cloudify:</p>
+<p class="p2">1. Directly through the use of <a href="http://www.cloudifysource.org/guide/2.2/developing/recipes_overview">Cloudify recipes</a></p>
+<script src="https://gist.github.com/3911417.js?file=mysql.groovy"></script><p>&nbsp;</p>
+<p class="p2">You can refer to the full <a href="https://github.com/CloudifySource/cloudify-recipes/tree/master/services/mysql" target="_self">MySQL recipe</a> here.</p>
+<p class="p2">2. Through the use of <a href="http://www.cloudifysource.org/guide/2.2/integrations/chef_documentation.html">Chef cookbooks</a></p>
+<p class="p2">&nbsp;</p>
+<p class="p2">If you are already using Chef you can plug-in to the Chef MySQL cookbook by extending the Cloudify recipe to use Chef, as you can see in the snippet below:</p>
+<script src="https://gist.github.com/3911443.js?file=runParams.groovy"></script><p>&nbsp;</p>
+<p class="p3">You can read the full details on how to <a href="http://www.cloudifysource.org/guide/2.2/integrations/chef_documentation.html" target="_self">run Chef with Cloudify</a> in our documentation.</p>
+<p class="p2"><strong>Running through bare metal environment</strong></p>
+<p class="p3">Even in the case where we share the same software services through our infrastructure and application, we tend to run them differently.</p>
+<p class="p2">Quite often infrastructure services will run on bare-metal environments, as we don&#8217;t want to create dependencies between our virtualiation layer and the underlying infrastructure that runs it. &nbsp;</p>
+<p class="p2">To enable this level of flexibility, we need to abstract the underlying compute layer from our service orchestration layer. In this way, we can use the same recipe and deploy it on either a bare-metal environment or a virtaulization layer. (Read: <a href="http://www.cloudifysource.org/guide/2.2/setup/configuring_byon.html" target="_self">Configuring a Traditional Data Center [<span class="caps">BYON</span>]</a>)</p>
+<p class="p2"><strong>Final notes</strong></p>
+<p class="p3">Up until recently, PaaS and IaaS were treated as two separate and closed entities and the integration between the two was done pretty much in a blackbox approach.&nbsp;The fact that both the IaaS and PaaS underlying infrastructure were closed was the primary reason behind this.</p>
+<p class="p2">Now with the growing adoption of open source IaaS such as OpenStack and CloudStack, and similarly with PaaS such CloudFoundry and Cloudify we have the opportunity to change this paradigm. There isn&#8217;t much of a reason why we shouldn&#8217;t be able to share the same orchestration, and configuration layers between our IaaS and PaaS layers. Amazon Elastic Beanstalk is a good reference why this makes a lot of sense.</p>
+<p class="p2"><strong>Special thanks</strong></p>
+<p class="p2">Special thanks to&nbsp;<a href="http://www.linkedin.com/in/borisrenski">Boris Renski</a> who was the main inspiration behind this post.</p>
+<p class="p2">&nbsp;</p>
+<p class="p2">
+<p><a class="asset-img-link" style="float: left;" href="http://natishalom.typepad.com/.a/6a00d835457b7453ef017c329cd14f970b-pi"><img class="asset  asset-image at-xid-6a00d835457b7453ef017c329cd14f970b" style="width: 55px; margin: 0px 5px 5px 0px;" title="1311765722_picons03" src="http://natishalom.typepad.com/.a/6a00d835457b7453ef017c329cd14f970b-75wi" alt="1311765722_picons03" /></a><br /><a title="Follow Nati Shalom on Twitter!" href="https://twitter.com/intent/follow?screen_name=natishalom" target="_blank">Follow Nati </a>on Twitter!</p></p>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/posts/2012-10-18-paas_as_infrastructure.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!--Start pagination -->
+
+        <div class="clear"></div>
+
+        <!--Start Footer -->
+
+        	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="goPro.html">Enterprise Cloudify</a></li>
+						<li><a href="cloudifyrecipecatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="how.html">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="http://www.cloudifysource.org/terms_of_use">Terms of Use</a></li>
+						<li><a href="http://www.cloudifysource.org/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+
+    </div>
+    <!--End site wrapper -->
+
+
+</div>
+<!--End site bg top wrapper -->
+</body>
+</html>

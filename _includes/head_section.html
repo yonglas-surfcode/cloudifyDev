@@ -36,15 +36,6 @@
 	<script src="/js/jquery.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	
-	{% if needVersions != null %} 
-		<script type="text/javascript">								
-			var origOnLoad = window.onload;
-			window.onload = function() {
-				origOnLoad();
-				addPageVersions();
-			}	
-		</script>			
-		{% assign needVersions = null %}
-	{% endif %}	
+	
 
 </head>

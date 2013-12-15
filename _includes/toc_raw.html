@@ -2,23 +2,19 @@
 {% capture currentVersion %}{{ page.url | remove: "/guide/" | split:"/" | first }}{% endcapture %}
    <h2 id="todHdr">Cloudify {{currentVersion}}</h2>
    <div class="clear"></div>
-	<div class="TableOfContents" id="accordion">
-		{% for category in site.categories %}		
-		<h3><a href="#">{{ category }}</a></h3>
-		<div>
-			 <ul>			 				 			
+	{% for category in site.categories %}		
+		<h5 class="widgetheading">{{ category }}</h5>
+		<div class="list-group subitem collapse" class="list-group-item"> 				 			
 			  {% for page in site.page_categories[category] %}				  
 				  {% if page.url contains currentVersion %}			  
-				    <li><a href="{{page.url}}">{{page.title}}</a></li>							   
+				    <a  class="list-group-item" href="{{page.url}}">{{page.title}}</a>							   
 				  {% endif %}			  
 			  {% endfor %}
 			  {% if category == "Reference" %}			  
-				  <li><a href="/guide/{{currentVersion}}/api">Cloudify API Reference</a></li>				 
-				  <li><a href="/guide/{{currentVersion}}/restapi/restdoclet.html">Rest API Reference</a></li>				 
+				  <a   class="list-group-item" href="/guide/{{currentVersion}}/api">Cloudify API Reference</a></li>				 
+				  <a   class="list-group-item" href="/guide/{{currentVersion}}/restapi/restdoclet.html">Rest API Reference</a>			 
              {% endif %}			  
-			 </ul>
 		</div>
        {% endfor %}		
-    </div>
 </div>
 

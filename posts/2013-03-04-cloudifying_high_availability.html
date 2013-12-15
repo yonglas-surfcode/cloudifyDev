@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - Cloudifying High Availability</title>
+	<script src="//cdn.optimizely.com/js/59503762.js"></script>
+	
+	<link rel="canonical" href="http://www.cloudifysource.org/posts/2013-03-04-cloudifying_high_availability.html"/>	
+	<!-- custom -->
+	<!--<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/atom.xml" />-->
+	<link rel="canonical" href="http://www.cloudifysource.org/index.html"/>	
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/x-icon" />
+	<!-- css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" />
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="/css/jcarousel.css" rel="stylesheet" />
+	<link href="/css/flexslider.css" rel="stylesheet" />
+	<link href="/css/cslider.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Theme skin -->
+	<link id="t-colors" href="/skins/blue.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="/bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="/ico/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="/js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	
+	
+
+</head>
+
+<body>
+<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
+<div class="WrapperBg">    
+    <div class="Wrapper">
+        <!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="goPro.html"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="download.html" data-toggle="tooltip" data-placement="bottom" title="Get the GA Release"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="download.html" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="index.html"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="index.html"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown active">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums</a>
+										</li>
+										<li class="dropdown">
+										<a href="doc.html">Docs<i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="#">2.3</a></li>
+											<li><a href="#">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg.html">2.6</a></li>
+											<li><a href="#">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works</a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="blog-right-sidebar.html">Blog</a></li>
+										<li><a href="#">The Cloudify Player</a></li>
+										<li><a href="video.htm">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com</strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+		<h1>Test</h1>
+        <div class="contentWrap">            
+			<div class="breadcrumbs">Home Page > Cloudify Blogs > Cloudifying High Availability</div>
+            <div class="clear"></div>
+
+            <!--Search-->
+			
+            
+ 
+
+<div class="learnFrom">
+    <h2>Blog Posts and Updates</h2>
+
+    <div class="searchWrap">
+        <form id="searchForm" action="#" method="get">
+            <input id="search" class="searchTxt" type="text" placeholder="Search..."/>
+            <input id="goBtn" class="searchBtn" type="button" value="Go"/>
+        </form>
+    </div>
+</div>
+ 
+<div class="hp-right-col">
+ 		<a class="hp-btn-getCloudify" href="/downloads/get_cloudify">Get Cloudify!</a>
+</div>
+
+
+
+
+			
+            <div class="content">
+                <div id="alTag_LeftBlog" class="left">
+                    
+                    <!--Event groups-->
+
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Recent Posts</h3>
+</div>
+
+
+<div class="leftContentBox blogLeftBox"> 
+ 		
+</div>
+
+               <!--start -->
+                 <div class="leftContentBox blogLeft-topTitle blog-left-title2 tumblr">
+                        <h3>CloudifySource on Tumblr</h3>
+                 </div>   
+                <div class="leftContentBox tumblrFeed">                     
+                
+                </div>
+<!--end-->
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Archived Posts</h3>
+</div>
+
+ <ul class="blog-archive-list">
+ 
+ 
+
+
+
+
+ 
+ </ul>
+
+                </div>
+
+                <!--Start left content -->
+
+                <div id="resultsDiv" class="DocumentsWrap"></div>
+                <div id="pageContent" class="DocumentsWrapRight">
+                    <h1 class="pageTitle">Cloudifying High Availability</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Ali Hodroj</a>  on  ,   
+					  </span>
+					  <br/><br/><br/>
+					 
+                    <p style="margin-left: .5in; text-align: justify;" class="MsoNormal"><em>The following is Part 1 of 2 on architecting highly available cloud applications using Cloudify. The first part introduces the concepts, challenges, and solutions to achieve highest levels of availability and disaster recovery in the cloud. The second part revisits the concept to provide a solution architecture and demo source code showing a real-world scenario implementation for a GigaSpaces Cloudify customer.&nbsp;</em></p>
+<h4>Introduction</h4>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;">Failure in the cloud is inevitable, since the end of 2012 we&#8217;ve witnessed two major incidents in the cloud computing world which were the latest in the string of high profile cloud computing outages. The outages, within <a href="http://news.cnet.com/8301-1023_3-57561454-93/amazon-apologizes-for-netflixs-christmas-eve-streaming-outage/" onclick="javascript:pageTracker._trackPageview('/outgoing/news.cnet.com/8301-1023_3-57561454-93/amazon-apologizes-for-netflixs-christmas-eve-streaming-outage/');">Amazon Web Services</a> as well as <a href="http://blogs.msdn.com/b/windowsazure/archive/2013/02/24/windows-azure-service-disruption-from-expired-certificate.aspx" onclick="javascript:pageTracker._trackPageview('/outgoing/blogs.msdn.com/b/windowsazure/archive/2013/02/24/windows-azure-service-disruption-from-expired-certificate.aspx');">Microsoft Windows Azure</a>, brought down major online services. Such outages are an alarming reminder about the true nature of cloud resources&mdash;it&#8217;s still just shared infrastructure of servers and data centers behind an <span class="caps">API</span>. Even though cloud vendors provide a set of infrastructure features to implement high availability, one cannot escape the increase in deployment complexity when trying to utilize those features for highly available systems. In this two-part blog post, I&#8217;ll outline a real world scenario with a GigaSpaces customer that illustrates how Cloudify was leveraged to implement cloud-scale high availability while eliminating increase in accidental complexity.</span></p>
+<h4>Approaches for Cloud High Availability</h4>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;">Cloud computing enables economies of scale facilitating high redundancy and geographically separate deployments. &nbsp;Approaching high availability a cloud environment requires the implementation of patterns and practices that introduce high redundancy and strive towards a shared-nothing architecture. Such patterns can be achieved through techniques such as geographically redundant cloud deployments and multi-site data replication to provide better fault tolerance and disaster recovery. This enables the elimination of single points of failure that could stop the entire system from operating in case of a disaster or node failure. &nbsp;There are three key principles to focus on:</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;"><br>
+</span></p>
+<p class="MsoNormal"><strong><img height="276" width="434" align="right" alt="" src="http://blog.gigaspaces.com/wp-content/uploads/cloud_ha(3).png"></strong></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;"><strong>Geographic Separation &ndash; </strong>Maintain high fault tolerance by utilizing multiple zones, regions, and cloud providers. For instance, Amazon&#8217;s EC2 currently supports three regions in the US, each split into several availability zones, demarcated by different power sources and are physically segregated.</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;"><strong>Replication and Failover &ndash;</strong> Ensure data redundancy and backup by continuous replication of data across geographically separated sites. In addition, provide proactive monitoring to automate failover operations allowing applications to rapidly come back online after a failure occurs.</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;"><strong>Monitoring, Elastic Scaling, and Cloud Bursting &ndash; </strong>Enable proactive and actionable monitoring to enable: 1) elastic expansion of resources in case of load changes allowing applications to automatically scale up and down, 2) recovering from failure by automatically scaling up a DR environment to handle production load, and finally 3) Implement <a href="http://horovits.wordpress.com/2012/06/12/cloud-bursting/" onclick="javascript:pageTracker._trackPageview('/outgoing/horovits.wordpress.com/2012/06/12/cloud-bursting/');">cloud bursting</a> by dynamically deploying your application onto more powerful cloud to address a spike in demand.</span></p>
+<h4>Challenges and Complexities &ndash; Portability and Automation</h4>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;">There are two significant impediments facing the climbing up the availability spectrum: lack of portability and automation immaturity. As we move beyond relatively simple web applications (deployed within an out of the box PaaS or simply hosted in an IaaS environment), the increase in solving the essential complexity of resilient cloud architecture triggers a direct increase in the <a href="http://en.wikipedia.org/wiki/Accidental_complexity" onclick="javascript:pageTracker._trackPageview('/outgoing/en.wikipedia.org/wiki/Accidental_complexity');">accidental complexity</a> of that architecture. This complexity emerges mostly from the need to design and implement custom automation solutions for auto deployment across traditional data centers, zones, regions, and private/public clouds. &nbsp;According to <a href="http://theinfopro.blogs.451research.com/index.php/2013/01/cloud-readiness-the-automation-age/" onclick="javascript:pageTracker._trackPageview('/outgoing/theinfopro.blogs.451research.com/index.php/2013/01/cloud-readiness-the-automation-age/');">recent research</a>, the second and third highest cloud enablement investment in the enterprise is spent on automation and orchestration.</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;">In addition to automation immaturity leading to significant IT or DevOps investment, the lack of portable cloud-agnostic orchestration solutions makes it difficult to retarget your cloud deployed application to another provider due to a variance between <span class="caps">API</span> sets, resource semantics, and data center levels of abstractions. To summarize, the issues are:</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;"><strong>Different levels of abstraction &ndash; </strong>The premise of cloud computing is that it provides a useful abstraction either at the infrastructure,<img height="227" width="318" align="right" alt="" src="http://blog.gigaspaces.com/wp-content/uploads/cloud_ha_challenges(3).png">platform, or application-level. However, the specifics of these abstractions vary greatly as we look into the ontology of their data centers and the hierarchy of resources within. As you try to move your architecture to a different cloud, you will run into some form impedance mismatch between the generics of your deployment model and the specifics of a certain IaaS model.</span></p>
+<p style="text-align: justify;" class="MsoNormal"><strong style="font-family: tahoma, geneva, sans-serif;">Different <span class="caps">API</span> &ndash;&nbsp;</strong><span style="font-family: tahoma, geneva, sans-serif;">The set of cloud <span class="caps">API</span> vary drastically across different cloud vendors. In addition to the nuts and bolts of provisioning resources, security policies, authentication keys, and general administrative workflow vary greatly from a cloud provider to another. This presents a challenge when trying to architect a deployment model that is adaptable enough to arbitrary regions and clouds.&nbsp;</span></p>
+<p style="text-align: justify;"></p>
+<h4>Cloudify &ndash; Increasing Resiliency without the Complexity</h4>
+<p style="text-align: justify;"><span style="font-family: tahoma, geneva, sans-serif; text-align: justify;">Although cloud vendors provide simplified access to a large pool of resources through <span class="caps">API</span> calls, this does not mitigate the increasing cost of implementing high availability and disaster recovery through custom automation<img height="239" width="288" align="right" alt="" src="http://blog.gigaspaces.com/wp-content/uploads/cloudify_complexity(10).png"> approaches. To address this problem, Cloudify proposes a higher level of abstraction designed to isolate an application from the underlying cloud environment, and to provide a common foundation for integration with all major cloud and virtualization vendors. The realization of this is achieved through <a href="http://www.cloudifysource.org/guide/2.3/clouddrivers/cloud_driver.html" onclick="javascript:pageTracker._trackPageview('/outgoing/www.cloudifysource.org/guide/2.3/clouddrivers/cloud_driver.html');">cloud drivers</a> that support both public clouds (Amazon EC2, Windows Azure, Rackspace, HP Cloud&#8230;etc) and private clouds (OpenStack, cloud.com, VMWare vCenter, Citrix XenServer&#8230;etc).&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: tahoma, geneva, sans-serif; text-align: justify;">With this flexibility at hand, creating a new cloud with your application stack is a matter of creating a set of recipes through a Groovy-based <span class="caps">DSL</span> that would describe the different lifecycle phases for deployment. In addition to solving the portability challenge through cloud driver abstraction and recipes, Cloudify simplifies portability even more through the introduction of <a href="http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_cloud" onclick="javascript:pageTracker._trackPageview('/outgoing/www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_cloud');">cloud overrides</a>: an easy way to parameterize your cloud deploymnet through a set of property files. This parameterization allows us to move from multi-region, muti-zone, to multi-cloud with a simple change in configuration files &mdash; minimizing cycle time and coping with cloud platform incompatibility. Simply put, it&#8217;s an implementation of &#8220;infrastructure as code&#8221; pattern from a high availability perspective, such that provisioning a DR cloud on a different zone, region, or provider becomes a matter of passing a configuration file to bootstrap another cloud. The details on how this can be implemented will be presented in the second part of the this blog post. &nbsp;</span></p>
+<p style="font-weight: normal; text-align: justify;">
+<p></p><h4><img height="328" width="728" align="middle" alt="" src="http://blog.gigaspaces.com/wp-content/uploads/cloudify_ha(6).png"></h4><br />
+<h4></h4><br />
+<h4>Conclusion</h4><br />
+<p style="text-align: justify;" class="MsoNormal"><span style="font-family: tahoma,geneva,sans-serif;">The first part of the series aimed to present the complexities, challenges, and potential approaches for achieving a resilient cloud architecture through cloud high availability maturity model. We&#8217;ve shown how the increase in high availability of a cloud application triggers a direct increase in deployment complexity. Through Cloudify, we are able to climb up the model while keeping the complexity of the deployment workflow at minimal levels by utilizing the core portability and lifecycle management automation features of the framework.</span></p><br />
+<p style="text-align: justify;" class="MsoNormal"><em><span style="color: black; mso-themecolor: text1;">&nbsp; The second part of these series will dive into the design and implementation of a real-world GigaSpaces customer scenario, revisiting the cloud availability model and applying it to an actual architecture on Amazon EC2 along with Cloudify recipes and sample code.&nbsp;</span></em></p></p>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/posts/2013-03-04-cloudifying_high_availability.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!--Start pagination -->
+
+        <div class="clear"></div>
+
+        <!--Start Footer -->
+
+        	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="goPro.html">Enterprise Cloudify</a></li>
+						<li><a href="cloudifyrecipecatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="how.html">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="http://www.cloudifysource.org/terms_of_use">Terms of Use</a></li>
+						<li><a href="http://www.cloudifysource.org/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+
+    </div>
+    <!--End site wrapper -->
+
+
+</div>
+<!--End site bg top wrapper -->
+</body>
+</html>
