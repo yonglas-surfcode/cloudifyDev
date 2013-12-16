@@ -1178,7 +1178,7 @@ footer .widget .social-network {
 	right:0;
 
 }
-
+input#website { display: none; }
 
 
 /* --- testimonial --- */
@@ -1189,7 +1189,7 @@ footer .widget .social-network {
 }
 
 .downloads .testimonial {
-    max-height:120px;
+    min-height:120px;
 }
 
 .testimonial .author img {
