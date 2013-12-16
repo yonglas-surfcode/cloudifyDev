@@ -1179,7 +1179,8 @@ footer .widget .social-network {
 
 }
 input#website { display: none; }
-
+.regTitle{ padding:20px 0 15px 0; text-align:center;}
+.gattingWrapper{ margin:0 auto; width:40%}
 
 /* --- testimonial --- */
 .testimonial {

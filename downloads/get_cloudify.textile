@@ -133,7 +133,8 @@ var downloadHref="";
 var strVar="";
 var formEmail="";
 var formName="";
-//strVar += "<div class=\"modal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">";
+strVar += "<div class=\"modal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">";
+strVar += "            <a  style=\"float:right \" class=\"gattingWrapperClose\" href=\"#\"><i class=\"fa fa-times\">&nbsp;&nbsp;<\/i> <\/a>";
 strVar += "<div class=\"gattingWrapper\">";
 strVar += "           <form id=\"regiterToDownload\" action=\"https:\/\/www.salesforce.com\/servlet\/servlet.WebToLead?encoding=UTF-8\" method=\"POST\">";
 strVar += "			<div class=\"regTitle\">Verify You're Human<\/div>";
@@ -146,22 +147,20 @@ strVar += "				<input  id=\"email\" name=\"email\"  type=\"text\"  placeholder=\
 strVar += "				<div class=\"cuValid\"><\/div>";
 strVar += "			<\/div>";
 strVar +="          <input id=\"website\" name=\"website\" type=\"text\" value=\"\"  \/>";
-strVar += "			<input type=\"submit\" class=\"cuSendGatting\" name=\"submit\" value=\"Download\" \/>";
+strVar += "			<input type=\"submit\" class=\"cuSendGatting btn btn-info\" name=\"submit\" value=\"Download\" \/>";
 strVar += "			<\/form>";
-strVar += "            <a class=\"gattingWrapperClose\" href=\"#\">Close<\/a>";
 strVar += "        <\/div>";
-//strVar += "        <\/div>";
+strVar += "        <\/div>";
 
 
 
 
-$("#downloadme").click(function(e) {
+
+$("#downloadme,.eaTitle").click(function(e) {
     
     //$('#myModal').modal('toggle');
     downloadHref = $(this).attr('href'); 
-	$(this).prev().css("visibility","visible");
 	$(this).before(strVar);
-	$(this).prev().css("visibility","visible");
 	downloadValid();
 	//$(".blockBg").show();
 	//GrabOldMessages();
@@ -176,12 +175,10 @@ $("#downloadme").click(function(e) {
 function directDownload(e){
 e.preventDefault();
 var verName="";
-var downloadHref = $('a#downloadme').attr('href');
 verName=downloadHref.split("/")[6]; 
 //track google and mixpanel 
 track_download(downloadHref);
-$("div.gattingWrapper").remove();
-$(".blockBg").hide();
+$('#myModal').modal('hide');	
 //self.delay(500); 
 setTimeout(function() {
 	window.location.href = downloadHref; 
@@ -199,6 +196,7 @@ function downloadFile(e)
 		try  {
 			e.preventDefault();
 			//Gating PopUp
+			$('#myModal').modal('toggle');
 			if(gotName == false){
 				//randomgen();
 				if ($("#regiterToDownload").validate()==true){
@@ -258,9 +256,7 @@ function track_download(downloadHref) {
 	}
 
 $('.downloads').on("click", "a.gattingWrapperClose", function() {
-		$("div.gattingWrapper").remove();
-		//$(".blockBg").hide();
-		
+		$('#myModal').modal('hide');	
 	});	
 
 function downloadValid(){
