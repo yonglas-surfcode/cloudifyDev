@@ -27,7 +27,7 @@ cat: User Guide
 		<div class="row marginbot30 downloads">
 			<div class="span12">
 				<div class="row">
-					<div class="span9">
+					<div class="span12">
 						<div class="wrapper">
 							<div class="testimonial">
 								
@@ -81,8 +81,9 @@ cat: User Guide
 						
 						
 					</div>
-				
-					<div class="span3">
+				<div class="clear"></div>
+				<br/>
+					<div class="span4">
 						<div class="wrapper">
 							<div class="testimonial">
 									<p class="name">
@@ -92,23 +93,18 @@ cat: User Guide
 						
 							</div>
 						</div>
-						<br/>
+						</div>
+						<div class="span4">
 						<div class="wrapper">
 							<div class="testimonial">
-								
-								
-									
 									<p class="name"> 
 										<i class=" icon-36 icon-download"></i>Get the GA Release
 									</p>
 									<span class="info"><a href="#">Download the latest stable version</a></span>
-				
-						
-								
-								
 							</div>
 						</div>
-						<br/>
+						</div>
+						<div class="span4">
 						<div class="wrapper">
 							<div class="testimonial">
 									<p class="name"> 

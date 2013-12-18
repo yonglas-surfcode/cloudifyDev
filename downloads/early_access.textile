@@ -27,7 +27,7 @@ cat: User Guide
 		<div class="row marginbot30 downloads">
 			<div class="span12">
 				<div class="row">
-					<div class="span9">
+					<div class="span12">
 						<div class="wrapper">
 							<div class="testimonial">
 								
@@ -60,8 +60,9 @@ cat: User Guide
 						
 						
 					</div>
-				
-					<div class="span3">
+				<div class="clear"></div>
+				<br/>
+					<div class="span4">
 						<div class="wrapper">
 							<div class="testimonial">
 									<p class="name">
@@ -71,7 +72,8 @@ cat: User Guide
 						
 							</div>
 						</div>
-						<br/>
+						</div>
+						<div class="span4">
 						<div class="wrapper">
 							<div class="testimonial">
 								
@@ -87,7 +89,8 @@ cat: User Guide
 								
 							</div>
 						</div>
-						<br/>
+						</div>
+						<div class="span4">
 						<div class="wrapper">
 							<div class="testimonial">
 								
