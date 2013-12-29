@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: bt_wiki
 title: Mongo DB Sharding in Pet Clinic Application recipe
 cat: User Guide
 publish: false

@@ -4,11 +4,823 @@
 
 <url>
  <loc>http://www.cloudifysource.org</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  <changefreq>daily</changefreq>
  <priority>1.0</priority>
 </url>
  
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/11/01/cloud_devops_orchestration.html</loc>
+ <lastmod>2013-11-01</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/11/01/cloud_devops_orchestration.html</loc>
+ <lastmod>2013-11-01</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/10/30/the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html</loc>
+ <lastmod>2013-10-30</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/10/30/the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html</loc>
+ <lastmod>2013-10-30</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/10/27/application_centric_approach_to_devops.html</loc>
+ <lastmod>2013-10-27</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/10/27/application_centric_approach_to_devops.html</loc>
+ <lastmod>2013-10-27</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/10/24/team_cloudify_heads_to_hong_kong.html</loc>
+ <lastmod>2013-10-24</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/10/24/team_cloudify_heads_to_hong_kong.html</loc>
+ <lastmod>2013-10-24</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/10/11/xap_on_cloudify_part_1.html</loc>
+ <lastmod>2013-10-11</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/10/11/xap_on_cloudify_part_1.html</loc>
+ <lastmod>2013-10-11</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/09/16/cloudifying_high_availability_part_2_disaster_recovery_on_demand.html</loc>
+ <lastmod>2013-09-16</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/09/16/cloudifying_high_availability_part_2_disaster_recovery_on_demand.html</loc>
+ <lastmod>2013-09-16</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/09/10/four_case_studies_for_moving_mission_critical_apps_to_openstack.html</loc>
+ <lastmod>2013-09-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/09/10/four_case_studies_for_moving_mission_critical_apps_to_openstack.html</loc>
+ <lastmod>2013-09-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/09/10/bootstrapping_cloudify_with_chef.html</loc>
+ <lastmod>2013-09-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/09/10/bootstrapping_cloudify_with_chef.html</loc>
+ <lastmod>2013-09-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/08/24/auto_scale_and_auto_heal_your_service_on_openstack.html</loc>
+ <lastmod>2013-08-24</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/08/24/auto_scale_and_auto_heal_your_service_on_openstack.html</loc>
+ <lastmod>2013-08-24</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/08/08/how_to_install_heat_and_devstack_on_vagrant.html</loc>
+ <lastmod>2013-08-08</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/08/08/how_to_install_heat_and_devstack_on_vagrant.html</loc>
+ <lastmod>2013-08-08</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/07/17/openstacks_third_birthday_a_recap_with_a_look_into_the_future.html</loc>
+ <lastmod>2013-07-17</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/07/17/openstacks_third_birthday_a_recap_with_a_look_into_the_future.html</loc>
+ <lastmod>2013-07-17</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/07/16/how_to_install_heat_and_devstack_on_ec2.html</loc>
+ <lastmod>2013-07-16</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/07/16/how_to_install_heat_and_devstack_on_ec2.html</loc>
+ <lastmod>2013-07-16</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/07/15/to_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today.html</loc>
+ <lastmod>2013-07-15</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/07/15/to_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today.html</loc>
+ <lastmod>2013-07-15</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/06/10/big_data_on_openstack.html</loc>
+ <lastmod>2013-06-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/06/10/big_data_on_openstack.html</loc>
+ <lastmod>2013-06-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/05/15/introducing_the_cloudify_player.html</loc>
+ <lastmod>2013-05-15</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/05/15/introducing_the_cloudify_player.html</loc>
+ <lastmod>2013-05-15</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/05/13/using_the_cloudify_player_as_an_open_source_framework_for_building_your_own_cloud_application_marketplace_on_openstack.html</loc>
+ <lastmod>2013-05-13</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/05/13/using_the_cloudify_player_as_an_open_source_framework_for_building_your_own_cloud_application_marketplace_on_openstack.html</loc>
+ <lastmod>2013-05-13</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/05/13/amazon_marketplace_not_a_fair_play_thoughts_on_an_open_marketplace_alternative_with_openstack.html</loc>
+ <lastmod>2013-05-13</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/05/13/amazon_marketplace_not_a_fair_play_thoughts_on_an_open_marketplace_alternative_with_openstack.html</loc>
+ <lastmod>2013-05-13</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/05/01/cross_cloud_storage.html</loc>
+ <lastmod>2013-05-01</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/05/01/cross_cloud_storage.html</loc>
+ <lastmod>2013-05-01</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/04/29/building_an_elastic_sip_server_with_websphere_xap_and_cloudify.html</loc>
+ <lastmod>2013-04-29</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/04/29/building_an_elastic_sip_server_with_websphere_xap_and_cloudify.html</loc>
+ <lastmod>2013-04-29</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/04/24/cloudify_management_rest_api_url.html</loc>
+ <lastmod>2013-04-24</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/04/24/cloudify_management_rest_api_url.html</loc>
+ <lastmod>2013-04-24</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/04/10/cloudify_2_5_is_ga.html</loc>
+ <lastmod>2013-04-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/04/10/cloudify_2_5_is_ga.html</loc>
+ <lastmod>2013-04-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/03/18/devops_paas_and_everything_in_between.html</loc>
+ <lastmod>2013-03-18</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/03/18/devops_paas_and_everything_in_between.html</loc>
+ <lastmod>2013-03-18</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/03/07/gigaspaces_and_storm_part_1_storm_clouds.html</loc>
+ <lastmod>2013-03-07</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/03/07/gigaspaces_and_storm_part_1_storm_clouds.html</loc>
+ <lastmod>2013-03-07</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/03/07/carrier_grade_cloud_paas.html</loc>
+ <lastmod>2013-03-07</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/03/07/carrier_grade_cloud_paas.html</loc>
+ <lastmod>2013-03-07</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/03/04/cloudifying_high_availability.html</loc>
+ <lastmod>2013-03-04</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/03/04/cloudifying_high_availability.html</loc>
+ <lastmod>2013-03-04</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/02/28/running_play_apps_on_the_cloud_with_cloudify.html</loc>
+ <lastmod>2013-02-28</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/02/28/running_play_apps_on_the_cloud_with_cloudify.html</loc>
+ <lastmod>2013-02-28</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/01/17/couchbase_any_cloud.html</loc>
+ <lastmod>2013-01-17</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2013/01/17/couchbase_any_cloud.html</loc>
+ <lastmod>2013-01-17</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/12/27/cloudify_230_has_landed.html</loc>
+ <lastmod>2012-12-27</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/12/27/cloudify_230_has_landed.html</loc>
+ <lastmod>2012-12-27</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/12/12/cloud_deployment_enterprise_paas.html</loc>
+ <lastmod>2012-12-12</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/12/12/cloud_deployment_enterprise_paas.html</loc>
+ <lastmod>2012-12-12</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/12/05/cloudify_2_2_and_roadmap.html</loc>
+ <lastmod>2012-12-05</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/12/05/cloudify_2_2_and_roadmap.html</loc>
+ <lastmod>2012-12-05</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/11/08/using_websphere_wsadmin_tool_on_any_cloud.html</loc>
+ <lastmod>2012-11-08</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/11/08/using_websphere_wsadmin_tool_on_any_cloud.html</loc>
+ <lastmod>2012-11-08</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/11/02/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale_cloudify_way.html</loc>
+ <lastmod>2012-11-02</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/11/02/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale_cloudify_way.html</loc>
+ <lastmod>2012-11-02</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/30/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale.html</loc>
+ <lastmod>2012-10-30</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/30/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale.html</loc>
+ <lastmod>2012-10-30</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/24/aws-outage-multi-availability-zone-multi-cloud.html</loc>
+ <lastmod>2012-10-24</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/24/aws-outage-multi-availability-zone-multi-cloud.html</loc>
+ <lastmod>2012-10-24</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/18/paas_as_infrastructure.html</loc>
+ <lastmod>2012-10-18</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/18/paas_as_infrastructure.html</loc>
+ <lastmod>2012-10-18</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/18/chef_as_foundation_for_paas.html</loc>
+ <lastmod>2012-10-18</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/18/chef_as_foundation_for_paas.html</loc>
+ <lastmod>2012-10-18</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/17/groovy_dsl_and_testing_with_spock.html</loc>
+ <lastmod>2012-10-17</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/10/17/groovy_dsl_and_testing_with_spock.html</loc>
+ <lastmod>2012-10-17</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/09/25/cloudify_ibm_infosphere_biginsights.html</loc>
+ <lastmod>2012-09-25</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/09/25/cloudify_ibm_infosphere_biginsights.html</loc>
+ <lastmod>2012-09-25</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/09/19/hi_cloudsters.html</loc>
+ <lastmod>2012-09-19</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/09/19/hi_cloudsters.html</loc>
+ <lastmod>2012-09-19</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/08/13/woz_worried_everything_going_cloud_real_issue_control.html</loc>
+ <lastmod>2012-08-13</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/08/09/time_to_play_with_cloudify.html</loc>
+ <lastmod>2012-08-09</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/08/09/time_to_play_with_cloudify.html</loc>
+ <lastmod>2012-08-09</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/08/01/putting_devops_paas_together_with_cloudify.html</loc>
+ <lastmod>2012-08-01</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/19/automate_your_legacy_application_on_the_cloud.html</loc>
+ <lastmod>2012-07-19</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/19/automate_your_legacy_application_on_the_cloud.html</loc>
+ <lastmod>2012-07-19</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/10/hi_cloudsters1.html</loc>
+ <lastmod>2012-07-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/10/hi_cloudsters1.html</loc>
+ <lastmod>2012-07-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/10/hi_cloudsters.html</loc>
+ <lastmod>2012-07-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/10/hi_cloudsters.html</loc>
+ <lastmod>2012-07-10</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/09/whats_cool_in_cloudify_2_1_1.html</loc>
+ <lastmod>2012-07-09</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/09/whats_cool_in_cloudify_2_1_1.html</loc>
+ <lastmod>2012-07-09</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/09/extending_chef_to_manage_the_entire_application.html</loc>
+ <lastmod>2012-07-09</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/07/09/extending_chef_to_manage_the_entire_application.html</loc>
+ <lastmod>2012-07-09</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/06/22/gigaspaces-mirantis-big-data-on-openstack.html</loc>
+ <lastmod>2012-06-22</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/06/18/lessons-from-heroku-amazon-outage.html</loc>
+ <lastmod>2012-06-18</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/06/03/cloud_on_boarding_the_true_story.html</loc>
+ <lastmod>2012-06-03</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/06/03/cloud_on_boarding_the_true_story.html</loc>
+ <lastmod>2012-06-03</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/28/paas_does_it_really_mean_no_ops.html</loc>
+ <lastmod>2012-05-28</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/28/paas_does_it_really_mean_no_ops.html</loc>
+ <lastmod>2012-05-28</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/20/bare_metal_paas.html</loc>
+ <lastmod>2012-05-20</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/13/cloud_integration_and_devops_automation.html</loc>
+ <lastmod>2012-05-13</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/13/cloud_integration_and_devops_automation.html</loc>
+ <lastmod>2012-05-13</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/09/how_we_built_it.html</loc>
+ <lastmod>2012-05-09</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/09/how_we_built_it.html</loc>
+ <lastmod>2012-05-09</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/03/mapping-the-cloudpaas-stack.html</loc>
+ <lastmod>2012-05-03</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/01/whats_new_in_cloudify_2_1.html</loc>
+ <lastmod>2012-05-01</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/05/01/whats_new_in_cloudify_2_1.html</loc>
+ <lastmod>2012-05-01</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/03/25/petclinic_deepdive.html</loc>
+ <lastmod>2012-03-25</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/03/25/petclinic_deepdive.html</loc>
+ <lastmod>2012-03-25</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/03/20/big-data-in-the-cloud-using-cloudify.html</loc>
+ <lastmod>2012-03-20</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/03/14/lessons-from-zynga-and-sony-on-moving-from-amazon-aws.html</loc>
+ <lastmod>2012-03-14</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/02/19/top-myths-of-moving-mission-critical-applications-to-the-cloud.html</loc>
+ <lastmod>2012-02-19</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/01/16/gigaspaces-cloudify-and-vmware-cloudfoundry-the-new-paas-jailbreaker.html</loc>
+ <lastmod>2012-01-16</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2012/01/05/terabyte-elastic-cache-clusters-on-cisco-ucs-and-amazon-ec2.html</loc>
+ <lastmod>2012-01-05</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2011/11/15/five-misconceptions-about-cloud-portability.html</loc>
+ <lastmod>2011-11-15</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2011/10/24/behind-the-curtains-of-cloudify-gigaspaces-new-product.html</loc>
+ <lastmod>2011-10-24</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
+
+<url>
+ <loc>http://www.cloudifysource.org/2011/09/13/cloudify-for-azure.html</loc>
+ <lastmod>2011-09-13</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.2</priority>
+</url>
 
  
 
@@ -17,7 +829,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/404.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -30,7 +842,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/about_us.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -42,7 +854,7 @@
        
 <url>
  <loc>http://www.cloudifysource.org/archives.html</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  
  
 </url>
@@ -53,7 +865,7 @@
        
 <url>
  <loc>http://www.cloudifysource.org/atom.xml</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  
  
 </url>
@@ -64,7 +876,7 @@
        
 <url>
  <loc>http://www.cloudifysource.org/blog.html</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  
  
 </url>
@@ -75,8 +887,21 @@
        
 		 					
 			<url>
+				<loc>http://www.cloudifysource.org/cloudifyRecipeCatalog.html</loc>
+				<lastmod>2013-12-26</lastmod>
+				
+				
+			</url>
+		 	
+	 	
+  
+
+  
+       
+		 					
+			<url>
 				<loc>http://www.cloudifysource.org/cloudifysourcetv.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -89,7 +914,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/cloudify_software_license_agreement.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -102,7 +927,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/cloudify_xap_license_terms.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -115,7 +940,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/downloads/early_access.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -128,7 +953,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/downloads/get_cloudify.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -141,7 +966,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/downloads/previous_ga_versions.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -154,7 +979,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/goPro.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -365,7 +1190,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/bootstrapping/bootstrapping_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -378,7 +1203,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/bootstrapping/bootstrapping_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -391,7 +1216,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/bootstrapping/bootstrapping_cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -404,7 +1229,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/bootstrapping/bootstrapping_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -424,7 +1249,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/bootstrapping/bootstrapping_localcloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -437,7 +1262,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/bootstrapping/bootstrapping_process.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -450,7 +1275,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/bootstrapping/bootstrapping_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -463,7 +1288,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/bootstrapping/bootstrapping_validations.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -476,7 +1301,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/clouddrivers/cloud_driver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -489,7 +1314,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/clouddrivers/developing_custom_clouddriver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -502,7 +1327,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/clouddrivers/tutorial_maven.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -515,7 +1340,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/common_patterns/file_examples.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -528,7 +1353,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/contribute/how_to.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -541,7 +1366,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/deploying/deploying_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -554,7 +1379,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/deploying/deploying_srvs.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -567,7 +1392,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/deploying/troubleshoot_app.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -580,7 +1405,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/application_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -593,7 +1418,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/attributes_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -606,7 +1431,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/configuring_ui_section.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -619,7 +1444,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/custom_commands.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -632,7 +1457,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/extending_recipes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -645,7 +1470,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/lifecycle_events.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -658,7 +1483,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/plugins.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -671,7 +1496,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/recipes_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -684,7 +1509,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/recipe_parameters.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -697,7 +1522,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/scaling_rules.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -710,7 +1535,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/service_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -723,7 +1548,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/sla_requirements.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -736,7 +1561,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/developing/the_service_context_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -749,7 +1574,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/faq/faq.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -761,7 +1586,7 @@
        
 <url>
  <loc>http://www.cloudifysource.org/guide/2.2/index.html</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  
  
 </url>
@@ -773,7 +1598,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/integrations/chef_documentation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -786,7 +1611,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/integrations/chef_tutorial.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -799,7 +1624,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/integrations/cloudify_chef_lifecycle_event_handlers.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -812,7 +1637,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/monitoring/monitoring_app_post_deploy.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -825,7 +1650,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/monitoring/the_web_management_console.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -845,7 +1670,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/overview/cloudify_intro.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -858,7 +1683,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/overview/cloud_driver_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -871,7 +1696,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/overview/universal_service_manager.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -884,7 +1709,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/plugins_and_probes/develop_your_plugin.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -897,7 +1722,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/plugins_and_probes/probes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -910,7 +1735,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/qsg/quick_start_guide.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -923,7 +1748,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/qsg/quick_start_guide_apache.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -936,7 +1761,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/qsg/quick_start_guide_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -949,7 +1774,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/qsg/quick_start_guide_helloworld.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -962,7 +1787,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/recipe/app_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -975,7 +1800,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/recipe/cloud_driver_config_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -988,7 +1813,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/recipe/command_line_reference.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1001,7 +1826,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/recipe/service_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1014,7 +1839,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/release_notes/release_notes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1027,7 +1852,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/rest_api/rest_api_attributes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1040,7 +1865,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/setup/cloudify_prerequisites.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1053,7 +1878,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/setup/configuring_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1066,7 +1891,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/setup/configuring_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1079,7 +1904,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/setup/configuring_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1092,7 +1917,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/setup/configuring_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1105,7 +1930,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/setup/configuring_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1118,7 +1943,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/setup/installing_the_cloudify_client.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1131,7 +1956,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/setup/post_installation_configuration.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1179,7 +2004,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/toc.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1192,7 +2017,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/undeploying/undeploy_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1205,7 +2030,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.2/undeploying/undeploy_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1218,7 +2043,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/bootstrapping/bootstrapping_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1231,7 +2056,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/bootstrapping/bootstrapping_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1244,7 +2069,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/bootstrapping/bootstrapping_cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1257,7 +2082,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/bootstrapping/bootstrapping_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1277,7 +2102,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/bootstrapping/bootstrapping_localcloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1290,7 +2115,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/bootstrapping/bootstrapping_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1303,7 +2128,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/bootstrapping/bootstrapping_process.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1316,7 +2141,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/bootstrapping/bootstrapping_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1329,7 +2154,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/bootstrapping/bootstrapping_validations.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1342,7 +2167,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/clouddrivers/cloud_driver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1355,7 +2180,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/clouddrivers/developing_custom_clouddriver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1368,7 +2193,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/clouddrivers/tutorial_maven.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1381,7 +2206,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/common_patterns/file_examples.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1394,7 +2219,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/contribute/how_to.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1407,7 +2232,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/deploying/deploying_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1420,7 +2245,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/deploying/deploying_srvs.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1433,7 +2258,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/deploying/troubleshoot_app.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1446,7 +2271,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/application_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1459,7 +2284,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/attributes_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1472,7 +2297,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/configuring_ui_section.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1485,7 +2310,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/custom_commands.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1498,7 +2323,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/debugger.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1511,7 +2336,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/extending_recipes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1524,7 +2349,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/how_storage_works.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1537,7 +2362,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/lifecycle_events.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1550,7 +2375,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/plugins.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1563,7 +2388,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/recipes_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1576,7 +2401,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/recipe_parameters.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1589,7 +2414,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/scaling_rules.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1602,7 +2427,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/service_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1615,7 +2440,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/sla_requirements.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1628,7 +2453,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/storage.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1641,7 +2466,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/developing/the_service_context_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1654,7 +2479,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/faq/faq.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1666,7 +2491,7 @@
        
 <url>
  <loc>http://www.cloudifysource.org/guide/2.3/index.html</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  
  
 </url>
@@ -1678,7 +2503,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/integrations/chef_documentation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1691,7 +2516,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/integrations/chef_tutorial.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1704,7 +2529,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/integrations/cloudify_chef_lifecycle_event_handlers.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1717,7 +2542,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/integrations/puppet_documentation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1730,7 +2555,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/monitoring/monitoring_app_post_deploy.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1743,7 +2568,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/monitoring/the_web_management_console.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1763,7 +2588,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/overview/cloudify_intro.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1776,7 +2601,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/overview/cloud_driver_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1789,7 +2614,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/overview/universal_service_manager.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1802,7 +2627,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/plugins_and_probes/develop_your_plugin.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1815,7 +2640,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/plugins_and_probes/probes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1828,7 +2653,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/qsg/quick_start_guide.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1841,7 +2666,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/qsg/quick_start_guide_apache.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1854,7 +2679,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/qsg/quick_start_guide_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1867,7 +2692,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/qsg/quick_start_guide_helloworld.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1880,7 +2705,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/recipe/app_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1893,7 +2718,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/recipe/cloud_driver_config_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1906,7 +2731,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/recipe/command_line_reference.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1919,7 +2744,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/recipe/service_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1932,7 +2757,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/release_notes/release_notes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1945,7 +2770,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/rest_api/rest_api_attributes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1958,7 +2783,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/cloudify_prerequisites.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1971,7 +2796,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/cloudify_without_shell.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1984,7 +2809,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/configuring_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -1997,7 +2822,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/configuring_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2010,7 +2835,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/configuring_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2030,7 +2855,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/configuring_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2043,7 +2868,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/configuring_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2056,7 +2881,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/configuring_security.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2069,7 +2894,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/installation_and_setup.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2082,7 +2907,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/installing_the_cloudify_client.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2095,7 +2920,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/post_installation_configuration.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2108,7 +2933,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/setup/recipes_tab.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2156,7 +2981,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/toc.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2169,7 +2994,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/undeploying/undeploy_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2182,7 +3007,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.3/undeploying/undeploy_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2195,7 +3020,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2208,7 +3033,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2221,7 +3046,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2234,7 +3059,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2254,7 +3079,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_localcloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2267,7 +3092,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2280,7 +3105,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_process.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2293,7 +3118,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_rackspace.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2306,7 +3131,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2319,7 +3144,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/bootstrapping/bootstrapping_validations.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2332,7 +3157,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/clouddrivers/cloud_driver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2345,7 +3170,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/clouddrivers/developing_custom_clouddriver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2358,7 +3183,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/clouddrivers/tutorial_maven.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2371,7 +3196,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/common_patterns/file_examples.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2384,7 +3209,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/contribute/how_to.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2397,7 +3222,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/deploying/deploying_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2410,7 +3235,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/deploying/deploying_srvs.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2423,7 +3248,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/deploying/troubleshoot_app.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2436,7 +3261,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/application_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2449,7 +3274,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/attributes_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2462,7 +3287,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/configuring_ui_section.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2475,7 +3300,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/custom_commands.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2488,7 +3313,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/debugger.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2501,7 +3326,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/extending_recipes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2514,7 +3339,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/how_storage_works.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2527,7 +3352,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/lifecycle_events.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2540,7 +3365,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/plugins.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2553,7 +3378,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/recipes_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2566,7 +3391,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/recipe_parameters.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2579,7 +3404,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/scaling_rules.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2592,7 +3417,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/service_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2605,7 +3430,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/sla_requirements.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2618,7 +3443,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/storage.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2631,7 +3456,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/developing/the_service_context_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2644,7 +3469,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/faq/faq.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2656,7 +3481,7 @@
        
 <url>
  <loc>http://www.cloudifysource.org/guide/2.5/index.html</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  
  
 </url>
@@ -2668,7 +3493,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/integrations/chef_documentation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2681,7 +3506,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/integrations/chef_tutorial.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2694,7 +3519,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/integrations/cloudify_chef_lifecycle_event_handlers.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2707,7 +3532,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/integrations/puppet_documentation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2720,7 +3545,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/monitoring/monitoring_app_post_deploy.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2733,7 +3558,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/monitoring/the_web_management_console.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2753,7 +3578,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/overview/cloudify_intro.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2766,7 +3591,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/overview/cloud_driver_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2779,7 +3604,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/overview/universal_service_manager.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2792,7 +3617,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/plugins_and_probes/develop_your_plugin.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2805,7 +3630,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/plugins_and_probes/probes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2818,7 +3643,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/qsg/quick_start_guide.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2831,7 +3656,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/qsg/quick_start_guide_apache.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2844,7 +3669,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/qsg/quick_start_guide_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2857,7 +3682,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/qsg/quick_start_guide_helloworld.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2870,7 +3695,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/recipe/app_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2883,7 +3708,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/recipe/cloud_driver_config_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2896,7 +3721,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/recipe/command_line_reference.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2909,7 +3734,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/recipe/service_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2922,7 +3747,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/release_notes/release_notes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2935,7 +3760,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/rest_api/rest_api_attributes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2948,7 +3773,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/cloudify_prerequisites.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2961,7 +3786,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/cloudify_without_shell.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2974,7 +3799,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/configuring_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -2987,7 +3812,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/configuring_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3000,7 +3825,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/configuring_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3020,7 +3845,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/configuring_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3033,7 +3858,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/configuring_rackspace.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3046,7 +3871,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/configuring_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3059,7 +3884,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/configuring_security.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3072,7 +3897,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/installation_and_setup.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3085,7 +3910,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/installing_the_cloudify_client.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3098,7 +3923,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/post_installation_configuration.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3111,7 +3936,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/setup/recipes_tab.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3159,7 +3984,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/toc.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3172,7 +3997,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/undeploying/undeploy_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3185,7 +4010,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.5/undeploying/undeploy_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3198,7 +4023,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3211,7 +4036,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3224,7 +4049,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3237,7 +4062,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3257,7 +4082,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_localcloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3270,7 +4095,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3283,7 +4108,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_process.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3296,7 +4121,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_rackspace.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3309,7 +4134,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3322,7 +4147,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/bootstrapping/bootstrapping_validations.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3335,7 +4160,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/clouddrivers/cloud_driver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3348,7 +4173,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/clouddrivers/developing_custom_clouddriver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3361,7 +4186,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/clouddrivers/tutorial_maven.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3374,7 +4199,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/common_patterns/file_examples.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3387,7 +4212,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/contribute/how_to.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3400,7 +4225,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/deploying/deploying_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3413,7 +4238,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/deploying/deploying_srvs.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3426,7 +4251,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/deploying/downtime_for_maintenance.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3439,7 +4264,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/deploying/troubleshoot_app.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3452,7 +4277,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/application_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3465,7 +4290,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/attributes_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3478,7 +4303,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/best_practices_for_debugging_and_developing_recipes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3491,7 +4316,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/configuring_ui_section.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3504,7 +4329,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/custom_commands.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3517,7 +4342,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/debugger.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3530,7 +4355,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/extending_recipes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3543,7 +4368,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/how_storage_works.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3556,7 +4381,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/lifecycle_events.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3569,7 +4394,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/plugins.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3582,7 +4407,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/recipes_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3595,7 +4420,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/recipe_parameters.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3608,7 +4433,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/scaling_rules.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3621,7 +4446,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/service_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3634,7 +4459,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/sla_requirements.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3647,7 +4472,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/storage.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3660,7 +4485,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/developing/the_service_context_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3673,7 +4498,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/faq/faq.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3685,7 +4510,7 @@
        
 <url>
  <loc>http://www.cloudifysource.org/guide/2.6/index.html</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  
  
 </url>
@@ -3697,7 +4522,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/integrations/chef_documentation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3710,7 +4535,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/integrations/chef_tutorial.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3723,7 +4548,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/integrations/cloudify_chef_lifecycle_event_handlers.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3736,7 +4561,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/integrations/puppet_documentation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3749,7 +4574,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/monitoring/monitoring_app_post_deploy.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3762,7 +4587,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/monitoring/the_web_management_console.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3782,7 +4607,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/overview/cloudify_intro.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3795,7 +4620,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/overview/cloud_driver_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3808,7 +4633,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/overview/universal_service_manager.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3821,7 +4646,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/plugins_and_probes/develop_your_plugin.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3834,7 +4659,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/plugins_and_probes/probes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3847,7 +4672,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/qsg/qsg.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3860,7 +4685,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/qsg/quick_start_guide.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3873,7 +4698,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/qsg/quick_start_guide_apache.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3886,7 +4711,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/qsg/quick_start_guide_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3899,7 +4724,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/qsg/quick_start_guide_helloworld.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3912,7 +4737,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/recipe/app_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3925,7 +4750,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/recipe/cloud_driver_config_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3938,7 +4763,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/recipe/command_line_reference.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3951,7 +4776,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/recipe/service_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3964,7 +4789,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/release_notes/release_notes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3977,7 +4802,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/rest_api/rest_api_attributes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -3990,7 +4815,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/cloudify_prerequisites.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4003,7 +4828,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/cloudify_without_shell.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4016,7 +4841,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/configuring_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4029,7 +4854,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/configuring_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4042,7 +4867,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/configuring_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4062,7 +4887,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/configuring_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4075,7 +4900,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/configuring_rackspace.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4088,7 +4913,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/configuring_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4101,7 +4926,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/configuring_security.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4114,7 +4939,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/installation_and_setup.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4127,7 +4952,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/installing_the_cloudify_client.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4140,7 +4965,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/post_installation_configuration.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4153,7 +4978,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/setup/recipes_tab.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4201,7 +5026,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/toc.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4214,7 +5039,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/undeploying/undeploy_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4227,7 +5052,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.6/undeploying/undeploy_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4240,7 +5065,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4253,7 +5078,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4266,7 +5091,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4279,7 +5104,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4299,7 +5124,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_localcloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4312,7 +5137,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4325,7 +5150,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_process.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4338,7 +5163,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_rackspace.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4351,7 +5176,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4364,7 +5189,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/bootstrapping/bootstrapping_validations.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4377,7 +5202,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/clouddrivers/cloud_driver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4390,7 +5215,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/clouddrivers/developing_custom_clouddriver.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4403,7 +5228,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/clouddrivers/tutorial_maven.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4416,7 +5241,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/common_patterns/file_examples.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4429,7 +5254,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/contribute/how_to.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4442,7 +5267,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/deploying/deploying_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4455,7 +5280,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/deploying/deploying_srvs.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4468,7 +5293,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/deploying/troubleshoot_app.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4481,7 +5306,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/application_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4494,7 +5319,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/attributes_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4507,7 +5332,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/best_practices_for_debugging_and_developing_recipes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4520,7 +5345,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/configuring_ui_section.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4533,7 +5358,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/custom_commands.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4546,7 +5371,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/debugger.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4559,7 +5384,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/extending_recipes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4572,7 +5397,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/how_storage_works.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4585,7 +5410,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/lifecycle_events.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4598,7 +5423,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/plugins.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4611,7 +5436,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/recipes_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4624,7 +5449,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/recipe_parameters.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4637,7 +5462,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/scaling_rules.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4650,7 +5475,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/service_recipe.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4663,7 +5488,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/sla_requirements.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4676,7 +5501,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/storage.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4689,7 +5514,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/developing/the_service_context_api.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4702,7 +5527,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/faq/faq.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4714,7 +5539,7 @@
        
 <url>
  <loc>http://www.cloudifysource.org/guide/2.7/index.html</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  
  
 </url>
@@ -4726,7 +5551,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/integrations/chef_documentation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4739,7 +5564,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/integrations/chef_tutorial.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4752,7 +5577,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/integrations/cloudify_chef_lifecycle_event_handlers.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4765,7 +5590,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/integrations/puppet_documentation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4778,7 +5603,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/monitoring/monitoring_app_post_deploy.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4791,7 +5616,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/monitoring/the_web_management_console.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4811,7 +5636,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/overview/cloudify_intro.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4824,7 +5649,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/overview/cloud_driver_overview.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4837,7 +5662,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/overview/universal_service_manager.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4850,7 +5675,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/plugins_and_probes/develop_your_plugin.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4863,7 +5688,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/plugins_and_probes/probes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4876,7 +5701,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/qsg/qsg.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4889,7 +5714,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/qsg/quick_start_guide.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4902,7 +5727,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/qsg/quick_start_guide_apache.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4915,7 +5740,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/qsg/quick_start_guide_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4928,7 +5753,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/qsg/quick_start_guide_helloworld.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4941,7 +5766,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/recipe/app_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4954,7 +5779,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/recipe/cloud_driver_config_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4967,7 +5792,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/recipe/command_line_reference.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4980,7 +5805,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/recipe/service_recipe_ref.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -4993,7 +5818,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/release_notes/release_notes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5006,7 +5831,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/rest_api/rest_api_attributes.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5019,7 +5844,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/cloudify_prerequisites.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5032,7 +5857,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/cloudify_without_shell.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5045,7 +5870,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/configuring_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5058,7 +5883,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/configuring_byon.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5071,7 +5896,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/configuring_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5091,7 +5916,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/configuring_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5104,7 +5929,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/configuring_rackspace.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5117,7 +5942,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/configuring_rsopenstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5130,7 +5955,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/configuring_security.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5143,7 +5968,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/installation_and_setup.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5156,7 +5981,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/installing_the_cloudify_client.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5169,7 +5994,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/post_installation_configuration.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5182,7 +6007,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/setup/recipes_tab.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5230,7 +6055,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/toc.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5243,7 +6068,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/undeploying/undeploy_apps.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5256,7 +6081,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/guide/2.7/undeploying/undeploy_azure.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5269,7 +6094,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/how/application_management.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5282,7 +6107,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/how/cloudify_paas.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5295,7 +6120,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/how/cloud_automation.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5308,7 +6133,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/how/cloud_deployment.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5321,7 +6146,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/how/cloud_migration.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5334,7 +6159,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/how/cloud_monitoring.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5347,7 +6172,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/how/devops.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5360,7 +6185,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/how/elastic_cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5373,7 +6198,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/how/index.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5386,7 +6211,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/index.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -5399,664 +6224,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/participate.htm</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-03-25-petclinic_deepdive.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-05-01-whats_new_in_cloudify_2_1.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-05-09-how_we_built_it.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-05-13-cloud_integration_and_devops_automation.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-05-28-paas_does_it_really_mean_no_ops.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-06-03-cloud_on_boarding_the_true_story.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-07-09-extending_chef_to_manage_the_entire_application.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-07-09-whats_cool_in_cloudify_2_1_1.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-07-10-hi_cloudsters.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-07-10-hi_cloudsters1.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-07-19-automate_your_legacy_application_on_the_cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-08-09-time_to_play_with_cloudify.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-09-19-hi_cloudsters.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-09-25-cloudify_ibm_infosphere_biginsights.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-10-18-chef_as_foundation_for_paas.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-10-18-paas_as_infrastructure.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-10-24-aws-outage-multi-availability-zone-multi-cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-10-30-moving_enterprise_workloads_to_the_cloud_on_a_massive_scale.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-11-02-moving_enterprise_workloads_to_the_cloud_on_a_massive_scale_cloudify_way.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-11-08-using_websphere_wsadmin_tool_on_any_cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-12-05-cloudify_2_2_and_roadmap.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-12-12-cloud_deployment_enterprise_paas.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2012-12-27-cloudify_230_has_landed.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-01-17-couchbase_any_cloud.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-02-28-running_play_apps_on_the_cloud_with_cloudify.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-03-04-cloudifying_high_availability.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-03-07-carrier_grade_cloud_paas.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-03-07-gigaspaces_and_storm_part_1_storm_clouds.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-03-18-devops_paas_and_everything_in_between.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-04-10-cloudify_2_5_is_ga.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-04-24-cloudify_management_rest_api_url.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-04-29-building_an_elastic_sip_server_with_websphere_xap_and_cloudify.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-05-01-cross_cloud_storage.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-05-13-amazon_marketplace_not_a_fair_play_thoughts_on_an_open_marketplace_alternative_with_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-05-13-using_the_cloudify_player_as_an_open_source_framework_for_building_your_own_cloud_application_marketplace_on_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-05-15-introducing_the_cloudify_player.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-06-10-big_data_on_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-07-15-to_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-07-16-how_to_install_heat_and_devstack_on_ec2.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-07-17-openstacks_third_birthday_a_recap_with_a_look_into_the_future.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-08-08-how_to_install_heat_and_devstack_on_vagrant.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-08-24-auto_scale_and_auto_heal_your_service_on_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-09-10-bootstrapping_cloudify_with_chef.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-09-10-four_case_studies_for_moving_mission_critical_apps_to_openstack.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-09-16-cloudifying_high_availability_part_2_disaster_recovery_on_demand.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-10-11-xap_on_cloudify_part_1.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-10-24-team_cloudify_heads_to_hong_kong.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-10-27-application_centric_approach_to_devops.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-10-30-the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html</loc>
-				<lastmod>2013-12-11</lastmod>
-				
-				
-			</url>
-		 	
-	 	
-  
-
-  
-       
-		 					
-			<url>
-				<loc>http://www.cloudifysource.org/posts/2013-11-01-cloud_devops_orchestration.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -6069,7 +6237,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/privacy_policy.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -6088,7 +6256,7 @@
        
 <url>
  <loc>http://www.cloudifysource.org/sitemap.xml</loc>
- <lastmod>2013-12-11</lastmod>
+ <lastmod>2013-12-26</lastmod>
  
  
 </url>
@@ -6100,7 +6268,20 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/terms_of_use.html</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
+				
+				
+			</url>
+		 	
+	 	
+  
+
+  
+       
+		 					
+			<url>
+				<loc>http://www.cloudifysource.org/thank_you.htm</loc>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -6113,7 +6294,7 @@
 		 					
 			<url>
 				<loc>http://www.cloudifysource.org/video.htm</loc>
-				<lastmod>2013-12-11</lastmod>
+				<lastmod>2013-12-26</lastmod>
 				
 				
 			</url>
@@ -6123,6 +6304,420 @@
 
   
 
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Cloudify</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/MongoDB</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Sharding</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/NoSQL</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Open PaaS</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Chef</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Scale Rules</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/BYON</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Cloud Driver</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/DevOps</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/GitHub</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Jekyll</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Disqus</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/ZenDesk</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Cloud</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/PaaS</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/NoOps</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/IaaS</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Apache</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Multiprocess</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Monitoring</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Load Balancer</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Play</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/MySQL</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Big Data</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/IBM BigInsights</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Hadoop</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Groovy</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Grails</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Meetup</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/AWS</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Multi Cloud</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Cloud Deployment</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Disaster Recovery</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Devops</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/OpsCode</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/OpenStack</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Virtualization</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Enterprise</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/WebSphere</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/JACL</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Version</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/News</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/SaaS</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Cloud migration</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Couchbase</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Application management</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/High Availability</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Cloud Computing</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Storm</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/REST API</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/XAP</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Storage</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/s3cmd</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/EC2</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/HP</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Amazon</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Aws</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Open source</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Devstack</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Open Source</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Vagrant</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Ec2</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Xap</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Web UI</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/OpenStack Summit</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/GigaSpaces</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/Continuous Delivery</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
+	
+<url>
+ <loc>http://www.cloudifysource.org/tags/CloudFoundry</loc>
+ <lastmod>2013-12-26</lastmod>
+</url>
+  
  
     
 </urlset>

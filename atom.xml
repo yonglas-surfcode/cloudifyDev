@@ -3,8 +3,188 @@
 <title type="text" xml:lang="en">Cloudify Community</title>
 <link type="application/atom+xml" href="http://www.cloudifysource.org/feed" rel="self" />
 <link type="text" href="http://www.cloudifysource.org" rel="alternate" />
-<updated>2013-12-11T18:08:07+02:00</updated>
+<updated>2013-12-26T17:37:26+02:00</updated>
 <id>http://www.cloudifysource.org</id>
 <rights>Copyright (c) 2012 Gigaspaces</rights>
-
+<entry>
+<title>Cloud DevOps Orchestration</title>
+<link href="http://www.cloudifysource.org/2013/11/01/cloud_devops_orchestration.html"/>
+<updated>2013-11-01T00:00:00+02:00</updated>
+<id>http://www.cloudifysource.org/2013/11/01/cloud_devops_orchestration.html</id>
+<summary type="html">I&amp;#8217;m pretty excited to take part in the OpenStack Summit in Hong Kong in a few days. Uri Cohen and...</summary>
+</entry><entry>
+<title>Cloud_devops_orchestration</title>
+<link href="http://www.cloudifysource.org/2013/11/01/cloud_devops_orchestration.html"/>
+<updated>2013-11-01T00:00:00+02:00</updated>
+<id>http://www.cloudifysource.org/2013/11/01/cloud_devops_orchestration.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - Cloud DevOps Orchestration Go Pro! Find out about Enterprise Cloudify...</summary>
+</entry><entry>
+<title>The Breakup - Why OpenStack Needs a Native Alternative to CloudFoundry and Openshift</title>
+<link href="http://www.cloudifysource.org/2013/10/30/the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html"/>
+<updated>2013-10-30T00:00:00+02:00</updated>
+<id>http://www.cloudifysource.org/2013/10/30/the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html</id>
+<summary type="html">Alex Freedland, Co-Founder and Chairman at Mirantis, wrote a controversial post in which he basically marks the breakout of some...</summary>
+</entry><entry>
+<title>The_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift</title>
+<link href="http://www.cloudifysource.org/2013/10/30/the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html"/>
+<updated>2013-10-30T00:00:00+02:00</updated>
+<id>http://www.cloudifysource.org/2013/10/30/the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - The Breakup - Why OpenStack Needs a Native Alternative to...</summary>
+</entry><entry>
+<title>An Application-Centric Approach to DevOps</title>
+<link href="http://www.cloudifysource.org/2013/10/27/application_centric_approach_to_devops.html"/>
+<updated>2013-10-27T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/10/27/application_centric_approach_to_devops.html</id>
+<summary type="html">Matt Jaynes, Founder of DevOps University, wrote a great post on Hacker News, What is Continuous Deployment, in which he...</summary>
+</entry><entry>
+<title>Application_centric_approach_to_devops</title>
+<link href="http://www.cloudifysource.org/2013/10/27/application_centric_approach_to_devops.html"/>
+<updated>2013-10-27T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/10/27/application_centric_approach_to_devops.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - An Application-Centric Approach to DevOps Go Pro! Find out about...</summary>
+</entry><entry>
+<title>Team Cloudify Heads to Hong Kong</title>
+<link href="http://www.cloudifysource.org/2013/10/24/team_cloudify_heads_to_hong_kong.html"/>
+<updated>2013-10-24T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/10/24/team_cloudify_heads_to_hong_kong.html</id>
+<summary type="html">It&amp;#8217;s that time of year again for the OpenStack Summit, and the Cloudify team will soon be shipping out to...</summary>
+</entry><entry>
+<title>Team_cloudify_heads_to_hong_kong</title>
+<link href="http://www.cloudifysource.org/2013/10/24/team_cloudify_heads_to_hong_kong.html"/>
+<updated>2013-10-24T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/10/24/team_cloudify_heads_to_hong_kong.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - Team Cloudify Heads to Hong Kong Go Pro! Find out...</summary>
+</entry><entry>
+<title>XAP on Cloudify Part 1</title>
+<link href="http://www.cloudifysource.org/2013/10/11/xap_on_cloudify_part_1.html"/>
+<updated>2013-10-11T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/10/11/xap_on_cloudify_part_1.html</id>
+<summary type="html">Introduction GigaSpaces XAP has lacked an official Cloudify recipe for some time now, and this series of posts will address...</summary>
+</entry><entry>
+<title>Xap_on_cloudify_part_1</title>
+<link href="http://www.cloudifysource.org/2013/10/11/xap_on_cloudify_part_1.html"/>
+<updated>2013-10-11T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/10/11/xap_on_cloudify_part_1.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - XAP on Cloudify Part 1 Go Pro! Find out about...</summary>
+</entry><entry>
+<title>Disaster Recovery On Demand</title>
+<link href="http://www.cloudifysource.org/2013/09/16/cloudifying_high_availability_part_2_disaster_recovery_on_demand.html"/>
+<updated>2013-09-16T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/09/16/cloudifying_high_availability_part_2_disaster_recovery_on_demand.html</id>
+<summary type="html">In this post we outline a pattern for implementing the Warm Disaster Recovery pattern across two Amazon EC2 regions. Disaster...</summary>
+</entry><entry>
+<title>Cloudifying_high_availability_part_2_disaster_recovery_on_demand</title>
+<link href="http://www.cloudifysource.org/2013/09/16/cloudifying_high_availability_part_2_disaster_recovery_on_demand.html"/>
+<updated>2013-09-16T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/09/16/cloudifying_high_availability_part_2_disaster_recovery_on_demand.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - Disaster Recovery On Demand Go Pro! Find out about Enterprise...</summary>
+</entry><entry>
+<title>Four Case Studies for Moving Mission Critical Apps to OpenStack</title>
+<link href="http://www.cloudifysource.org/2013/09/10/four_case_studies_for_moving_mission_critical_apps_to_openstack.html"/>
+<updated>2013-09-10T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/09/10/four_case_studies_for_moving_mission_critical_apps_to_openstack.html</id>
+<summary type="html">There&amp;#8217;ve been various discussions in the community on OpenStack Interoperability and Portability. The discussions tend to be centralized around the...</summary>
+</entry><entry>
+<title>Four_case_studies_for_moving_mission_critical_apps_to_openstack</title>
+<link href="http://www.cloudifysource.org/2013/09/10/four_case_studies_for_moving_mission_critical_apps_to_openstack.html"/>
+<updated>2013-09-10T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/09/10/four_case_studies_for_moving_mission_critical_apps_to_openstack.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - Four Case Studies for Moving Mission Critical Apps to OpenStack...</summary>
+</entry><entry>
+<title>Bootstrapping Cloudify With Chef</title>
+<link href="http://www.cloudifysource.org/2013/09/10/bootstrapping_cloudify_with_chef.html"/>
+<updated>2013-09-10T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/09/10/bootstrapping_cloudify_with_chef.html</id>
+<summary type="html">Overview Cloudify and Opscode Chef work together to provide the greatest high qualify recipe/cookbook coverage for deployment that is possible....</summary>
+</entry><entry>
+<title>Bootstrapping_cloudify_with_chef</title>
+<link href="http://www.cloudifysource.org/2013/09/10/bootstrapping_cloudify_with_chef.html"/>
+<updated>2013-09-10T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/09/10/bootstrapping_cloudify_with_chef.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - Bootstrapping Cloudify With Chef Go Pro! Find out about Enterprise...</summary>
+</entry><entry>
+<title>Auto-scale and Auto-heal your state-full Apache or tomcat service on OpenStack</title>
+<link href="http://www.cloudifysource.org/2013/08/24/auto_scale_and_auto_heal_your_service_on_openstack.html"/>
+<updated>2013-08-24T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/08/24/auto_scale_and_auto_heal_your_service_on_openstack.html</id>
+<summary type="html">Architecting and building a web service in the cloud age is quite simple. Options range from web site generators such...</summary>
+</entry><entry>
+<title>Auto_scale_and_auto_heal_your_service_on_openstack</title>
+<link href="http://www.cloudifysource.org/2013/08/24/auto_scale_and_auto_heal_your_service_on_openstack.html"/>
+<updated>2013-08-24T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/08/24/auto_scale_and_auto_heal_your_service_on_openstack.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - Auto-scale and Auto-heal your state-full Apache or tomcat service on...</summary>
+</entry><entry>
+<title>How to Install Heat and DevStack on Vagrant</title>
+<link href="http://www.cloudifysource.org/2013/08/08/how_to_install_heat_and_devstack_on_vagrant.html"/>
+<updated>2013-08-08T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/08/08/how_to_install_heat_and_devstack_on_vagrant.html</id>
+<summary type="html">Here&amp;#8217;s a short post that explains how to install Heat and DevStack on Vagrant Download and install Vagrant (1.2.6). Download...</summary>
+</entry><entry>
+<title>How_to_install_heat_and_devstack_on_vagrant</title>
+<link href="http://www.cloudifysource.org/2013/08/08/how_to_install_heat_and_devstack_on_vagrant.html"/>
+<updated>2013-08-08T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/08/08/how_to_install_heat_and_devstack_on_vagrant.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - How to Install Heat and DevStack on Vagrant Go Pro!...</summary>
+</entry><entry>
+<title>Openstack's Third Birthday - A Recap With A Look Into The Future</title>
+<link href="http://www.cloudifysource.org/2013/07/17/openstacks_third_birthday_a_recap_with_a_look_into_the_future.html"/>
+<updated>2013-07-17T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/07/17/openstacks_third_birthday_a_recap_with_a_look_into_the_future.html</id>
+<summary type="html">OpenStack was first announced three years ago at the OSCON conference in Portland. I remember the first time I heard...</summary>
+</entry><entry>
+<title>Openstacks_third_birthday_a_recap_with_a_look_into_the_future</title>
+<link href="http://www.cloudifysource.org/2013/07/17/openstacks_third_birthday_a_recap_with_a_look_into_the_future.html"/>
+<updated>2013-07-17T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/07/17/openstacks_third_birthday_a_recap_with_a_look_into_the_future.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - Openstack's Third Birthday - A Recap With A Look Into...</summary>
+</entry><entry>
+<title>How to Install Heat and Devstack on EC2</title>
+<link href="http://www.cloudifysource.org/2013/07/16/how_to_install_heat_and_devstack_on_ec2.html"/>
+<updated>2013-07-16T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/07/16/how_to_install_heat_and_devstack_on_ec2.html</id>
+<summary type="html">Devstack is A great option to install and run an OpenStack cloud on your laptop or inside a VM on...</summary>
+</entry><entry>
+<title>How_to_install_heat_and_devstack_on_ec2</title>
+<link href="http://www.cloudifysource.org/2013/07/16/how_to_install_heat_and_devstack_on_ec2.html"/>
+<updated>2013-07-16T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/07/16/how_to_install_heat_and_devstack_on_ec2.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - How to Install Heat and Devstack on EC2 Go Pro!...</summary>
+</entry><entry>
+<title>To Openstack or not to Openstack Moving Enterprise Applications onto Openstack Today</title>
+<link href="http://www.cloudifysource.org/2013/07/15/to_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today.html"/>
+<updated>2013-07-15T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/07/15/to_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today.html</id>
+<summary type="html">Peter Chadwick Senior Product Manager &amp;#8211; Cloud Infrastructure at SUSE wrote an interesting article arguing&amp;nbsp; Why OpenStack Will Rule the...</summary>
+</entry><entry>
+<title>To_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today</title>
+<link href="http://www.cloudifysource.org/2013/07/15/to_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today.html"/>
+<updated>2013-07-15T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/07/15/to_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - To Openstack or not to Openstack Moving Enterprise Applications onto...</summary>
+</entry><entry>
+<title>Big Data on OpenStack</title>
+<link href="http://www.cloudifysource.org/2013/06/10/big_data_on_openstack.html"/>
+<updated>2013-06-10T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/06/10/big_data_on_openstack.html</id>
+<summary type="html">Big Data systems by their very nature tend to be&amp;#8230;Big. Big in the amount of data, in the number and...</summary>
+</entry><entry>
+<title>Big_data_on_openstack</title>
+<link href="http://www.cloudifysource.org/2013/06/10/big_data_on_openstack.html"/>
+<updated>2013-06-10T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/06/10/big_data_on_openstack.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - Big Data on OpenStack Go Pro! Find out about Enterprise...</summary>
+</entry><entry>
+<title>Introducing The Cloudify Player</title>
+<link href="http://www.cloudifysource.org/2013/05/15/introducing_the_cloudify_player.html"/>
+<updated>2013-05-15T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/05/15/introducing_the_cloudify_player.html</id>
+<summary type="html">This Monday we&amp;#8217;re launching the Cloudify online recipe catalog and the Cloudify Player, an embeddable, simple to use JavaScript widget...</summary>
+</entry><entry>
+<title>Introducing_the_cloudify_player</title>
+<link href="http://www.cloudifysource.org/2013/05/15/introducing_the_cloudify_player.html"/>
+<updated>2013-05-15T00:00:00+03:00</updated>
+<id>http://www.cloudifysource.org/2013/05/15/introducing_the_cloudify_player.html</id>
+<summary type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; Cloudify - Introducing The Cloudify Player Go Pro! Find out about Enterprise...</summary>
+</entry>
 </feed>

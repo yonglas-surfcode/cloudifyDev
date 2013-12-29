@@ -1,13 +1,15 @@
 <div class="leftContentBox">
 {% capture currentVersion %}{{ page.url | remove: "/guide/" | split:"/" | first }}{% endcapture %}
-   <h2 id="todHdr">Cloudify {{currentVersion}}</h2>
+   <h5 class="widgetheading" id="todHdr">Cloudify {{currentVersion}}</h2>
    <div class="clear"></div>
+   <div id="sidebar" class="list-group docMenu"> 
 	{% for category in site.categories %}		
-		<h5 class="widgetheading">{{ category }}</h5>
-		<div class="list-group subitem collapse" class="list-group-item"> 				 			
+		<!--<h5 class="widgetheading">{{ category }}</h5>-->
+		 <a href="#{{ category | join: ' ' }}" class="list-group-item"  data-parent="#sidebar">{{ category }}</a>
+		<div id="{{ category | join: ' ' }}" class="list-group subitem collapse" class="list-group-item"> 				 			
 			  {% for page in site.page_categories[category] %}				  
-				  {% if page.url contains currentVersion %}			  
-				    <a  class="list-group-item" href="{{page.url}}">{{page.title}}</a>							   
+				  {% if page.url contains currentVersion %}		
+					<a  class="list-group-item" href="{{page.url}}"><i class="icon-caret-right"></i>{{page.title}}</a>							   
 				  {% endif %}			  
 			  {% endfor %}
 			  {% if category == "Reference" %}			  
@@ -17,4 +19,6 @@
 		</div>
        {% endfor %}		
 </div>
+</div>
+
 
