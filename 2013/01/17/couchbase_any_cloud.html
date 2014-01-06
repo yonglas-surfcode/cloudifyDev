@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
@@ -41,7 +40,6 @@
 </head>
 
 <body>
-<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
 <div class="WrapperBg">    
     <div class="Wrapper">
         <!-- toggle top area -->
@@ -146,39 +144,110 @@
 		
 </header>	
 <!-- end header -->	
-		<h1>Test</h1>
-        <div class="contentWrap">            
-			<div class="breadcrumbs">Home Page > Cloudify Blogs > A Couchbase for Any Cloud</div>
-            <div class="clear"></div>
+		
+			<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2><i class="icon-edit"></i>Cloudifysource<strong> Blogs</strong></h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Blog</a><i class="icon-angle-right"></i></li>
+					<li class="active">A Couchbase for Any Cloud</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+	<div class="container">
+			<div class="row">
+				<!-- Blog Right side posts -->
+				<div class="span9">
+					<div id="resultsDiv" class="DocumentsWrap"></div>
+					<div id="pageContent" class="DocumentsWrapRight">
+					
+					<h1 class="pageTitle">A Couchbase for Any Cloud</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Uri Cohen</a>  on January 17, 2013  
+					  </span>
+					  <br/><br/><br/>
+					 
+                      <p>Couchbase is a great NoSQL database.&#160; It combines the power and flexibility of a schemaless document store, in-memory performance and super simple clustering and administration.</p>
+  <p>So it&#8217;s not surprising that a good 50% of Couchbase users have chosen to use it on the cloud.</p>
+  <p>For the average Couchbase user (yours truly included, no special Couchbase ninja skills here), deploying and managing a Couchbase-driven application on the cloud can seem like a daunting task. There are many options out there, each with their own benefits and considerations. You can always<a href="http://www.couchbase.com/why-nosql/nosql-database"> roll out your own deployment</a>, or use tools like<a href="https://github.com/getaroom/chef-couchbase"> Chef</a>,<a href="https://forge.puppetlabs.com/thias/couchbase"> Puppet</a>,<a href="https://github.com/couchbaselabs/cloud-formation"> CloudFormation</a> or even<a href="https://github.com/couchbaselabs/rightscale_cookbooks"> RightScale</a>. Comparing them all is a blog post unto itself, and this post is lengthy enough as is&#8230; So in this post I&#8217;m going to focus on how Cloudify allows you to deploy, manage and scale your Couchbase app on any cloud environment.</p>
+  <p>But first thing&#8217;s first, let&#8217;s take a deeper look at what it takes to manage multi-tier apps on the cloud:</p>
+<ul>
+    <li>Starting VMs: A no brainer. Running your app requires compute resources. &#8217;Nuff said.</li>
+    <li>Installing and configuring the started VMs: Every VM needs proper installation and configuration. For example, for VMs which Couchbase runs on, you need to install Couchbase and configure the VM and installation to your liking (mount external volumes if needed, configure networking, ports, etc.).</li>
+    <li>Starting and orchestrating application components: A truth I hold to be self-evident &#8211; all application tiers have inter-dependencies, and as a result they have to be aware of one another. For example, before starting your web container, you will need to make sure that your Couchbase cluster has successfully started and can be connected to, and you will need to expose the IP addresses and ports of that cluster to the web server.</li>
+    <li>Repairing: Another truth &#8211; and this one is Murphy&#8217;s not my own.&#160; What can go wrong, will go wrong. So it&#8217;s best to prepare for the worst. Once everything is up and running, things inevitably will break. Processes will die for no apparent reason, VMs will come and go, and you need your application to continue to work even when this happens.</li>
+    <li>Monitoring key metrics and scaling your application tiers based on them: Let&#8217;s assume that this is for the best of reasons, not the worst, where your load spikes due to your application or service being inordinately successful. You need to be able to identify the load on your app across its various tiers and for very specific metrics (e.g. request latency), and take action based on it to make sure your users keep getting a decent service level. For example, if you see that the <span class="caps">CPU</span> load in your Couchbase server goes above 70%, you will want to add another instance and rebalance the cluster to even the load.</li>
+    <li>Updating your application code: last, and not less important, is the update cycle of your application. In many cases you can&#8217;t afford downtime, so having a mechanism that allows you to push code to the running instances on the fly is essential&#160; (naturally there&#8217;s much more to continuous delivery than pushing code, but this too is a topic for a separate post).</li>
+</ul>
+<br/>
+In a cloud environment, which is dynamic and volatile by nature, it&#8217;s also extremely important to automate all of these processes, so that you can set up environments easily and consistently, switch between environments, test things before you go live, maximize your utilization and minimize downtimes.
+  <p>&#160;</p>
+  <h1>How Cloudify Enters the Mix</h1>
+  <p>Things we know about Cloudify already &#8211; it&#8217;s an open source framework for deploying, managing and scaling your applications on any cloud environment. It&#8217;s designed to handle all of the above for you, while enabling you to retain a high degree of control and flexibility by defining things from an application perspective rather than an infrastructure&#160; perspective, through our built-in recipes.&#160; So that brings me to the essence of the post&#8230;</p>
+  <p>&#160;</p>
+  <h1>Couchbase, Cloudified</h1>
+  <p>We have just added an awesome <a target="_blank" href="https://github.com/CloudifySource/cloudify-recipes/tree/master/services/couchbase">Couchbase Recipe</a> to our repo. This allows you to deploy your Couchbase-driven apps right out of the box. The recipe supports Couchbase 2.0, and auto-registers all cluster members when starting. It also supports dynamically adding instances with a single command, and takes care of all of the cluster joining and rebalancing for you! It will soon also<a target="_blank" href="http://www.couchbase.com/docs/couchbase-manual-2.0/couchbase-admin-tasks-xdcr.html"> support <span class="caps">XDCR</span></a> so you can replicate data between availability zones or even other clouds. </p>
+<p>Here&#8217;s a snippet from the new Couchbase recipe: <br/>
+<br/>
+  <script src="https://gist.github.com/4547146.js"></script> <br/> <br />
+  <br/>
+ <br/>
+  <strong>[<span class="caps">WARNING</span>: <span class="caps">SERIOUS</span> <span class="caps">GEEK</span> <span class="caps">STUFF</span> <span class="caps">AHEAD</span>]. </strong> <br/> <br/></p>
+  <h1>Ok, Now What?</h1>
+  <p>Now, all you have to do is the regular Cloudify drill.&#160; Here&#8217;s a quick recap&#8230;</p>
+  <p>First,<a href="http://www.cloudifysource.org/guide/bootstrapping/bootstrapping_process"> bootstrap a Cloudify controller</a> environment on the cloud of your choice from the<a href="http://www.cloudifysource.org/guide/setup/installing_the_cloudify_client"> Cloudify <span class="caps">CLI</span></a>. From that point onwards, the <span class="caps">CLI</span> will communicate with the controller over <span class="caps">REST</span>. Next, you issue an<a href="http://www.cloudifysource.org/guide/deploying/deploying_apps"> install-application</a> command that will trigger the controller to analyze the installed recipe, provision the right amount of VMs for it, and orchestrate the deployment of all the recipe components. This controller will then provide the<a href="http://www.cloudifysource.org/guide/monitoring/the_web_management_console"> cloud monitoring</a> for the deployed components and VMs, scale them if needed (manually or using using<a href="http://www.cloudifysource.org/guide/developing/scaling_rules"> cloud scaling rules</a>) and make sure to restart any failed components.</p>
+  <p>Below is what this looks like in action (Click the image below to see how it works).</p>
+<a target="_blank" href="http://www.cloudifysource.org/how"><img align="center" src="http://i.picasion.com/pic63/a4e88798110bbbde4f7c8b6864c50eef.gif" width="450" height="153" border="0" alt="gifs" /></a>
+  <p>&#160;</p>
+  <h1>Gimme, gimme, gimme</h1>
+  <p>And now after all the previous hype and buildup, we present the Cloudify player.</p>
+  <p>We&#8217;ve created a special Cloudify player that lets you test drive you Couchbase recipe on demand, without having to download or install Cloudify at all. By just clicking on the Play button below, and then waiting a couple of seconds, you will have a running Couchbase instance on the cloud, for you to fiddle around with for 20 minutes. You can then look at the Couchbase console or the Cloudify console, and even write test code to interact with this server.</p>
+  <p>Under the hood, the widget communicates with a server infrastructure that creates a dedicated Cloudify manager just for you, and uses the new Couchbase recipe to install and start the Couchbase server. </p>
+  <p>So what are you waiting for, take a seat, and start playing.</p>
 
-            <!--Search-->
-			
-            
- 
+<script type="text/javascript" id="cloudify-widget" data-api-key="2850beaa-9414-460c-b1e1-1e15b429c53a" data-title="Launch Couchbase Server 2.0" data-host="launch.cloudifysource.org" data-video_url="http://www.youtube.com/v/N8V44NoVhKM" src="http://launch.cloudifysource.org/js/get_widget.js"></script>
+<p></p>
+Note: To login to the Couchbase console, use the following credentials:<br/>
+Username: Administrator<br/>
+Password: password<br/>
+<p><br/><br/>
+<p><a target="_blank" href="https://twitter.com/intent/follow?screen_name=uri1803"><img style="display: inline; float: left" title="1311765722_picons03" alt="1311765722_picons03" align="left" src="http://natishalom.typepad.com/.a/6a00d835457b7453ef017c329cd14f970b-75wi" width="42" height="42" />  Follow Uri </a>on Twitter!</p></p>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/2013/01/17/couchbase_any_cloud.html';
 
-<div class="learnFrom">
-    <h2>Blog Posts and Updates</h2>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
-    <div class="searchWrap">
-        <form id="searchForm" action="#" method="get">
-            <input id="search" class="searchTxt" type="text" placeholder="Search..."/>
-            <input id="goBtn" class="searchBtn" type="button" value="Go"/>
-        </form>
-    </div>
-</div>
- 
-<div class="hp-right-col">
- 		<a class="hp-btn-getCloudify" href="/downloads/get_cloudify">Get Cloudify!</a>
-</div>
-
-
-
-
-			
-            <div class="content">
-                <div id="alTag_LeftBlog" class="left">
-                    
-                    <!--Event groups-->
+					
+					
+					</div>			
+				</div>	
+				
+				<!-- Blog Left side coll -->
+				<div class="span3">
+					<aside class="right-sidebar">
+						<!--Event groups-->
 
 
 
@@ -2093,93 +2162,14 @@
 
  
  </ul>
-
-                </div>
-
-                <!--Start left content -->
-
-                <div id="resultsDiv" class="DocumentsWrap"></div>
-                <div id="pageContent" class="DocumentsWrapRight">
-                    <h1 class="pageTitle">A Couchbase for Any Cloud</h1>
-					 
-					  <span class="blogPostInfo">Posted By: <a href="#">Uri Cohen</a>  on January 17, 2013  
-					  </span>
-					  <br/><br/><br/>
-					 
-                      <p>Couchbase is a great NoSQL database.&#160; It combines the power and flexibility of a schemaless document store, in-memory performance and super simple clustering and administration.</p>
-  <p>So it&#8217;s not surprising that a good 50% of Couchbase users have chosen to use it on the cloud.</p>
-  <p>For the average Couchbase user (yours truly included, no special Couchbase ninja skills here), deploying and managing a Couchbase-driven application on the cloud can seem like a daunting task. There are many options out there, each with their own benefits and considerations. You can always<a href="http://www.couchbase.com/why-nosql/nosql-database"> roll out your own deployment</a>, or use tools like<a href="https://github.com/getaroom/chef-couchbase"> Chef</a>,<a href="https://forge.puppetlabs.com/thias/couchbase"> Puppet</a>,<a href="https://github.com/couchbaselabs/cloud-formation"> CloudFormation</a> or even<a href="https://github.com/couchbaselabs/rightscale_cookbooks"> RightScale</a>. Comparing them all is a blog post unto itself, and this post is lengthy enough as is&#8230; So in this post I&#8217;m going to focus on how Cloudify allows you to deploy, manage and scale your Couchbase app on any cloud environment.</p>
-  <p>But first thing&#8217;s first, let&#8217;s take a deeper look at what it takes to manage multi-tier apps on the cloud:</p>
-<ul>
-    <li>Starting VMs: A no brainer. Running your app requires compute resources. &#8217;Nuff said.</li>
-    <li>Installing and configuring the started VMs: Every VM needs proper installation and configuration. For example, for VMs which Couchbase runs on, you need to install Couchbase and configure the VM and installation to your liking (mount external volumes if needed, configure networking, ports, etc.).</li>
-    <li>Starting and orchestrating application components: A truth I hold to be self-evident &#8211; all application tiers have inter-dependencies, and as a result they have to be aware of one another. For example, before starting your web container, you will need to make sure that your Couchbase cluster has successfully started and can be connected to, and you will need to expose the IP addresses and ports of that cluster to the web server.</li>
-    <li>Repairing: Another truth &#8211; and this one is Murphy&#8217;s not my own.&#160; What can go wrong, will go wrong. So it&#8217;s best to prepare for the worst. Once everything is up and running, things inevitably will break. Processes will die for no apparent reason, VMs will come and go, and you need your application to continue to work even when this happens.</li>
-    <li>Monitoring key metrics and scaling your application tiers based on them: Let&#8217;s assume that this is for the best of reasons, not the worst, where your load spikes due to your application or service being inordinately successful. You need to be able to identify the load on your app across its various tiers and for very specific metrics (e.g. request latency), and take action based on it to make sure your users keep getting a decent service level. For example, if you see that the <span class="caps">CPU</span> load in your Couchbase server goes above 70%, you will want to add another instance and rebalance the cluster to even the load.</li>
-    <li>Updating your application code: last, and not less important, is the update cycle of your application. In many cases you can&#8217;t afford downtime, so having a mechanism that allows you to push code to the running instances on the fly is essential&#160; (naturally there&#8217;s much more to continuous delivery than pushing code, but this too is a topic for a separate post).</li>
-</ul>
-<br/>
-In a cloud environment, which is dynamic and volatile by nature, it&#8217;s also extremely important to automate all of these processes, so that you can set up environments easily and consistently, switch between environments, test things before you go live, maximize your utilization and minimize downtimes.
-  <p>&#160;</p>
-  <h1>How Cloudify Enters the Mix</h1>
-  <p>Things we know about Cloudify already &#8211; it&#8217;s an open source framework for deploying, managing and scaling your applications on any cloud environment. It&#8217;s designed to handle all of the above for you, while enabling you to retain a high degree of control and flexibility by defining things from an application perspective rather than an infrastructure&#160; perspective, through our built-in recipes.&#160; So that brings me to the essence of the post&#8230;</p>
-  <p>&#160;</p>
-  <h1>Couchbase, Cloudified</h1>
-  <p>We have just added an awesome <a target="_blank" href="https://github.com/CloudifySource/cloudify-recipes/tree/master/services/couchbase">Couchbase Recipe</a> to our repo. This allows you to deploy your Couchbase-driven apps right out of the box. The recipe supports Couchbase 2.0, and auto-registers all cluster members when starting. It also supports dynamically adding instances with a single command, and takes care of all of the cluster joining and rebalancing for you! It will soon also<a target="_blank" href="http://www.couchbase.com/docs/couchbase-manual-2.0/couchbase-admin-tasks-xdcr.html"> support <span class="caps">XDCR</span></a> so you can replicate data between availability zones or even other clouds. </p>
-<p>Here&#8217;s a snippet from the new Couchbase recipe: <br/>
-<br/>
-  <script src="https://gist.github.com/4547146.js"></script> <br/> <br />
-  <br/>
- <br/>
-  <strong>[<span class="caps">WARNING</span>: <span class="caps">SERIOUS</span> <span class="caps">GEEK</span> <span class="caps">STUFF</span> <span class="caps">AHEAD</span>]. </strong> <br/> <br/></p>
-  <h1>Ok, Now What?</h1>
-  <p>Now, all you have to do is the regular Cloudify drill.&#160; Here&#8217;s a quick recap&#8230;</p>
-  <p>First,<a href="http://www.cloudifysource.org/guide/bootstrapping/bootstrapping_process"> bootstrap a Cloudify controller</a> environment on the cloud of your choice from the<a href="http://www.cloudifysource.org/guide/setup/installing_the_cloudify_client"> Cloudify <span class="caps">CLI</span></a>. From that point onwards, the <span class="caps">CLI</span> will communicate with the controller over <span class="caps">REST</span>. Next, you issue an<a href="http://www.cloudifysource.org/guide/deploying/deploying_apps"> install-application</a> command that will trigger the controller to analyze the installed recipe, provision the right amount of VMs for it, and orchestrate the deployment of all the recipe components. This controller will then provide the<a href="http://www.cloudifysource.org/guide/monitoring/the_web_management_console"> cloud monitoring</a> for the deployed components and VMs, scale them if needed (manually or using using<a href="http://www.cloudifysource.org/guide/developing/scaling_rules"> cloud scaling rules</a>) and make sure to restart any failed components.</p>
-  <p>Below is what this looks like in action (Click the image below to see how it works).</p>
-<a target="_blank" href="http://www.cloudifysource.org/how"><img align="center" src="http://i.picasion.com/pic63/a4e88798110bbbde4f7c8b6864c50eef.gif" width="450" height="153" border="0" alt="gifs" /></a>
-  <p>&#160;</p>
-  <h1>Gimme, gimme, gimme</h1>
-  <p>And now after all the previous hype and buildup, we present the Cloudify player.</p>
-  <p>We&#8217;ve created a special Cloudify player that lets you test drive you Couchbase recipe on demand, without having to download or install Cloudify at all. By just clicking on the Play button below, and then waiting a couple of seconds, you will have a running Couchbase instance on the cloud, for you to fiddle around with for 20 minutes. You can then look at the Couchbase console or the Cloudify console, and even write test code to interact with this server.</p>
-  <p>Under the hood, the widget communicates with a server infrastructure that creates a dedicated Cloudify manager just for you, and uses the new Couchbase recipe to install and start the Couchbase server. </p>
-  <p>So what are you waiting for, take a seat, and start playing.</p>
-
-<script type="text/javascript" id="cloudify-widget" data-api-key="2850beaa-9414-460c-b1e1-1e15b429c53a" data-title="Launch Couchbase Server 2.0" data-host="launch.cloudifysource.org" data-video_url="http://www.youtube.com/v/N8V44NoVhKM" src="http://launch.cloudifysource.org/js/get_widget.js"></script>
-<p></p>
-Note: To login to the Couchbase console, use the following credentials:<br/>
-Username: Administrator<br/>
-Password: password<br/>
-<p><br/><br/>
-<p><a target="_blank" href="https://twitter.com/intent/follow?screen_name=uri1803"><img style="display: inline; float: left" title="1311765722_picons03" alt="1311765722_picons03" align="left" src="http://natishalom.typepad.com/.a/6a00d835457b7453ef017c329cd14f970b-75wi" width="42" height="42" />  Follow Uri </a>on Twitter!</p></p>
-                    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
-    var disqus_identifier = '/2013/01/17/couchbase_any_cloud.html';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-
-                </div>
-
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <!--Start pagination -->
-
-        <div class="clear"></div>
-
-        <!--Start Footer -->
-
-        	<footer>
+					</aside>
+				</div>
+			</div>	
+	</div>	
+	</section>	
+	<div class="clear"></div>
+	<!--Start Footer -->
+		<footer>
 	<div class="container">
 		<div class="row">
 			<div class="span3">
@@ -2258,12 +2248,7 @@ Password: password<br/>
 
 
 
-
-    </div>
-    <!--End site wrapper -->
-
-
-</div>
-<!--End site bg top wrapper -->
+			
+	</div>
 </body>
 </html>

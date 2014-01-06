@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
@@ -41,7 +40,6 @@
 </head>
 
 <body>
-<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
 <div class="WrapperBg">    
     <div class="Wrapper">
         <!-- toggle top area -->
@@ -146,39 +144,115 @@
 		
 </header>	
 <!-- end header -->	
-		<h1>Test</h1>
-        <div class="contentWrap">            
-			<div class="breadcrumbs">Home Page > Cloudify Blogs > Cloud DevOps Orchestration</div>
-            <div class="clear"></div>
+		
+			<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2><i class="icon-edit"></i>Cloudifysource<strong> Blogs</strong></h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Blog</a><i class="icon-angle-right"></i></li>
+					<li class="active">Cloud DevOps Orchestration</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+	<div class="container">
+			<div class="row">
+				<!-- Blog Right side posts -->
+				<div class="span9">
+					<div id="resultsDiv" class="DocumentsWrap"></div>
+					<div id="pageContent" class="DocumentsWrapRight">
+					
+					<h1 class="pageTitle">Cloud DevOps Orchestration</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Yaron Parasol</a>  on November  1, 2013  
+					  </span>
+					  <br/><br/><br/>
+					 
+                    <p>I&#8217;m pretty excited to take part in the OpenStack Summit in Hong Kong in a few days.<br />
+Uri Cohen and I will give a talk about Cloud Application Orchestration.<br />
+This is a great opportunity for us to share what we have learned during the last three years building Cloudify and engaging with many DevOps people, Cloudify community users and, of course, our enterprise and SaaS customers.<br />
+Needless to say, we expect to meet many OpenStack users and contributors, get their valuable feedback and learn tons more as we always do at this kind of event.</p>
+<p>When we started designing Cloudify, we didn&#8217;t spend so much time thinking about Orchestration; we followed what we figured out was the right way based on our experience with building a management layer for a distributed, virtualized grid middleware and applications. Coming from a monitoring background, it was natural for me to add in the <span class="caps">KPI</span> monitoring part. Scaling out was also natural for us, as this was our way to scale our In-Memory Data Grid.</p>
+<p>Coming from an application perspective, we have started with a simple yet powerful model for setting up and managing cloud applications, called a recipe. The recipe assumed an application made of services. A service was basically a symmetric cluster of several machines with the same middleware and the same application code in it.</p>
+<p>This recipe describes the dependencies between the services, and for each service it lists a set of hooks (we named them &#8220;lifecycle events&#8221;). These are hooks for installation, startup, post-installation configuration, shutdown and uninstall. Each service also declares the compute template Cloudify will use to provision VMs for this cluster. This way we ensure cloud portability.</p>
+<p>Then, we added the startup and stop detectors which are availability probes to ensure components indeed start and remain up and healthy. Monitoring <span class="caps">KPI</span> definitions and scale rules were added to allow for custom performance monitoring and remediation measures.<br />
+Finally, we started to recognize a need for some other post-deployment actions (Continuous Delivery for example), so we added additional hooks, called custom commands.</p>
+<p>This model is simple, yet it has the profound understanding of a unified process that helps us drive our vision forward. Our assumption was quite different from what we saw as best practice adopted by others. Coming from an application perspective, we never drew a line between IaaS, Middleware and Application. For us, all of these are part of the application production fabric. They are all interdependent on one another in configurations, metadata and certainly in the flow of setting them up or fixing the application when it breaks or needs to change.</p>
+<p>The common approach that I call the 3 layer cake assumes you lay each layer separately using different tools. So following the 3 layers approach, one would:</p>
+<ol>
+	<li>Use some script directly vs. the IaaS <span class="caps">API</span> or via some cloud library abstracting the IaaS <span class="caps">API</span> to provision VM, volumes etc.</li>
+	<li>Use a CM tool like Chef, Puppet, Ansible or Salt to create the middle layer of the cake with the different middleware containers.</li>
+	<li>Use <span class="caps">SSH</span>, CM agent or a combination to install the application binaries over the environment and configure the environment for the application.</li>
+</ol>
+<p>The 3 layer approach preserves the siloed structure of IT and Apps, so in essence it&#8217;s even anti- DevOps. In the worst case you have different teams running the different tools and in the better case you just have different tools.</p>
+<p>This siloed IT structure is something that doesn&#8217;t fit the new reality of IT. IT organizations today are expected to be much more agile and deal with provisioning of applications in a matter of minutes, not hours, not days and certainly not weeks! Furthermore, they are expected to cater to growing number of users, but without ever growing the IT organization, all while keeping the overhead in a predictable and controlled level. <br />
+So, if 10 years ago nobody even dreamed about this level of automation &#8211; today it&#8217;s not just a buzzword &#8211; it&#8217;s a requirement.</p>
+<p>Think about the most simple web application deployment. Let&#8217;s use <span class="caps">LAMP</span> stack for this example. You will need the following steps:</p>
+<ol>
+	<li>Create a network to host the application.</li>
+	<li>Create another network to be your <span class="caps">DMZ</span>.</li>
+	<li>Set a security group with rules of networking between the application hosts.</li>
+	<li>Create a floating IP to assign to your front-end host.</li>
+	<li>Create a VM for the MySQL database server. This VM depends on the network and the security group.</li>
+	<li>Create a VM for the application Apache (where <span class="caps">PHP</span> business logic is processed) &#8211; this VM is also dependent on the network and the security group.</li>
+	<li>Create a VM in the <span class="caps">DMZ</span> network to host your front-end apache. This VM is also dependent on the floating IP (for more security it needs 2 vNICs).</li>
+	<li>Install the MySQL DB on the backend VM.</li>
+	<li>Install the application Apache on the other VM.</li>
+	<li>Install the front end Apache on the <span class="caps">DMZ</span> VM.</li>
+	<li>Create a DB for the application on the MySQL DB.</li>
+	<li>Install the <span class="caps">PHP</span> stack on the application Apache.</li>
+	<li>Install the application code onto the application Apache.</li>
+	<li>Configure the apache modules for authentication and proxy on the <span class="caps">DMZ</span> Apache (in real life, you will probably need to configure or even install the <span class="caps">LDAP</span>). To configure the proxy module you need to discover the application Apache IP.</li>
+	<li>Configure the <span class="caps">PHP</span> application to connect with the application DB (you need to discover the DB IP).</li>
+	<li>Start the application.</li>
+</ol>
+<p><img src="/images/appnetwork.jpg" /></p>
+<p>This simple example demonstrates how different layers are interdependent and how much a successful installation requires the correct timing and validation of the different steps.</p>
+<p>Now just imagine what happens when one of your VMs crash or when you need to scale this application or upgrade its code. In all of these cases, all layers must be modified.</p>
+<p>The need for orchestration grows linear with the complexity of your application (number of tiers, number of connections, security arrangements, etc.) and with the level of agility you want to achieve (more automated processes that are even more complex in monitoring success as you move).</p>
+<p>So no wonder Amazon and later OpenStack added IaaS orchestration (<a href="http://aws.amazon.com/cloudformation/" class="newwindow">Cloud Formation</a> and <a href="https://wiki.openstack.org/wiki/Heat" class="newwindow">Heat</a>) to their set of services. Users wanted the cloud to provide them with IaaS orchestration (albeit somewhat rudimentary, defining a simple &#8220;wait for&#8221; type of orchestration) instead of the complicated scripts they had to write (think about scripting state and events).</p>
+<p>The middleware and application layer are equally complex. There are parts of configuration that can only be done dynamically in a cloud environment &#8211; for example configuring middleware connections. CM tools don&#8217;t fit in here, as metadata sharing is not enough. You also need to time restarts in order to have the application components configured and started in the right order; this is something that CM tools were not built to do.</p>
+<p>Bottom line &#8211; All the layers in the cake are interdependent. For example: many CM recipes will need to modify both the host OS, its etc/host file, an external volume and the load balancer to set up an application web server or database server.</p>
+<p>Furthermore, setting up your application in the cloud is just one process out of several you need to automate. The next one in line is naturally auto-heal or you missed the whole point of agility. But let&#8217;s not forget continuous deployment, and other maintenance and upgrade procedures.</p>
+<p>Learning these lessons, we rolled up our sleeves again and got back to our design board to find a better orchestration model.</p>
+<p><a href="http://openstacksummitnovember2013.sched.org/event/f72c2b2d69d0d5925d03e8b7dc4b20dd#.UmV7aflebnh" class="newwindow">Come hear us speak at the OpenStack Summit</a> in Hong Kong and read more about our model in my next post. Stay tuned!</p>
 
-            <!--Search-->
-			
-            
- 
 
-<div class="learnFrom">
-    <h2>Blog Posts and Updates</h2>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/2013/11/01/cloud_devops_orchestration.html';
 
-    <div class="searchWrap">
-        <form id="searchForm" action="#" method="get">
-            <input id="search" class="searchTxt" type="text" placeholder="Search..."/>
-            <input id="goBtn" class="searchBtn" type="button" value="Go"/>
-        </form>
-    </div>
-</div>
- 
-<div class="hp-right-col">
- 		<a class="hp-btn-getCloudify" href="/downloads/get_cloudify">Get Cloudify!</a>
-</div>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
-
-
-
-			
-            <div class="content">
-                <div id="alTag_LeftBlog" class="left">
-                    
-                    <!--Event groups-->
+					
+					
+					</div>			
+				</div>	
+				
+				<!-- Blog Left side coll -->
+				<div class="span3">
+					<aside class="right-sidebar">
+						<!--Event groups-->
 
 
 
@@ -2093,98 +2167,14 @@
 
  
  </ul>
-
-                </div>
-
-                <!--Start left content -->
-
-                <div id="resultsDiv" class="DocumentsWrap"></div>
-                <div id="pageContent" class="DocumentsWrapRight">
-                    <h1 class="pageTitle">Cloud DevOps Orchestration</h1>
-					 
-					  <span class="blogPostInfo">Posted By: <a href="#">Yaron Parasol</a>  on November  1, 2013  
-					  </span>
-					  <br/><br/><br/>
-					 
-                    <p>I&#8217;m pretty excited to take part in the OpenStack Summit in Hong Kong in a few days.<br />
-Uri Cohen and I will give a talk about Cloud Application Orchestration.<br />
-This is a great opportunity for us to share what we have learned during the last three years building Cloudify and engaging with many DevOps people, Cloudify community users and, of course, our enterprise and SaaS customers.<br />
-Needless to say, we expect to meet many OpenStack users and contributors, get their valuable feedback and learn tons more as we always do at this kind of event.</p>
-<p>When we started designing Cloudify, we didn&#8217;t spend so much time thinking about Orchestration; we followed what we figured out was the right way based on our experience with building a management layer for a distributed, virtualized grid middleware and applications. Coming from a monitoring background, it was natural for me to add in the <span class="caps">KPI</span> monitoring part. Scaling out was also natural for us, as this was our way to scale our In-Memory Data Grid.</p>
-<p>Coming from an application perspective, we have started with a simple yet powerful model for setting up and managing cloud applications, called a recipe. The recipe assumed an application made of services. A service was basically a symmetric cluster of several machines with the same middleware and the same application code in it.</p>
-<p>This recipe describes the dependencies between the services, and for each service it lists a set of hooks (we named them &#8220;lifecycle events&#8221;). These are hooks for installation, startup, post-installation configuration, shutdown and uninstall. Each service also declares the compute template Cloudify will use to provision VMs for this cluster. This way we ensure cloud portability.</p>
-<p>Then, we added the startup and stop detectors which are availability probes to ensure components indeed start and remain up and healthy. Monitoring <span class="caps">KPI</span> definitions and scale rules were added to allow for custom performance monitoring and remediation measures.<br />
-Finally, we started to recognize a need for some other post-deployment actions (Continuous Delivery for example), so we added additional hooks, called custom commands.</p>
-<p>This model is simple, yet it has the profound understanding of a unified process that helps us drive our vision forward. Our assumption was quite different from what we saw as best practice adopted by others. Coming from an application perspective, we never drew a line between IaaS, Middleware and Application. For us, all of these are part of the application production fabric. They are all interdependent on one another in configurations, metadata and certainly in the flow of setting them up or fixing the application when it breaks or needs to change.</p>
-<p>The common approach that I call the 3 layer cake assumes you lay each layer separately using different tools. So following the 3 layers approach, one would:</p>
-<ol>
-	<li>Use some script directly vs. the IaaS <span class="caps">API</span> or via some cloud library abstracting the IaaS <span class="caps">API</span> to provision VM, volumes etc.</li>
-	<li>Use a CM tool like Chef, Puppet, Ansible or Salt to create the middle layer of the cake with the different middleware containers.</li>
-	<li>Use <span class="caps">SSH</span>, CM agent or a combination to install the application binaries over the environment and configure the environment for the application.</li>
-</ol>
-<p>The 3 layer approach preserves the siloed structure of IT and Apps, so in essence it&#8217;s even anti- DevOps. In the worst case you have different teams running the different tools and in the better case you just have different tools.</p>
-<p>This siloed IT structure is something that doesn&#8217;t fit the new reality of IT. IT organizations today are expected to be much more agile and deal with provisioning of applications in a matter of minutes, not hours, not days and certainly not weeks! Furthermore, they are expected to cater to growing number of users, but without ever growing the IT organization, all while keeping the overhead in a predictable and controlled level. <br />
-So, if 10 years ago nobody even dreamed about this level of automation &#8211; today it&#8217;s not just a buzzword &#8211; it&#8217;s a requirement.</p>
-<p>Think about the most simple web application deployment. Let&#8217;s use <span class="caps">LAMP</span> stack for this example. You will need the following steps:</p>
-<ol>
-	<li>Create a network to host the application.</li>
-	<li>Create another network to be your <span class="caps">DMZ</span>.</li>
-	<li>Set a security group with rules of networking between the application hosts.</li>
-	<li>Create a floating IP to assign to your front-end host.</li>
-	<li>Create a VM for the MySQL database server. This VM depends on the network and the security group.</li>
-	<li>Create a VM for the application Apache (where <span class="caps">PHP</span> business logic is processed) &#8211; this VM is also dependent on the network and the security group.</li>
-	<li>Create a VM in the <span class="caps">DMZ</span> network to host your front-end apache. This VM is also dependent on the floating IP (for more security it needs 2 vNICs).</li>
-	<li>Install the MySQL DB on the backend VM.</li>
-	<li>Install the application Apache on the other VM.</li>
-	<li>Install the front end Apache on the <span class="caps">DMZ</span> VM.</li>
-	<li>Create a DB for the application on the MySQL DB.</li>
-	<li>Install the <span class="caps">PHP</span> stack on the application Apache.</li>
-	<li>Install the application code onto the application Apache.</li>
-	<li>Configure the apache modules for authentication and proxy on the <span class="caps">DMZ</span> Apache (in real life, you will probably need to configure or even install the <span class="caps">LDAP</span>). To configure the proxy module you need to discover the application Apache IP.</li>
-	<li>Configure the <span class="caps">PHP</span> application to connect with the application DB (you need to discover the DB IP).</li>
-	<li>Start the application.</li>
-</ol>
-<p><img src="/images/appnetwork.jpg" /></p>
-<p>This simple example demonstrates how different layers are interdependent and how much a successful installation requires the correct timing and validation of the different steps.</p>
-<p>Now just imagine what happens when one of your VMs crash or when you need to scale this application or upgrade its code. In all of these cases, all layers must be modified.</p>
-<p>The need for orchestration grows linear with the complexity of your application (number of tiers, number of connections, security arrangements, etc.) and with the level of agility you want to achieve (more automated processes that are even more complex in monitoring success as you move).</p>
-<p>So no wonder Amazon and later OpenStack added IaaS orchestration (<a href="http://aws.amazon.com/cloudformation/" class="newwindow">Cloud Formation</a> and <a href="https://wiki.openstack.org/wiki/Heat" class="newwindow">Heat</a>) to their set of services. Users wanted the cloud to provide them with IaaS orchestration (albeit somewhat rudimentary, defining a simple &#8220;wait for&#8221; type of orchestration) instead of the complicated scripts they had to write (think about scripting state and events).</p>
-<p>The middleware and application layer are equally complex. There are parts of configuration that can only be done dynamically in a cloud environment &#8211; for example configuring middleware connections. CM tools don&#8217;t fit in here, as metadata sharing is not enough. You also need to time restarts in order to have the application components configured and started in the right order; this is something that CM tools were not built to do.</p>
-<p>Bottom line &#8211; All the layers in the cake are interdependent. For example: many CM recipes will need to modify both the host OS, its etc/host file, an external volume and the load balancer to set up an application web server or database server.</p>
-<p>Furthermore, setting up your application in the cloud is just one process out of several you need to automate. The next one in line is naturally auto-heal or you missed the whole point of agility. But let&#8217;s not forget continuous deployment, and other maintenance and upgrade procedures.</p>
-<p>Learning these lessons, we rolled up our sleeves again and got back to our design board to find a better orchestration model.</p>
-<p><a href="http://openstacksummitnovember2013.sched.org/event/f72c2b2d69d0d5925d03e8b7dc4b20dd#.UmV7aflebnh" class="newwindow">Come hear us speak at the OpenStack Summit</a> in Hong Kong and read more about our model in my next post. Stay tuned!</p>
-
-
-                    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
-    var disqus_identifier = '/2013/11/01/cloud_devops_orchestration.html';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-
-                </div>
-
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <!--Start pagination -->
-
-        <div class="clear"></div>
-
-        <!--Start Footer -->
-
-        	<footer>
+					</aside>
+				</div>
+			</div>	
+	</div>	
+	</section>	
+	<div class="clear"></div>
+	<!--Start Footer -->
+		<footer>
 	<div class="container">
 		<div class="row">
 			<div class="span3">
@@ -2263,12 +2253,7 @@ So, if 10 years ago nobody even dreamed about this level of automation &#8211; t
 
 
 
-
-    </div>
-    <!--End site wrapper -->
-
-
-</div>
-<!--End site bg top wrapper -->
+			
+	</div>
 </body>
 </html>

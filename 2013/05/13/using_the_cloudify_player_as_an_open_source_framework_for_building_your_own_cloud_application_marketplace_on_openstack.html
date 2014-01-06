@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
@@ -41,7 +40,6 @@
 </head>
 
 <body>
-<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
 <div class="WrapperBg">    
     <div class="Wrapper">
         <!-- toggle top area -->
@@ -146,39 +144,114 @@
 		
 </header>	
 <!-- end header -->	
-		<h1>Test</h1>
-        <div class="contentWrap">            
-			<div class="breadcrumbs">Home Page > Cloudify Blogs > Using the Cloudify Player as an Open Source Framework for Building Your Own Cloud Application Marketplace on OpenStack</div>
-            <div class="clear"></div>
+		
+			<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2><i class="icon-edit"></i>Cloudifysource<strong> Blogs</strong></h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Blog</a><i class="icon-angle-right"></i></li>
+					<li class="active">Using the Cloudify Player as an Open Source Framework for Building Your Own Cloud Application Marketplace on OpenStack</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+	<div class="container">
+			<div class="row">
+				<!-- Blog Right side posts -->
+				<div class="span9">
+					<div id="resultsDiv" class="DocumentsWrap"></div>
+					<div id="pageContent" class="DocumentsWrapRight">
+					
+					<h1 class="pageTitle">Using the Cloudify Player as an Open Source Framework for Building Your Own Cloud Application Marketplace on OpenStack</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Nati Shalom</a>  on May 13, 2013  
+					  </span>
+					  <br/><br/><br/>
+					 
+                    <p><a href="http://natishalom.typepad.com/nati_shaloms_blog/2013/05/amazon-marketplace-not-a-fair-play-thoughts-on-an-open-marketplace-alternative-with-openstack.html" class="newwindow">In the previous post</a>, I outlined the main lessons learned from the Amazon Cloud Marketplace and suggested an alternative approach for building an open marketplace.</p>
+<p>In this post I&#8217;ll refer to a specific implementation of that alternative approach through a new Cloudify Service called the Cloudify Player.</p>
+<h3>Introduction to the Cloudify Player</h3>
+<p>Cloudify Player is a new patent-based service that makes the experience of trying and deploying even the most complex, multi-tier big data applications as simple as playing a video on YouTube. The new service currently supports OpenStack-based clouds and is available as a free online service from <a href="https://www.hpcloud.com/" class="newwindow">HP Cloud Services</a> and GigaSpaces&#8217; Cloudify. The source code for the service is also available as an open source project on Github. The Player was developed in collaboration with HP Cloud Services, GigaSpaces&#8217; cloud partner and leading provider of OpenStack-based public cloud services.</p>
+<h3>Cloudify Player an End User Perspective</h3>
+<p>The Cloudify Player provides a user-friendly and hassle-free user experience in which applications are &#8220;played&#8221; in similar fashion to the way you play a video online. Users can choose and browse applications from public catalogs that are based on Github. Similarly to YouTube, users can share the applications or embed them easily on their blog or website.</p>
+<p>Users can choose to play any application as a free trial or for full production under their account.<br />
+<a class="fancybox-media" href="/images/player201.jpg"><img src="/images/player201_thumb.jpg" alt="pic is missing" /></a></p>
+<h3>Technical Overview</h3>
+<p>The Cloudify Player consists of the following components as outlined below:<br />
+<a class="fancybox-media" href="/images/player201_comp.jpg"><img src="/images/player201_comp_thumb.jpg" alt="pic is missing" /></a></p>
+<h3>Web Front End</h3>
+<p>The Web Front End is based on two main interfaces: a widget interface which allows users to browse through a list of applications and deploy them, and a widget management form is provided to allow users to easily publish new applications.</p>
+<p>Users can use one of the two deployment options &#8211; a trial deployment provides a free non-gated experience for running the selected application on a single machine. Registered users can provide their cloud credentials and route the application into their cloud environment. In this way, they can also monitor the deployed instances through their cloud management console.</p>
+<h3>Multi-Tenant Orchestrator and Monitoring</h3>
+<p>The multi-tenant orchestration and monitoring service is responsible for parsing the selected application recipe and for executing the deployment of that application based on the description provided in the recipe. The web-based management allows users to monitor and manage the deployed application.<br />
+<a class="fancybox-media" href="/images/web_ui.gif"><img src="/images/web_ui_thumb.gif" alt="pic is missing" /></a></p>
+<h3>Application Analytics</h3>
+<p>Application activities are sent into an analytics service that produce real-time usage reports on the most-active application, as well as the user experience activities.<br />
+<a class="fancybox-media" href="/images/mixpanel.gif"><img src="/images/mixpanel_thumb.gif" alt="pic is missing" /></a></p>
+<h3>Service Catalogue Repository</h3>
+<p>The Service Catalogue is based on a Github clone.</p>
+<p>Users use the repository to store their application recipes, track versions, manage history of updates, etc.<br />
+<a class="fancybox-media" href="/images/play201_recipes.jpg"><img src="/images/play201_recipes_thumb.jpg" alt="pic is missing" /></a></p>
+<h3>Cloud Pools</h3>
+<p>Cloudify can be integrated with various public and private clouds using out-of-the-box plug-ins.</p>
+<p>There are basically two main cloud pools that are used in this architecture:</p>
+<ol>
+	<li>Free Trial Pool &#8211; The free trial pool is used to speed up the deployment experience during the trial stage. This pool is limited for time and is initially set for a single VM per deployment to avoid quick exhaustion of resources from the free pool.</li>
+	<li>Production User Cloud &#8211; Users that pass their credentials could use the same interface for deploying application under their account. In this case they are not limited in time nor the number of nodes per application.</li>
+</ol>
+<h3>Product Overview for IT Managers and DevOps</h3>
+<p>The Cloudify Player was designed to fit into a DevOps environment in which applications are expected to be modified on a continuous basis after they have been deployed. Users can add new applications easily by wrapping them with a simple script, called a recipe. Recipes can be based on either Chef or Puppet.  Recipes can be modified after they have been published by each end user before the deployment takes place.</p>
+<p>Users can monitor and manage their applications using a single management dashboard. The management dashboard allows users to monitor the application topology and behavior as well as view real time logging and even open <span class="caps">SSH</span> console if needed.</p>
+<h3>Summary of the Main Features</h3>
+<ul>
+	<li>Out-of-the-box support for 100s of products (Leveraging the existing Chef/Puppet support)</li>
+	<li>Supports full life cycle of user experience from simple free trial to full production</li>
+	<li>Specific support for Big Data clusters, including Database as a Service, Hadoop as a Service, MongoDB as a Service, etc.</li>
+	<li>Can run clusters rather than just individual VMs</li>
+	<li>Application can run outside of the marketplace using the same tools</li>
+	<li>Users can easily customize the services from the catalog for their own purposes, including the possibility to run their own version of each item in the catalog. Advanced users can leverage the built-in Chef &amp; Puppet support for advanced configuration management.</li>
+	<li>Built in multi-tenant application management so that each user can monitor and manage all of the products under his/her account using a single application-centric dashboard</li>
+	<li>Built-in integration with analytics tools to support tracking of user activity</li>
+</ul>
+<h3>Using Cloudify to Build Your Own Marketplace</h3>
+<p>The Cloudify Player was designed to simplify the deployment of applications in the cloud. The open nature of the Cloudify Player provides many of the features required for building a marketplace in your own environment under your brand and with the application of your choice. In addition, we&#8217;ve put a lot of emphasise on making the user experience simple while ensuring a smooth transition from a hassle-free trial to full production usage.</p>
+<p>You can try out the OpenStack version that we launched in collaboration with HP at <a href="www.cloudifysoure.org">www.cloudifysoure.org</a>.</p>
+<p>For more information about the Cloudify Player and how it works, please see Uri Cohen&#8217;s blog post <a href="http:/www.cloudifysource.org/2013/05/15/introducing_the_cloudify_player.html">Introducing the Cloudify Player</a>.</p>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/2013/05/13/using_the_cloudify_player_as_an_open_source_framework_for_building_your_own_cloud_application_marketplace_on_openstack.html';
 
-            <!--Search-->
-			
-            
- 
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
-<div class="learnFrom">
-    <h2>Blog Posts and Updates</h2>
-
-    <div class="searchWrap">
-        <form id="searchForm" action="#" method="get">
-            <input id="search" class="searchTxt" type="text" placeholder="Search..."/>
-            <input id="goBtn" class="searchBtn" type="button" value="Go"/>
-        </form>
-    </div>
-</div>
- 
-<div class="hp-right-col">
- 		<a class="hp-btn-getCloudify" href="/downloads/get_cloudify">Get Cloudify!</a>
-</div>
-
-
-
-
-			
-            <div class="content">
-                <div id="alTag_LeftBlog" class="left">
-                    
-                    <!--Event groups-->
+					
+					
+					</div>			
+				</div>	
+				
+				<!-- Blog Left side coll -->
+				<div class="span3">
+					<aside class="right-sidebar">
+						<!--Event groups-->
 
 
 
@@ -2093,97 +2166,14 @@
 
  
  </ul>
-
-                </div>
-
-                <!--Start left content -->
-
-                <div id="resultsDiv" class="DocumentsWrap"></div>
-                <div id="pageContent" class="DocumentsWrapRight">
-                    <h1 class="pageTitle">Using the Cloudify Player as an Open Source Framework for Building Your Own Cloud Application Marketplace on OpenStack</h1>
-					 
-					  <span class="blogPostInfo">Posted By: <a href="#">Nati Shalom</a>  on May 13, 2013  
-					  </span>
-					  <br/><br/><br/>
-					 
-                    <p><a href="http://natishalom.typepad.com/nati_shaloms_blog/2013/05/amazon-marketplace-not-a-fair-play-thoughts-on-an-open-marketplace-alternative-with-openstack.html" class="newwindow">In the previous post</a>, I outlined the main lessons learned from the Amazon Cloud Marketplace and suggested an alternative approach for building an open marketplace.</p>
-<p>In this post I&#8217;ll refer to a specific implementation of that alternative approach through a new Cloudify Service called the Cloudify Player.</p>
-<h3>Introduction to the Cloudify Player</h3>
-<p>Cloudify Player is a new patent-based service that makes the experience of trying and deploying even the most complex, multi-tier big data applications as simple as playing a video on YouTube. The new service currently supports OpenStack-based clouds and is available as a free online service from <a href="https://www.hpcloud.com/" class="newwindow">HP Cloud Services</a> and GigaSpaces&#8217; Cloudify. The source code for the service is also available as an open source project on Github. The Player was developed in collaboration with HP Cloud Services, GigaSpaces&#8217; cloud partner and leading provider of OpenStack-based public cloud services.</p>
-<h3>Cloudify Player an End User Perspective</h3>
-<p>The Cloudify Player provides a user-friendly and hassle-free user experience in which applications are &#8220;played&#8221; in similar fashion to the way you play a video online. Users can choose and browse applications from public catalogs that are based on Github. Similarly to YouTube, users can share the applications or embed them easily on their blog or website.</p>
-<p>Users can choose to play any application as a free trial or for full production under their account.<br />
-<a class="fancybox-media" href="/images/player201.jpg"><img src="/images/player201_thumb.jpg" alt="pic is missing" /></a></p>
-<h3>Technical Overview</h3>
-<p>The Cloudify Player consists of the following components as outlined below:<br />
-<a class="fancybox-media" href="/images/player201_comp.jpg"><img src="/images/player201_comp_thumb.jpg" alt="pic is missing" /></a></p>
-<h3>Web Front End</h3>
-<p>The Web Front End is based on two main interfaces: a widget interface which allows users to browse through a list of applications and deploy them, and a widget management form is provided to allow users to easily publish new applications.</p>
-<p>Users can use one of the two deployment options &#8211; a trial deployment provides a free non-gated experience for running the selected application on a single machine. Registered users can provide their cloud credentials and route the application into their cloud environment. In this way, they can also monitor the deployed instances through their cloud management console.</p>
-<h3>Multi-Tenant Orchestrator and Monitoring</h3>
-<p>The multi-tenant orchestration and monitoring service is responsible for parsing the selected application recipe and for executing the deployment of that application based on the description provided in the recipe. The web-based management allows users to monitor and manage the deployed application.<br />
-<a class="fancybox-media" href="/images/web_ui.gif"><img src="/images/web_ui_thumb.gif" alt="pic is missing" /></a></p>
-<h3>Application Analytics</h3>
-<p>Application activities are sent into an analytics service that produce real-time usage reports on the most-active application, as well as the user experience activities.<br />
-<a class="fancybox-media" href="/images/mixpanel.gif"><img src="/images/mixpanel_thumb.gif" alt="pic is missing" /></a></p>
-<h3>Service Catalogue Repository</h3>
-<p>The Service Catalogue is based on a Github clone.</p>
-<p>Users use the repository to store their application recipes, track versions, manage history of updates, etc.<br />
-<a class="fancybox-media" href="/images/play201_recipes.jpg"><img src="/images/play201_recipes_thumb.jpg" alt="pic is missing" /></a></p>
-<h3>Cloud Pools</h3>
-<p>Cloudify can be integrated with various public and private clouds using out-of-the-box plug-ins.</p>
-<p>There are basically two main cloud pools that are used in this architecture:</p>
-<ol>
-	<li>Free Trial Pool &#8211; The free trial pool is used to speed up the deployment experience during the trial stage. This pool is limited for time and is initially set for a single VM per deployment to avoid quick exhaustion of resources from the free pool.</li>
-	<li>Production User Cloud &#8211; Users that pass their credentials could use the same interface for deploying application under their account. In this case they are not limited in time nor the number of nodes per application.</li>
-</ol>
-<h3>Product Overview for IT Managers and DevOps</h3>
-<p>The Cloudify Player was designed to fit into a DevOps environment in which applications are expected to be modified on a continuous basis after they have been deployed. Users can add new applications easily by wrapping them with a simple script, called a recipe. Recipes can be based on either Chef or Puppet.  Recipes can be modified after they have been published by each end user before the deployment takes place.</p>
-<p>Users can monitor and manage their applications using a single management dashboard. The management dashboard allows users to monitor the application topology and behavior as well as view real time logging and even open <span class="caps">SSH</span> console if needed.</p>
-<h3>Summary of the Main Features</h3>
-<ul>
-	<li>Out-of-the-box support for 100s of products (Leveraging the existing Chef/Puppet support)</li>
-	<li>Supports full life cycle of user experience from simple free trial to full production</li>
-	<li>Specific support for Big Data clusters, including Database as a Service, Hadoop as a Service, MongoDB as a Service, etc.</li>
-	<li>Can run clusters rather than just individual VMs</li>
-	<li>Application can run outside of the marketplace using the same tools</li>
-	<li>Users can easily customize the services from the catalog for their own purposes, including the possibility to run their own version of each item in the catalog. Advanced users can leverage the built-in Chef &amp; Puppet support for advanced configuration management.</li>
-	<li>Built in multi-tenant application management so that each user can monitor and manage all of the products under his/her account using a single application-centric dashboard</li>
-	<li>Built-in integration with analytics tools to support tracking of user activity</li>
-</ul>
-<h3>Using Cloudify to Build Your Own Marketplace</h3>
-<p>The Cloudify Player was designed to simplify the deployment of applications in the cloud. The open nature of the Cloudify Player provides many of the features required for building a marketplace in your own environment under your brand and with the application of your choice. In addition, we&#8217;ve put a lot of emphasise on making the user experience simple while ensuring a smooth transition from a hassle-free trial to full production usage.</p>
-<p>You can try out the OpenStack version that we launched in collaboration with HP at <a href="www.cloudifysoure.org">www.cloudifysoure.org</a>.</p>
-<p>For more information about the Cloudify Player and how it works, please see Uri Cohen&#8217;s blog post <a href="http:/www.cloudifysource.org/2013/05/15/introducing_the_cloudify_player.html">Introducing the Cloudify Player</a>.</p>
-                    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
-    var disqus_identifier = '/2013/05/13/using_the_cloudify_player_as_an_open_source_framework_for_building_your_own_cloud_application_marketplace_on_openstack.html';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-
-                </div>
-
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <!--Start pagination -->
-
-        <div class="clear"></div>
-
-        <!--Start Footer -->
-
-        	<footer>
+					</aside>
+				</div>
+			</div>	
+	</div>	
+	</section>	
+	<div class="clear"></div>
+	<!--Start Footer -->
+		<footer>
 	<div class="container">
 		<div class="row">
 			<div class="span3">
@@ -2262,12 +2252,7 @@
 
 
 
-
-    </div>
-    <!--End site wrapper -->
-
-
-</div>
-<!--End site bg top wrapper -->
+			
+	</div>
 </body>
 </html>

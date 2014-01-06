@@ -1718,7 +1718,8 @@ ul.meta-post li a{
     font-weight: bold;
 }
 
-
+.postedBySection{ margin:10px 0 0 0; font-size:12px; line-height:16px}
+.postedBySection img{ margin-bottom:2px}
 /* ===============================
 15. Aside, sidebar
 ================================ */

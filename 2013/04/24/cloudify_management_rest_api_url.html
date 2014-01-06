@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
@@ -41,7 +40,6 @@
 </head>
 
 <body>
-<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
 <div class="WrapperBg">    
     <div class="Wrapper">
         <!-- toggle top area -->
@@ -146,39 +144,83 @@
 		
 </header>	
 <!-- end header -->	
-		<h1>Test</h1>
-        <div class="contentWrap">            
-			<div class="breadcrumbs">Home Page > Cloudify Blogs > How to get the Cloudify Management REST API URL</div>
-            <div class="clear"></div>
+		
+			<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2><i class="icon-edit"></i>Cloudifysource<strong> Blogs</strong></h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Blog</a><i class="icon-angle-right"></i></li>
+					<li class="active">How to get the Cloudify Management REST API URL</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+	<div class="container">
+			<div class="row">
+				<!-- Blog Right side posts -->
+				<div class="span9">
+					<div id="resultsDiv" class="DocumentsWrap"></div>
+					<div id="pageContent" class="DocumentsWrapRight">
+					
+					<h1 class="pageTitle">How to get the Cloudify Management REST API URL</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Tamir Korem</a>  on April 24, 2013  
+					  </span>
+					  <br/><br/><br/>
+					 
+                    <h2>The <span class="caps">REST</span> <span class="caps">API</span> <span class="caps">URL</span></h2>
+<p>In some cases when you develop a recipe, you may need access to the Cloudify management server/s.</p>
+<h4 class="impt">In a production environment, we recommend that you use two management servers.</h4>
+<p>This access may be required for invoking <span class="caps">REST</span> <span class="caps">API</span> calls either on the management servers or on services via the management servers. In any case, you need the management servers&#8217; <span class="caps">REST</span> <span class="caps">URL</span>.</p>
+<h4 class="info">Cloudify will soon <a href="https://cloudifysource.atlassian.net/browse/CLOUDIFY-1515?jql=resolution%20%3D%20Unresolved%20AND%20reporter%20%3D%20currentUser%28%29" class="newwindow">expose</a> this IP address, but until then, there are two options:</h4>
+<h3>Use <span class="caps">LOOKUPLOCATORS</span></h3>
+<p>Retrieve the value of the <strong><code>LOOKUPLOCATORS</code></strong> environment variable from within a recipe, parse it and then get the address from it.<br />
+The <span class="caps">LOOKUPLOCATORS</span> environment variable contains the IP address and port of the <span class="caps">LUS</span> (Lookup Service), so you need to take the IP address and instead of the <span class="caps">LUS</span> port, use 8100 which is the default <span class="caps">REST</span> <span class="caps">API</span> port in Cloudify.<br />
+In case you have two management servers, the structure of the <span class="caps">LOOKUPLOCATORS</span> environment variable is <strong><code>IP_ADDRESS1:port1;IP_ADDRESS2:port2</code></strong> and after parsing it, you can use any of the two IP addresses.</p>
+<h3>Wrap the <span class="caps">CLI</span> with a script</h3>
+<p>I&#8217;ve created a short script that retrieves the <span class="caps">REST</span> IP addresses and ports and then stores it in the Cloudify service context attributes store.<br />
+Here it is : <br />
+<script src="https://gist.github.com/tamirko/5451271.js"></script></p>
 
-            <!--Search-->
-			
-            
- 
+<p><br/> <br />
+Have fun, <br />
+<br/> <br />
+ Tamir.</p>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/2013/04/24/cloudify_management_rest_api_url.html';
 
-<div class="learnFrom">
-    <h2>Blog Posts and Updates</h2>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
-    <div class="searchWrap">
-        <form id="searchForm" action="#" method="get">
-            <input id="search" class="searchTxt" type="text" placeholder="Search..."/>
-            <input id="goBtn" class="searchBtn" type="button" value="Go"/>
-        </form>
-    </div>
-</div>
- 
-<div class="hp-right-col">
- 		<a class="hp-btn-getCloudify" href="/downloads/get_cloudify">Get Cloudify!</a>
-</div>
-
-
-
-
-			
-            <div class="content">
-                <div id="alTag_LeftBlog" class="left">
-                    
-                    <!--Event groups-->
+					
+					
+					</div>			
+				</div>	
+				
+				<!-- Blog Left side coll -->
+				<div class="span3">
+					<aside class="right-sidebar">
+						<!--Event groups-->
 
 
 
@@ -2093,66 +2135,14 @@
 
  
  </ul>
-
-                </div>
-
-                <!--Start left content -->
-
-                <div id="resultsDiv" class="DocumentsWrap"></div>
-                <div id="pageContent" class="DocumentsWrapRight">
-                    <h1 class="pageTitle">How to get the Cloudify Management REST API URL</h1>
-					 
-					  <span class="blogPostInfo">Posted By: <a href="#">Tamir Korem</a>  on April 24, 2013  
-					  </span>
-					  <br/><br/><br/>
-					 
-                    <h2>The <span class="caps">REST</span> <span class="caps">API</span> <span class="caps">URL</span></h2>
-<p>In some cases when you develop a recipe, you may need access to the Cloudify management server/s.</p>
-<h4 class="impt">In a production environment, we recommend that you use two management servers.</h4>
-<p>This access may be required for invoking <span class="caps">REST</span> <span class="caps">API</span> calls either on the management servers or on services via the management servers. In any case, you need the management servers&#8217; <span class="caps">REST</span> <span class="caps">URL</span>.</p>
-<h4 class="info">Cloudify will soon <a href="https://cloudifysource.atlassian.net/browse/CLOUDIFY-1515?jql=resolution%20%3D%20Unresolved%20AND%20reporter%20%3D%20currentUser%28%29" class="newwindow">expose</a> this IP address, but until then, there are two options:</h4>
-<h3>Use <span class="caps">LOOKUPLOCATORS</span></h3>
-<p>Retrieve the value of the <strong><code>LOOKUPLOCATORS</code></strong> environment variable from within a recipe, parse it and then get the address from it.<br />
-The <span class="caps">LOOKUPLOCATORS</span> environment variable contains the IP address and port of the <span class="caps">LUS</span> (Lookup Service), so you need to take the IP address and instead of the <span class="caps">LUS</span> port, use 8100 which is the default <span class="caps">REST</span> <span class="caps">API</span> port in Cloudify.<br />
-In case you have two management servers, the structure of the <span class="caps">LOOKUPLOCATORS</span> environment variable is <strong><code>IP_ADDRESS1:port1;IP_ADDRESS2:port2</code></strong> and after parsing it, you can use any of the two IP addresses.</p>
-<h3>Wrap the <span class="caps">CLI</span> with a script</h3>
-<p>I&#8217;ve created a short script that retrieves the <span class="caps">REST</span> IP addresses and ports and then stores it in the Cloudify service context attributes store.<br />
-Here it is : <br />
-<script src="https://gist.github.com/tamirko/5451271.js"></script></p>
-
-<p><br/> <br />
-Have fun, <br />
-<br/> <br />
- Tamir.</p>
-                    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
-    var disqus_identifier = '/2013/04/24/cloudify_management_rest_api_url.html';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-
-                </div>
-
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <!--Start pagination -->
-
-        <div class="clear"></div>
-
-        <!--Start Footer -->
-
-        	<footer>
+					</aside>
+				</div>
+			</div>	
+	</div>	
+	</section>	
+	<div class="clear"></div>
+	<!--Start Footer -->
+		<footer>
 	<div class="container">
 		<div class="row">
 			<div class="span3">
@@ -2231,12 +2221,7 @@ Have fun, <br />
 
 
 
-
-    </div>
-    <!--End site wrapper -->
-
-
-</div>
-<!--End site bg top wrapper -->
+			
+	</div>
 </body>
 </html>
