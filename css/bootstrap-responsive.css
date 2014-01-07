@@ -463,6 +463,16 @@
   }
 }
 
+@media (min-width: 979px) and (max-width: 1200px) {
+  header  #header-hidden-link {
+position: absolute;
+right: 0px;
+top: 0px;
+z-index: 999;
+float: right;
+}
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
     .row {
     margin-left: -20px;
@@ -488,6 +498,15 @@
   .navbar-fixed-bottom .container {
     width: /*724px*/766px;
   }
+    
+header  #header-hidden-link {
+position: absolute;
+right: 0px;
+top: 0px;
+z-index: 999;
+float: right;
+}
+
   .span12 {
     width: 724px;
   }

@@ -151,11 +151,13 @@ a:active {
 
 
 div.subitem a.list-group-item {
-    padding-left: 30px;
+    padding-left: 20px;
+	border-bottom:#e9e9e9 1px solid;
 }
 a.list-group-item {
 color: #555;
 }
+a.list-group-item.highlight{color:#00B4DA}
 /* ===================================
 3. Responsive media
 ==================================== */
@@ -186,6 +188,8 @@ img.img-polaroid {
 ==================================== */
 
 /* --- hidden top area --- */
+/* --- hidden top area --- */
+.grayGrediant  .container { padding:0}
 
  .hidden-top {
    height: 0;
@@ -217,10 +221,10 @@ img.img-polaroid {
 
 #header-hidden-link {
   position: absolute;
-  right: 60px;
-  top: 0px;
-    z-index:999;
-  
+  right: 0px;
+  top: 24px;
+  z-index:999;
+  float:right;
 }
 #header-hidden-link a.toggle-link,
 #header-hidden-link a.top-link {
@@ -3388,9 +3392,16 @@ display: block;
 
 @media (max-width: 767px) {
 /*this classes are hidden on small */    
+#header-hidden-link {
+position: absolute;
+right: 0px;
+top: 0px;
+z-index:999;
+float:right;
+}
   .cloudifyLogo{ display:none !important}
    .dwnBtn{display:none !important} 
-.cdsearch{top: 171px;}
+.cdsearch{top: 0px;}
 /*end classes are hidden on small */ 
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;

@@ -83,7 +83,7 @@
 
 <!-- javascript footer_scripts-->
 {% include footer_scripts.html %}
-
+<script src="/js/cookie.js"></script>
 <script type="text/javascript">
 $(function() {
 $('#sidebar > a').on('click', function (e) {
@@ -99,10 +99,47 @@ $('#sidebar > a').on('click', function (e) {
 		}
 
 	});
+	
+	
+	
+ 
+  //target the class 'accordion-body' 
+  $('a.list-group-item').on('click', function(e){
+ 
+   //save the uncollapsed/shown item ID to your cookie:
+   $(e.target).attr('id','highlight');
+   $.cookie('cookie_highlight', $(e.target).attr('href'));
+  });
+  
+  $('#sidebar').on('shown', function(e){
+ 
+   //save the uncollapsed/shown item ID to your cookie:
+   $.cookie('cookie_collapse', $(e.target).attr('id'));
+  });
+ 
+  var lastCollapse = $.cookie('cookie_collapse');
+  var highlight = $.cookie('cookie_highlight');
+ 
+    //if the cookie exists:-
+    //activate uncollapsed item by adding the class 'in' to the saved ID
+     if (lastCollapse) {
+      var lastCollapse = '#' + lastCollapse
+      $(lastCollapse).addClass('in');
+     }
+	
+	
+	if (highlight) {
+      $('.in a.list-group-item').removeClass('highlight');
+      $('.in a.list-group-item[href$="'+highlight+'"]').addClass('highlight');
+     }
+
+
+	
 });
 </script>
 
 <!-- javascript footer_scripts-->
+
 
 </body>
 </html>
