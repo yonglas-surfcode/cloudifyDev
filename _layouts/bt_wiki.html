@@ -96,6 +96,12 @@ $('#sidebar > a').on('click', function (e) {
 			$(this).addClass("active");
 			$(this).next('div').collapse('show');
 
+		}else{
+			//$(this).removeClass("active");
+			$(this).closest("#sidebar").children(".in").css("height","0px");
+			$(this).closest("#sidebar").children(".in").removeClass("in");
+			$(this).removeClass("active");
+		
 		}
 
 	});
