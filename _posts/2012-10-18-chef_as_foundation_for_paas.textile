@@ -1,0 +1,17 @@
+---
+layout: blogpost
+title: The Bay Area Chef User Group - Chef as a foundation for PaaS - How Cloudify Uses Chef
+image: sharone.jpg
+author: Sharone Revah Zitzman
+tags: 
+ - Cloudify
+ - Chef 
+ - DevOps 
+ - Meetup 
+---
+h2. For those who didn't make it out to the Chef User Group meetup on October 19th at 6:30PM PST at Survey Monkey's HQ, below is a recording of the session that was presented.
+
+<iframe width="500" height="400" src="http://www.youtube.com/embed/-uyLOl8YOq0" frameborder="0" allowfullscreen></iframe>
+
+
+<br /><a title="Follow Sharone Zitzman on Twitter!" href="https://twitter.com/intent/follow?screen_name=shar1z" target="_blank">Follow Sharone </a>on Twitter!

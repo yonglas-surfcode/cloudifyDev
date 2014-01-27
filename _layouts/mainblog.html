@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	</section>
-	{% assign searchHdr="Blog Posts and Updates" %}
+<!-- 	{% assign searchHdr="Blog Posts and Updates" %} -->
 	<section id="content">
 	<div class="container">
 			<div class="row">
@@ -34,15 +34,13 @@
 					<div id="pageContent" class="DocumentsWrapRight">
 					{% assign posts = paginator.posts %}
 					{% include post-listing.html %}										
-					{{content}}
-					
-					
+			       {{content}} 
 					</div>			
 				</div>	
 				
 				<!-- Blog Left side coll -->
 				<div class="span3">
-					<aside class="right-sidebar">
+					<aside class="right-sidebar" >
 						{% include posts_toc.html %}
 					</aside>
 				</div>
