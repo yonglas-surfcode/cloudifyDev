@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - Getting your Favorite Open Source Framework on OpenStack is Now Simpler than on Amazon, GAE or Azure</title>
+	<script src="//cdn.optimizely.com/js/59503762.js"></script>
+	
+	<link rel="canonical" href="http://www.cloudifysource.org/2013/11/21/getting_your_favorite_open_source_framework_on_openstack_is_simpler_than_on_amazon_gae_or_azure.html"/>	
+	<!-- custom -->
+	<!--<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/atom.xml" />-->
+	<link rel="canonical" href="http://www.cloudifysource.org/index.html"/>	
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/x-icon" />
+	<!-- css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" />
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="/css/jcarousel.css" rel="stylesheet" />
+	<link href="/css/flexslider.css" rel="stylesheet" />
+	<link href="/css/cslider.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Theme skin -->
+	<link id="t-colors" href="/skins/blue.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="/bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="/ico/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="/js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body>
+<div class="WrapperBg">    
+    <div class="Wrapper">
+        <!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="/goPro"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/early_access" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/get_cloudify" data-toggle="tooltip" data-placement="bottom" title="Get Cloudify">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="/index"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="/index"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="/guide/2.6/qsg/qsg">Docs <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="/guide/2.3/qsg/quick_start_guide">2.3</a></li>
+											<li><a href="/guide/2.5/qsg/quick_start_guide">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg">2.6</a></li>
+											<li><a href="/guide/2.7/qsg/qsg">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="/blog">Blog</a></li>
+										<li><a href="cloudifyRecipeCatalog.html">The Cloudify Player</a></li>
+										<li><a href="CloudifysourceTV.html">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com<i class="icon-angle-down"></i></strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+		
+			<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2><i class="icon-edit"></i>Cloudifysource<strong> Blogs</strong></h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Blog</a><i class="icon-angle-right"></i></li>
+					<li class="active">Getting your Favorite Open Source Framework on OpenStack is Now Simpler than on Amazon, GAE or Azure</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+	<div class="container">
+			<div class="row">
+				<!-- Blog Right side posts -->
+				<div class="span9">
+					<div id="resultsDiv" class="DocumentsWrap"></div>
+					<div id="pageContent" class="DocumentsWrapRight">
+					
+					<h1 class="pageTitle">Getting your Favorite Open Source Framework on OpenStack is Now Simpler than on Amazon, GAE or Azure</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Nati Shalom</a>  on November 21, 2013  
+					  </span>
+					  <br/><br/><br/>
+					 
+                    <p>The number of open source frameworks that are available today is continuously growing at an enormous pace, with over 1 million unique open source projects today, as indicated in a <a href="http://www.slideshare.net/blackducksoftware/the-2013-future-of-open-source-survey-results" class="newwindow">recent survey</a> by Black Duck.</p>
+<p><img src="/images/os_is_eating.png" /></p>
+<p>The availability of these frameworks has changed the way we build products and structure our IT infrastructure products are often built through integration of different open source frameworks rather than developing the entire stack.</p>
+<p>The speed of innovation is also an area that has changed as a result of this open source movement. Where previously innovation was mostly driven by the speed of development of new features, in the open source world innovation is greatly determined by how fast we can integrate and take advantage of new open source frameworks.</p>
+<p>Having said that, the process of trying out new open source frameworks can still be fairly tedious, especially if there isn&#8217;t a well-funded company behind the project. Let me explain why.</p>
+<h2>Open Source Framework Integration Continuum</h2>
+<p>The integration of a new open source framework often goes through an evolution cycle that I refer to as the integration continuum.<br />
+A typical integration process often involves initial exploration where we continuously explore new frameworks, sometimes without any specific need in mind. At this stage, we want to be able to get a feel of the framework, but don&#8217;t necessarily have the time to take a deep dive into the technology or deal with complex configurations. Once we find a framework that we like and see a potential use for it, we start to look closer and run a full <span class="caps">POC</span>.</p>
+<p><img src="/images/os_frameworks_integration.png" /></p>
+<p>In this case, we already have a better idea of what the product does and how it can fit in our system, but we want to validate our assumptions. Once we are done with the <span class="caps">POC</span> and found what were looking for, we start the integration and development stage with our product. <br />
+This stage is where we are often interested in getting our hands on the <span class="caps">API</span> and the product features, and need a simple environment that will allow us to quickly test the integration of that <span class="caps">API</span> with our product. As we get closer to production, we get more interested in the operational aspects and need to deal with building the cluster for high availability, adding more monitoring capabilities and integrating it with our existing operational environment.</p>
+<p>Each of those steps often involves downloading the framework, setting up the environment and tuning it to fit the need of the specific stage (i.e. trial, <span class="caps">POC</span>, dev, production). For obvious reasons, the requirements for each of those stages are fairly different, so we typically end up with a different setup process with various tools in each step, leading to a process in which we are continuously ripping and replacing the setup from the previous step as we move from one stage to the next.</p>
+<h2>The Friction Multiplier Effect</h2>
+<p>The friction that I was referring to above refers to a process for a single framework. In reality, however, during the exploration and <span class="caps">POC</span> stages, we evaluate more than one framework in order to choose the one that best fits our needs.</p>
+<p>In addition, we often integrate with more than one product or framework at a time. So in reality, the overhead that I was referring to is multiplied by the number of frameworks that we are evaluating and using. The overhead in the initial stages of exploration and <span class="caps">POC</span> often ends in complete waste as we typically choose one framework out of several, meaning we spent a lot of time setting up frameworks that we are never going to use.</p>
+<h2>How can we make the process simpler?</h2>
+<p>In a nutshell, we combined two main principles &#8211; SaaS as a means to carve out the infrastructure complexity and open source practices and tools to allow for full customization.</p>
+<p>We use a SaaS-based model to provide a self-service experience that will allow users to launch their framework of choice through a simple one click deployment. This is particularly useful for the initial exploration stages in which users want to get a preview of many products and don&#8217;t have time to spend on setup and installation. The difference between our service and other SaaS services that are often done per product is that in this case, Cloudify  provides a single-click deployment for many different frameworks using a single service.</p>
+<p>By relying on open source practices and tools, such as Github, we allow different degrees of customization at each stage to the point where a user can take the entire framework that we are using online on his own environment with full customization.</p>
+<h2>Launching a New Application Catalogue on HP&#8217;s OpenStack-based Public Cloud</h2>
+<p>This week we are launching a new <a href="http://appcatalog.cloudifysource.org/#/?cloudifyblog" class="newwindow">application catalogue</a> service on HP&#8217;s OpenStack-based Public Cloud, with the aim to make the use of open source frameworks on OpenStack simpler than on any other cloud.</p>
+<p>The service includes the following main features:</p>
+<p><a href="http://appcatalog.cloudifysource.org/#/?cloudifyblog" title="application catalogue" target="_blank"><img src="/images/os_solutions.png" /></a></p>
+<ol>
+	<li>Hassle-free preview &#8211; One click experience for trying out several open source services for 60 min.</li>
+	<li>Trial as a Service &#8211; Aimed for simple, 1 week <span class="caps">POC</span>.</li>
+	<li>Frictionless transition to unlimited account &#8211; Allows you to use the exact same one-click experience, but in this case the service will be launched under your account and managed by you.</li>
+	<li>Built on Github &#8211; The catalogue service is built on Git &#8211; this means that you can use the Git experience to add new services, customize them as you would any other open source project.</li>
+	<li>Fully open source &#8211; Having the catalogue (including the UI), the orchestration engine and the OpenStack-based cloud in open source means that you can also choose to clone this entire framework anywhere you like, including in your own private environment. In addition, leverage the investment that you built for the trial and <span class="caps">POC</span> stages for future phases, as you&#8217;re going to use the exact same tools throughout the entire process.</li>
+</ol>
+<p>With this tool, users can launch any app outside of the catalogue service through a unique embed model similar to the way someone would embed a video from YouTube.</p>
+<h2>How is that different that Amazon, <span class="caps">GAE</span> or Azure offerings?</h2>
+<p>All other clouds limit their services to a particular set of pre-canned frameworks. In addition, the infrastructure and tools that most clouds offer are not open source. This means that you will not be able to use the same services under your own environment. It also introduces a higher degree of locking.</p>
+<p>This flexibility is critical as the industry moves toward more advanced development and production scenarios. This could be a huge stop gap. If you get stuck with the out of the box offering, you have no way to escape, with your only way out to build the entire environment yourself, using other sets of tools to build the entire environment completely from scratch.</p>
+<p>The hassle-free preview model as well as the fact that you can run any of the services outside of the catalogue service makes the Cloudify Application Catalogue significantly simpler. This is especially true when comparing it with any of the existing alternatives on other clouds which often require registration and credit card as a way to get started.</p>
+<h2>Final Words</h2>
+<p>In today&#8217;s world, innovation is key to allowing organizations to keep up with the competition.<br />
+The use of open source has enabled  everyone to accelerate the speed of innovation, however, the process of exploring and trying open source frameworks is still fairly tedious, with much friction in the transition from the initial exploration to full production.</p>
+<p>With this new service, we believe that we have changed the game, showing that we can now make the experience of deploying new open source services and applications on OpenStack simpler than on other clouds. By taking an open source approach, we guarantee not to hit a stop-gap as we advance through the process and avoid the risk of a complete re-write or lock-in. At the same time we allow hassle free one-click experience by providing an &#8220;as-a-service&#8221; offering for deploying any of our open source frameworks of choice. By the fact that we use the same underlying infrastructure and set of tools through all the cycles, we ensure that users can take their experience and investment from one stage to the other and thus avoid a complete re-write.</p>
+<p>With all this we now allow many users and organizations to increase their speed of innovation dramatically by simplifying the process of exploring and integrating new open source frameworks.</p>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/2013/11/21/getting_your_favorite_open_source_framework_on_openstack_is_simpler_than_on_amazon_gae_or_azure.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+					
+					
+					</div>			
+				</div>	
+				
+				<!-- Blog Left side coll -->
+				<div class="span3">
+					<aside class="right-sidebar" >
+						<!--Event groups-->
+
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Recent Posts</h3>
+</div>
+
+
+<div class="leftContentBox blogLeftBox"> 
+   
+	<a href="/2014/01/23/intro_to_puppet_installing_your_first_mysql_service_in_5_minutes.html">Intro to Puppet, Installing your First MySQL Service in 5 Minutes 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">January 23, 2014</span>  
+	<br/><br/>
+  
+	<a href="/2013/12/23/setting_up_devstack_havana_on_your_local_network.html">Openstack in a Box - Setting Up Devstack Havana On Your Local Network 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">December 23, 2013</span>  
+	<br/><br/>
+  
+	<a href="/2013/12/07/eight_cloud_and_big_data_predictions_for_2014.html">Eight Cloud and Big Data Predictions for 2014 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">December  7, 2013</span>  
+	<br/><br/>
+		
+</div>
+
+               <!--start -->
+                 <div class="leftContentBox blogLeft-topTitle blog-left-title2 tumblr">
+                        <h3>CloudifySource on Tumblr</h3>
+                 </div>   
+                <div class="leftContentBox tumblrFeed">                     
+                
+                </div>
+<!--end-->
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Archived Posts</h3>
+</div>
+
+ <ul class="blog-archive-list">
+ 
+ 
+	
+	
+	
+	
+	
+	
+
+	
+<li><a href="/2014/01">January 2014</a> <span class="blue">(1)</span></li>
+
+	
+
+	
+		
+
+<li><a href="/2013/12">December 2013</a> <span class="blue">(2)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/11">November 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/10">October 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/09">September 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/08">August 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/07">July 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/06">June 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/05">May 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/04">April 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/03">March 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/02">February 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/01">January 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2012/12">December 2012</a> <span class="blue">(3)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/11">November 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/10">October 2012</a> <span class="blue">(5)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/09">September 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/08">August 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/07">July 2012</a> <span class="blue">(5)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/06">June 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/05">May 2012</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/03">March 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/02">February 2012</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/01">January 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2011/11">November 2011</a> <span class="blue">(1)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/10">October 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/09">September 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+ 
+ </ul>
+					</aside>
+				</div>
+			</div>	
+	</div>	
+	</section>	
+	<div class="clear"></div>
+	<!--Start Footer -->
+		<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="\about_us">About Us</a></li>
+						<li><a href="\goPro">Enterprise Cloudify</a></li>
+						<li><a href="\cloudifyRecipeCatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="\how">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="/terms_of_use">Terms of Use</a></li>
+						<li><a href="/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook" target="_blank"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter" target="_blank"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr" target="_blank"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube" target="_blank"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+			
+	</div>
+</body>
+</html>

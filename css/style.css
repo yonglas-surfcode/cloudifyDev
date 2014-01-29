@@ -106,6 +106,8 @@ body {
 	background:#111111 !important;
 }
 
+iframe body{background:#ffffff !important;}
+.noBg{background:#ffffff !important;}
 a:active {
 	outline:0;
 }

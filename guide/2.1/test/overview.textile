@@ -31,7 +31,7 @@ pageord:
 				</li>	
 				<li>
 					<a href="http://www.cloudifysource.org../">
-						<table>
+						<table class="table table-bordered table-striped">
 						<tr>						
 							<th>1st column header</th>
 							<th>2nd column header</th>

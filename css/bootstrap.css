@@ -230,6 +230,8 @@ body {
   background-color: #ffffff;
 }
 
+
+
 a {
   color: #0088cc;
   text-decoration: none;
@@ -2006,15 +2008,35 @@ legend + .control-group {
 }
 
 table {
+
   max-width: 100%;
   background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0;
+  /*border-collapse: collapse;
+  border-spacing: 0;*/
+  border: 1px solid #dddddd;
+ border-collapse: collapse;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+  
 }
+
+table th, table td {
+padding: 8px;
+line-height: 20px;
+text-align: left;
+vertical-align: top;
+border:solid 1px #656565;
+}
+
+
+
+
 
 .table {
   width: 100%;
   margin-bottom: 20px;
+  
 }
 
 .table th,
@@ -2024,6 +2046,9 @@ table {
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
+}
+tbody > tr:nth-child(odd) > td, tbody > tr:nth-child(odd) > th {
+background-color: #f9f9f9;
 }
 
 .table th {
@@ -3875,24 +3900,26 @@ input[type="submit"].btn.btn-mini {
           border-radius: 0 0 6px 6px;
 }
 
-.alert {
+#docsWrap .alert,#docsWrap .info,#docsWrap .warn,#docsWrap .impt {
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
 .alert,
-.alert h4 {
+.alert h4,.warn {
   color: #c09853;
+    font-size:14px;
 }
 
-.alert h4 {
+.alert h4,.warn h4 {
   margin: 0;
+   font-size:14px;
 }
 
 .alert .close {
@@ -3902,14 +3929,15 @@ input[type="submit"].btn.btn-mini {
   line-height: 20px;
 }
 
-.alert-success {
+.alert-success ,#docsWrap .info{
   color: #468847;
   background-color: #dff0d8;
   border-color: #d6e9c6;
 }
 
-.alert-success h4 {
+.alert-success h4,#docsWrap h4.info {
   color: #468847;
+   font-size:14px;
 }
 
 .alert-danger,
@@ -3924,14 +3952,15 @@ input[type="submit"].btn.btn-mini {
   color: #b94a48;
 }
 
-.alert-info {
+.alert-info,.impt {
   color: #3a87ad;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
 
-.alert-info h4 {
+.alert-info h4,h4.impt{
   color: #3a87ad;
+  font-size:14px;
 }
 
 .alert-block {

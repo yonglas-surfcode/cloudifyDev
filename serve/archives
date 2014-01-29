@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - Archived Blog Posts</title>
+	<script src="//cdn.optimizely.com/js/59503762.js"></script>
+	
+	<link rel="canonical" href="http://www.cloudifysource.org/archives_raw"/>	
+	<!-- custom -->
+	<!--<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/atom.xml" />-->
+	<link rel="canonical" href="http://www.cloudifysource.org/index.html"/>	
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/x-icon" />
+	<!-- css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" />
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="/css/jcarousel.css" rel="stylesheet" />
+	<link href="/css/flexslider.css" rel="stylesheet" />
+	<link href="/css/cslider.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Theme skin -->
+	<link id="t-colors" href="/skins/blue.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="/bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="/ico/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="/js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body>
+<div class="WrapperBg">    
+    <div class="Wrapper">
+        <!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="goPro.html"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/previous_ga_versions.html" data-toggle="tooltip" data-placement="bottom" title="Get the GA Release"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/get_cloudify.html" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="index.html"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="index.html"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown active">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="doc.html">Docs <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="#">2.3</a></li>
+											<li><a href="#">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg.html">2.6</a></li>
+											<li><a href="#">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="blog-right-sidebar.html">Blog</a></li>
+										<li><a href="#">The Cloudify Player</a></li>
+										<li><a href="video.htm">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com<i class="icon-angle-down"></i></strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+		
+			<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2><i class="icon-edit"></i>Cloudifysource<strong> Blogs</strong></h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Blog1</a><i class="icon-angle-right"></i></li>
+					<li class="active">Archived Blog Posts</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+	<div class="container">
+			<div class="row">
+				<!-- Blog Right side posts -->
+				<div class="span9">
+					<div id="resultsDiv" class="DocumentsWrap"></div>
+					<div id="pageContent" class="DocumentsWrapRight">
+					
+					
+
+
+
+
+
+
+
+										
+					<p></p>
+<h2 class='archives'><a href="/2013">2013</a></h2>
+<h3><a href="/2013/11">November</a></h3>
+<ul>2013-11-01 &#8211; <a href="/2013/11/01/cloud_devops_orchestration.html">Cloud DevOps Orchestration</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</ul>
+<h3><a href="/2013/10">October</a></h3>
+<ul>
+
+<p></p>
+<p>2013-11-01 &#8211; <a href="/2013/11/01/cloud_devops_orchestration.html">Cloud_devops_orchestration</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/10">October</a></h3>
+<ul>
+
+<p></p>
+<p>2013-10-30 &#8211; <a href="/2013/10/30/the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html">The Breakup &#8211; Why OpenStack Needs a Native Alternative to CloudFoundry and Openshift</a><br/><br/><a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Continuous Delivery">Continuous Delivery (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/CloudFoundry">CloudFoundry (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-10-30 &#8211; <a href="/2013/10/30/the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html">The_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-10-27 &#8211; <a href="/2013/10/27/application_centric_approach_to_devops.html">An Application-Centric Approach to DevOps</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Continuous Delivery">Continuous Delivery (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-10-27 &#8211; <a href="/2013/10/27/application_centric_approach_to_devops.html">Application_centric_approach_to_devops</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-10-24 &#8211; <a href="/2013/10/24/team_cloudify_heads_to_hong_kong.html">Team Cloudify Heads to Hong Kong</a><br/><br/><a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/OpenStack Summit">OpenStack Summit (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/GigaSpaces">GigaSpaces (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-10-24 &#8211; <a href="/2013/10/24/team_cloudify_heads_to_hong_kong.html">Team_cloudify_heads_to_hong_kong</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-10-11 &#8211; <a href="/2013/10/11/xap_on_cloudify_part_1.html"><span class="caps">XAP</span> on Cloudify Part 1</a><br/><br/><a class="postTag" href="/tags/Ec2">Ec2 (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Xap">Xap (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Web UI">Web UI (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2013/09">September</a></h3>
+<ul>
+
+<p></p>
+<p>2013-10-11 &#8211; <a href="/2013/10/11/xap_on_cloudify_part_1.html">Xap_on_cloudify_part_1</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/09">September</a></h3>
+<ul>
+
+<p></p>
+<p>2013-09-16 &#8211; <a href="/2013/09/16/cloudifying_high_availability_part_2_disaster_recovery_on_demand.html">Disaster Recovery On Demand</a><br/><br/><a class="postTag" href="/tags/Disaster Recovery">Disaster Recovery (4)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/High Availability">High Availability (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-09-16 &#8211; <a href="/2013/09/16/cloudifying_high_availability_part_2_disaster_recovery_on_demand.html">Cloudifying_high_availability_part_2_disaster_recovery_on_demand</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-09-10 &#8211; <a href="/2013/09/10/four_case_studies_for_moving_mission_critical_apps_to_openstack.html">Four Case Studies for Moving Mission Critical Apps to OpenStack</a><br/><br/><a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/AWS"><span class="caps">AWS</span> (4)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Computing">Cloud Computing (9)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-09-10 &#8211; <a href="/2013/09/10/four_case_studies_for_moving_mission_critical_apps_to_openstack.html">Four_case_studies_for_moving_mission_critical_apps_to_openstack</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-09-10 &#8211; <a href="/2013/09/10/bootstrapping_cloudify_with_chef.html">Bootstrapping Cloudify With Chef</a><br/><br/><a class="postTag" href="/tags/Chef">Chef (7)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2013/08">August</a></h3>
+<ul>
+
+<p></p>
+<p>2013-09-10 &#8211; <a href="/2013/09/10/bootstrapping_cloudify_with_chef.html">Bootstrapping_cloudify_with_chef</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/08">August</a></h3>
+<ul>
+
+<p></p>
+<p>2013-08-24 &#8211; <a href="/2013/08/24/auto_scale_and_auto_heal_your_service_on_openstack.html">Auto-scale and Auto-heal your state-full Apache or tomcat service on OpenStack</a><br/><br/><a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-08-24 &#8211; <a href="/2013/08/24/auto_scale_and_auto_heal_your_service_on_openstack.html">Auto_scale_and_auto_heal_your_service_on_openstack</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-08-08 &#8211; <a href="/2013/08/08/how_to_install_heat_and_devstack_on_vagrant.html">How to Install Heat and DevStack on Vagrant</a><br/><br/><a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Devstack">Devstack (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Vagrant">Vagrant (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2013/07">July</a></h3>
+<ul>
+
+<p></p>
+<p>2013-08-08 &#8211; <a href="/2013/08/08/how_to_install_heat_and_devstack_on_vagrant.html">How_to_install_heat_and_devstack_on_vagrant</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/07">July</a></h3>
+<ul>
+
+<p></p>
+<p>2013-07-17 &#8211; <a href="/2013/07/17/openstacks_third_birthday_a_recap_with_a_look_into_the_future.html">Openstack&#8217;s Third Birthday &#8211; A Recap With A Look Into The Future</a><br/><br/><a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Computing">Cloud Computing (9)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/AWS"><span class="caps">AWS</span> (4)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Open Source">Open Source (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-07-17 &#8211; <a href="/2013/07/17/openstacks_third_birthday_a_recap_with_a_look_into_the_future.html">Openstacks_third_birthday_a_recap_with_a_look_into_the_future</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-07-16 &#8211; <a href="/2013/07/16/how_to_install_heat_and_devstack_on_ec2.html">How to Install Heat and Devstack on EC2</a><br/><br/><a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Devstack">Devstack (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/EC2">EC2 (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-07-16 &#8211; <a href="/2013/07/16/how_to_install_heat_and_devstack_on_ec2.html">How_to_install_heat_and_devstack_on_ec2</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-07-15 &#8211; <a href="/2013/07/15/to_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today.html">To Openstack or not to Openstack Moving Enterprise Applications onto Openstack Today</a><br/><br/><a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Computing">Cloud Computing (9)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2013/06">June</a></h3>
+<ul>
+
+<p></p>
+<p>2013-07-15 &#8211; <a href="/2013/07/15/to_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today.html">To_openstack_or_not_to_openstack_moving_enterprise_applications_onto_openstack_today</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/06">June</a></h3>
+<ul>
+
+<p></p>
+<p>2013-06-10 &#8211; <a href="/2013/06/10/big_data_on_openstack.html">Big Data on OpenStack</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Big Data">Big Data (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Computing">Cloud Computing (9)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2013/05">May</a></h3>
+<ul>
+
+<p></p>
+<p>2013-06-10 &#8211; <a href="/2013/06/10/big_data_on_openstack.html">Big_data_on_openstack</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/05">May</a></h3>
+<ul>
+
+<p></p>
+<p>2013-05-15 &#8211; <a href="/2013/05/15/introducing_the_cloudify_player.html">Introducing The Cloudify Player</a><br/><br/><a class="postTag" href="/tags/Play">Play (3)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-05-15 &#8211; <a href="/2013/05/15/introducing_the_cloudify_player.html">Introducing_the_cloudify_player</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-05-13 &#8211; <a href="/2013/05/13/using_the_cloudify_player_as_an_open_source_framework_for_building_your_own_cloud_application_marketplace_on_openstack.html">Using the Cloudify Player as an Open Source Framework for Building Your Own Cloud Application Marketplace on OpenStack</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Computing">Cloud Computing (9)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Open source">Open source (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-05-13 &#8211; <a href="/2013/05/13/using_the_cloudify_player_as_an_open_source_framework_for_building_your_own_cloud_application_marketplace_on_openstack.html">Using_the_cloudify_player_as_an_open_source_framework_for_building_your_own_cloud_application_marketplace_on_openstack</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-05-13 &#8211; <a href="/2013/05/13/amazon_marketplace_not_a_fair_play_thoughts_on_an_open_marketplace_alternative_with_openstack.html">Amazon Marketplace &#8211; Not a Fair Play, Thoughts on an Open Marketplace Alternative with OpenStack</a><br/><br/><a class="postTag" href="/tags/Amazon">Amazon (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Aws">Aws (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Computing">Cloud Computing (9)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Open source">Open source (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-05-13 &#8211; <a href="/2013/05/13/amazon_marketplace_not_a_fair_play_thoughts_on_an_open_marketplace_alternative_with_openstack.html">Amazon_marketplace_not_a_fair_play_thoughts_on_an_open_marketplace_alternative_with_openstack</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-05-01 &#8211; <a href="/2013/05/01/cross_cloud_storage.html">Cross-Cloud Storage</a><br/><br/><a class="postTag" href="/tags/Storage">Storage (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/s3cmd">s3cmd (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/EC2">EC2 (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/HP">HP (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2013/04">April</a></h3>
+<ul>
+
+<p></p>
+<p>2013-05-01 &#8211; <a href="/2013/05/01/cross_cloud_storage.html">Cross_cloud_storage</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/04">April</a></h3>
+<ul>
+
+<p></p>
+<p>2013-04-29 &#8211; <a href="/2013/04/29/building_an_elastic_sip_server_with_websphere_xap_and_cloudify.html">Building an Elastic <span class="caps">SIP</span> Server with WebSphere, <span class="caps">XAP</span> and Cloudify</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/XAP"><span class="caps">XAP</span> (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/WebSphere">WebSphere (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-04-29 &#8211; <a href="/2013/04/29/building_an_elastic_sip_server_with_websphere_xap_and_cloudify.html">Building_an_elastic_sip_server_with_websphere_xap_and_cloudify</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-04-24 &#8211; <a href="/2013/04/24/cloudify_management_rest_api_url.html">How to get the Cloudify Management <span class="caps">REST</span> <span class="caps">API</span> <span class="caps">URL</span></a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/REST API"><span class="caps">REST</span> <span class="caps">API</span> (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-04-24 &#8211; <a href="/2013/04/24/cloudify_management_rest_api_url.html">Cloudify_management_rest_api_url</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-04-10 &#8211; <a href="/2013/04/10/cloudify_2_5_is_ga.html">Cloudify 2.5 is GA</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Chef">Chef (7)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Version">Version (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2013/03">March</a></h3>
+<ul>
+
+<p></p>
+<p>2013-04-10 &#8211; <a href="/2013/04/10/cloudify_2_5_is_ga.html">Cloudify_2_5_is_ga</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/03">March</a></h3>
+<ul>
+
+<p></p>
+<p>2013-03-18 &#8211; <a href="/2013/03/18/devops_paas_and_everything_in_between.html">DevOps, PaaS and Everything in Between</a><br/><br/><a class="postTag" href="/tags/AWS"><span class="caps">AWS</span> (4)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Computing">Cloud Computing (9)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/IaaS">IaaS (3)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-03-18 &#8211; <a href="/2013/03/18/devops_paas_and_everything_in_between.html">Devops_paas_and_everything_in_between</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-03-07 &#8211; <a href="/2013/03/07/gigaspaces_and_storm_part_1_storm_clouds.html">GigaSpaces And Storm Part 1 &#8211; Storm Clouds</a><br/><br/><a class="postTag" href="/tags/Cloud Computing">Cloud Computing (9)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Storm">Storm (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-03-07 &#8211; <a href="/2013/03/07/gigaspaces_and_storm_part_1_storm_clouds.html">Gigaspaces_and_storm_part_1_storm_clouds</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-03-07 &#8211; <a href="/2013/03/07/carrier_grade_cloud_paas.html">Carrier Grade Cloud/PaaS</a><br/><br/><a class="postTag" href="/tags/Disaster Recovery">Disaster Recovery (4)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Computing">Cloud Computing (9)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2013-03-07 &#8211; <a href="/2013/03/07/carrier_grade_cloud_paas.html">Carrier_grade_cloud_paas</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2013-03-04 &#8211; <a href="/2013/03/04/cloudifying_high_availability.html">Cloudifying High Availability</a><br/><br/><a class="postTag" href="/tags/Disaster Recovery">Disaster Recovery (4)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/High Availability">High Availability (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2013/02">February</a></h3>
+<ul>
+
+<p></p>
+<p>2013-03-04 &#8211; <a href="/2013/03/04/cloudifying_high_availability.html">Cloudifying_high_availability</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/02">February</a></h3>
+<ul>
+
+<p></p>
+<p>2013-02-28 &#8211; <a href="/2013/02/28/running_play_apps_on_the_cloud_with_cloudify.html">Running Play Apps on the Cloud with Cloudify</a><br/><br/><a class="postTag" href="/tags/Play">Play (3)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2013/01">January</a></h3>
+<ul>
+
+<p></p>
+<p>2013-02-28 &#8211; <a href="/2013/02/28/running_play_apps_on_the_cloud_with_cloudify.html">Running_play_apps_on_the_cloud_with_cloudify</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2013/01">January</a></h3>
+<ul>
+
+<p></p>
+<p>2013-01-17 &#8211; <a href="/2013/01/17/couchbase_any_cloud.html">A Couchbase for Any Cloud</a><br/><br/><a class="postTag" href="/tags/Couchbase">Couchbase (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/NoSQL">NoSQL (3)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Application management">Application management (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h2 class='archives'><a href="/2012">2012</a></h2>
+<h3><a href="/2012/12">December</a></h3>
+<ul>
+
+<p></p>
+<p>2013-01-17 &#8211; <a href="/2013/01/17/couchbase_any_cloud.html">Couchbase_any_cloud</a><br/><br/></p>
+<p></p>
+</ul>
+<h2 class='archives'><a href="/2012">2012</a></h2>
+<h3><a href="/2012/12">December</a></h3>
+<ul>
+
+<p></p>
+<p>2012-12-27 &#8211; <a href="/2012/12/27/cloudify_230_has_landed.html">Cloudify 2.3.0 Has Landed</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-12-27 &#8211; <a href="/2012/12/27/cloudify_230_has_landed.html">Cloudify_230_has_landed</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-12-12 &#8211; <a href="/2012/12/12/cloud_deployment_enterprise_paas.html">Enterprises Taking Off to the Cloud(s)</a><br/><br/><a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Enterprise">Enterprise (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/SaaS">SaaS (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud migration">Cloud migration (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-12-12 &#8211; <a href="/2012/12/12/cloud_deployment_enterprise_paas.html">Cloud_deployment_enterprise_paas</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-12-05 &#8211; <a href="/2012/12/05/cloudify_2_2_and_roadmap.html">Cloudify 2.2 and Roadmap</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Chef">Chef (7)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Version">Version (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/News">News (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2012/11">November</a></h3>
+<ul>
+
+<p></p>
+<p>2012-12-05 &#8211; <a href="/2012/12/05/cloudify_2_2_and_roadmap.html">Cloudify_2_2_and_roadmap</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/11">November</a></h3>
+<ul>
+
+<p></p>
+<p>2012-11-08 &#8211; <a href="/2012/11/08/using_websphere_wsadmin_tool_on_any_cloud.html">Using WebSphere&#8217;s wsadmin tool on any Cloud</a><br/><br/><a class="postTag" href="/tags/WebSphere">WebSphere (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/JACL"><span class="caps">JACL</span> (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-11-08 &#8211; <a href="/2012/11/08/using_websphere_wsadmin_tool_on_any_cloud.html">Using_websphere_wsadmin_tool_on_any_cloud</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-11-02 &#8211; <a href="/2012/11/02/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale_cloudify_way.html">Moving Enterprise Workloads to the Cloud on a Massive Scale &#8211; The Cloudify Way</a><br/><br/><a class="postTag" href="/tags/Devops">Devops (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/OpsCode">OpsCode (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Enterprise">Enterprise (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Virtualization">Virtualization (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2012/10">October</a></h3>
+<ul>
+
+<p></p>
+<p>2012-11-02 &#8211; <a href="/2012/11/02/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale_cloudify_way.html">Moving_enterprise_workloads_to_the_cloud_on_a_massive_scale_cloudify_way</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/10">October</a></h3>
+<ul>
+
+<p></p>
+<p>2012-10-30 &#8211; <a href="/2012/10/30/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale.html">Moving Enterprise Workloads to the Cloud on a Massive Scale</a><br/><br/><a class="postTag" href="/tags/Devops">Devops (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/OpsCode">OpsCode (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/OpenStack">OpenStack (14)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Virtualization">Virtualization (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-10-30 &#8211; <a href="/2012/10/30/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale.html">Moving_enterprise_workloads_to_the_cloud_on_a_massive_scale</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-10-24 &#8211; <a href="/2012/10/24/aws-outage-multi-availability-zone-multi-cloud.html"><span class="caps">AWS</span> Outage &#8211; Moving from Multi-Availability-Zone to Multi-Cloud</a><br/><br/><a class="postTag" href="/tags/AWS"><span class="caps">AWS</span> (4)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Multi Cloud">Multi Cloud (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Deployment">Cloud Deployment (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Disaster Recovery">Disaster Recovery (4)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-10-24 &#8211; <a href="/2012/10/24/aws-outage-multi-availability-zone-multi-cloud.html">Aws Outage Multi Availability Zone Multi Cloud</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-10-18 &#8211; <a href="/2012/10/18/paas_as_infrastructure.html">PaaS as Infrastructure</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/IaaS">IaaS (3)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Chef">Chef (7)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/MySQL">MySQL (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-10-18 &#8211; <a href="/2012/10/18/paas_as_infrastructure.html">Paas_as_infrastructure</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-10-18 &#8211; <a href="/2012/10/18/chef_as_foundation_for_paas.html">Live Streaming &#8211; The Bay Area Chef User Group &#8211; Chef as a foundation for PaaS &#8211; How Cloudify Uses Chef</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Chef">Chef (7)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Meetup">Meetup (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-10-18 &#8211; <a href="/2012/10/18/chef_as_foundation_for_paas.html">Chef_as_foundation_for_paas</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-10-17 &#8211; <a href="/2012/10/17/groovy_dsl_and_testing_with_spock.html">Live Streaming Groovy and Grails Israel Meetup &#8211; Groovy <span class="caps">DSL</span> and Testing with Spock</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Groovy">Groovy (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Grails">Grails (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Meetup">Meetup (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2012/09">September</a></h3>
+<ul>
+
+<p></p>
+<p>2012-10-17 &#8211; <a href="/2012/10/17/groovy_dsl_and_testing_with_spock.html">Groovy_dsl_and_testing_with_spock</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/09">September</a></h3>
+<ul>
+
+<p></p>
+<p>2012-09-25 &#8211; <a href="/2012/09/25/cloudify_ibm_infosphere_biginsights.html">Cloudify and <span class="caps">IBM</span> InfoSphere BigInsights</a><br/><br/><a class="postTag" href="/tags/Big Data">Big Data (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/IBM BigInsights"><span class="caps">IBM</span> BigInsights (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Hadoop">Hadoop (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-09-25 &#8211; <a href="/2012/09/25/cloudify_ibm_infosphere_biginsights.html">Cloudify_ibm_infosphere_biginsights</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-09-19 &#8211; <a href="/2012/09/19/hi_cloudsters.html">Community Update &#8211; Sep 19th 2012</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2012/08">August</a></h3>
+<ul>
+
+<p></p>
+<p>2012-09-19 &#8211; <a href="/2012/09/19/hi_cloudsters.html">Hi_cloudsters</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/08">August</a></h3>
+<ul>
+
+<p></p>
+<p>2012-08-13 &#8211; <a href="/2012/08/13/woz_worried_everything_going_cloud_real_issue_control.html">Woz_worried_everything_going_cloud_real_issue_control</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-08-09 &#8211; <a href="/2012/08/09/time_to_play_with_cloudify.html">It&#8217;s Time to Play with Cloudify</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Play">Play (3)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/MySQL">MySQL (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-08-09 &#8211; <a href="/2012/08/09/time_to_play_with_cloudify.html">Time_to_play_with_cloudify</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-08-01 &#8211; <a href="/2012/08/01/putting_devops_paas_together_with_cloudify.html">Putting_devops_paas_together_with_cloudify</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/07">July</a></h3>
+<ul>
+
+<p></p>
+<p>2012-07-19 &#8211; <a href="/2012/07/19/automate_your_legacy_application_on_the_cloud.html">Automate Your Application on the Cloud with Cloudify Custom Commands</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/GitHub">GitHub (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Apache">Apache (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Scale Rules">Scale Rules (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Load Balancer">Load Balancer (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-07-19 &#8211; <a href="/2012/07/19/automate_your_legacy_application_on_the_cloud.html">Automate_your_legacy_application_on_the_cloud</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-07-10 &#8211; <a href="/2012/07/10/hi_cloudsters1.html">What Kept Us Busy &#8211; A Cloudify Update</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-07-10 &#8211; <a href="/2012/07/10/hi_cloudsters1.html">Hi_cloudsters1</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-07-10 &#8211; <a href="/2012/07/10/hi_cloudsters.html">Community Update &#8211; Sep 19th 2012</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-07-10 &#8211; <a href="/2012/07/10/hi_cloudsters.html">Hi_cloudsters</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-07-09 &#8211; <a href="/2012/07/09/whats_cool_in_cloudify_2_1_1.html">What&#8217;s Cool in Cloudify 2.1.1</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Apache">Apache (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Multiprocess">Multiprocess (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Monitoring">Monitoring (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-07-09 &#8211; <a href="/2012/07/09/whats_cool_in_cloudify_2_1_1.html">Whats_cool_in_cloudify_2_1_1</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-07-09 &#8211; <a href="/2012/07/09/extending_chef_to_manage_the_entire_application.html">Extending Chef to manage the entire application lifecycle</a><br/><br/><a class="postTag" href="/tags/Chef">Chef (7)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2012/06">June</a></h3>
+<ul>
+
+<p></p>
+<p>2012-07-09 &#8211; <a href="/2012/07/09/extending_chef_to_manage_the_entire_application.html">Extending_chef_to_manage_the_entire_application</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/06">June</a></h3>
+<ul>
+
+<p></p>
+<p>2012-06-22 &#8211; <a href="/2012/06/22/gigaspaces-mirantis-big-data-on-openstack.html">Gigaspaces Mirantis Big Data On Openstack</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-06-18 &#8211; <a href="/2012/06/18/lessons-from-heroku-amazon-outage.html">Lessons From Heroku Amazon Outage</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-06-03 &#8211; <a href="/2012/06/03/cloud_on_boarding_the_true_story.html">Cloud On-Boarding &#8211; The True Story</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/NoSQL">NoSQL (3)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Open PaaS">Open PaaS (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2012/05">May</a></h3>
+<ul>
+
+<p></p>
+<p>2012-06-03 &#8211; <a href="/2012/06/03/cloud_on_boarding_the_true_story.html">Cloud_on_boarding_the_true_story</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/05">May</a></h3>
+<ul>
+
+<p></p>
+<p>2012-05-28 &#8211; <a href="/2012/05/28/paas_does_it_really_mean_no_ops.html">PaaS, Does It Really Mean No-Ops?</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/NoOps">NoOps (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/IaaS">IaaS (3)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-05-28 &#8211; <a href="/2012/05/28/paas_does_it_really_mean_no_ops.html">Paas_does_it_really_mean_no_ops</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-05-20 &#8211; <a href="/2012/05/20/bare_metal_paas.html">Bare_metal_paas</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-05-13 &#8211; <a href="/2012/05/13/cloud_integration_and_devops_automation.html">Cloud integration and DevOps automation experience shared</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud">Cloud (19)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/PaaS">PaaS (12)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-05-13 &#8211; <a href="/2012/05/13/cloud_integration_and_devops_automation.html">Cloud_integration_and_devops_automation</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-05-09 &#8211; <a href="/2012/05/09/how_we_built_it.html">How We Built This site</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/GitHub">GitHub (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Jekyll">Jekyll (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Disqus">Disqus (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/ZenDesk">ZenDesk (1)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-05-09 &#8211; <a href="/2012/05/09/how_we_built_it.html">How_we_built_it</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-05-03 &#8211; <a href="/2012/05/03/mapping-the-cloudpaas-stack.html">Mapping The Cloudpaas Stack</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-05-01 &#8211; <a href="/2012/05/01/whats_new_in_cloudify_2_1.html">What&#8217;s new in Cloudify 2.1</a><br/><br/><a class="postTag" href="/tags/Chef">Chef (7)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Scale Rules">Scale Rules (2)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/BYON"><span class="caps">BYON</span> (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Cloud Driver">Cloud Driver (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/DevOps">DevOps (10)</a>&nbsp;&nbsp;</p>
+<p></p>
+</ul>
+<h3><a href="/2012/03">March</a></h3>
+<ul>
+
+<p></p>
+<p>2012-05-01 &#8211; <a href="/2012/05/01/whats_new_in_cloudify_2_1.html">Whats_new_in_cloudify_2_1</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/03">March</a></h3>
+<ul>
+
+<p></p>
+<p>2012-03-25 &#8211; <a href="/2012/03/25/petclinic_deepdive.html">Mongo DB Sharding in the Pet Clinic Application recipe</a><br/><br/><a class="postTag" href="/tags/Cloudify">Cloudify (28)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/MongoDB">MongoDB (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Sharding">Sharding (1)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/NoSQL">NoSQL (3)</a>&nbsp;&nbsp;<a class="postTag" href="/tags/Open PaaS">Open PaaS (2)</a>&nbsp;&nbsp;</p>
+<p></p>
+
+<p></p>
+<p>2012-03-25 &#8211; <a href="/2012/03/25/petclinic_deepdive.html">Petclinic_deepdive</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-03-20 &#8211; <a href="/2012/03/20/big-data-in-the-cloud-using-cloudify.html">Big Data In The Cloud Using Cloudify</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-03-14 &#8211; <a href="/2012/03/14/lessons-from-zynga-and-sony-on-moving-from-amazon-aws.html">Lessons From Zynga And Sony On Moving From Amazon Aws</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/02">February</a></h3>
+<ul>
+
+<p></p>
+<p>2012-02-19 &#8211; <a href="/2012/02/19/top-myths-of-moving-mission-critical-applications-to-the-cloud.html">Top Myths Of Moving Mission Critical Applications To The Cloud</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2012/01">January</a></h3>
+<ul>
+
+<p></p>
+<p>2012-01-16 &#8211; <a href="/2012/01/16/gigaspaces-cloudify-and-vmware-cloudfoundry-the-new-paas-jailbreaker.html">Gigaspaces Cloudify And Vmware Cloudfoundry The New Paas Jailbreaker</a><br/><br/></p>
+<p></p>
+
+<p></p>
+<p>2012-01-05 &#8211; <a href="/2012/01/05/terabyte-elastic-cache-clusters-on-cisco-ucs-and-amazon-ec2.html">Terabyte Elastic Cache Clusters On Cisco Ucs And Amazon Ec2</a><br/><br/></p>
+<p></p>
+</ul>
+<h2 class='archives'><a href="/2011">2011</a></h2>
+<h3><a href="/2011/11">November</a></h3>
+<ul>
+
+<p></p>
+<p>2011-11-15 &#8211; <a href="/2011/11/15/five-misconceptions-about-cloud-portability.html">Five Misconceptions About Cloud Portability</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2011/10">October</a></h3>
+<ul>
+
+<p></p>
+<p>2011-10-24 &#8211; <a href="/2011/10/24/behind-the-curtains-of-cloudify-gigaspaces-new-product.html">Behind The Curtains Of Cloudify Gigaspaces New Product</a><br/><br/></p>
+<p></p>
+</ul>
+<h3><a href="/2011/09">September</a></h3>
+<ul>
+
+<p></p>
+<p>2011-09-13 &#8211; <a href="/2011/09/13/cloudify-for-azure.html">Cloudify For Azure</a><br/><br/></p>
+</ul>
+<p></p>
+					
+					
+					</div>			
+				</div>	
+				
+				<!-- Blog Left side coll -->
+				<div class="span3">
+					<aside class="right-sidebar">
+						<!--Event groups-->
+
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Recent Posts</h3>
+</div>
+
+
+<div class="leftContentBox blogLeftBox"> 
+   
+	<a href="/2013/11/01/cloud_devops_orchestration.html">Cloud DevOps Orchestration 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">November  1, 2013</span>  
+	<br/><br/>
+  
+	<a href="/2013/11/01/cloud_devops_orchestration.html">Cloud_devops_orchestration 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">November  1, 2013</span>  
+	<br/><br/>
+  
+	<a href="/2013/10/30/the_breakup_why_openstack_needs_a_native_alternative_to_cloudfoundry_and_openshift.html">The Breakup - Why OpenStack Needs a Native Alternative to CloudFoundry and Openshift 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">October 30, 2013</span>  
+	<br/><br/>
+		
+</div>
+
+               <!--start -->
+                 <div class="leftContentBox blogLeft-topTitle blog-left-title2 tumblr">
+                        <h3>CloudifySource on Tumblr</h3>
+                 </div>   
+                <div class="leftContentBox tumblrFeed">                     
+                
+                </div>
+<!--end-->
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Archived Posts</h3>
+</div>
+
+ <ul class="blog-archive-list">
+ 
+ 
+	
+	
+	
+	
+	
+	
+
+	
+<li><a href="/2013/11">November 2013</a> <span class="blue">(2)</span></li>
+
+	
+
+	
+		
+			
+<li><a href="/2013/10">October 2013</a> <span class="blue">(8)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/10">October 2013</a> <span class="blue">(8)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/09">September 2013</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/09">September 2013</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/08">August 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/08">August 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/07">July 2013</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/07">July 2013</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/06">June 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/06">June 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/05">May 2013</a> <span class="blue">(8)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/05">May 2013</a> <span class="blue">(8)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/04">April 2013</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/04">April 2013</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/03">March 2013</a> <span class="blue">(8)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/03">March 2013</a> <span class="blue">(8)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/02">February 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/02">February 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/01">January 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/01">January 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2012/12">December 2012</a> <span class="blue">(6)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2012/12">December 2012</a> <span class="blue">(6)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/11">November 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/11">November 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/10">October 2012</a> <span class="blue">(10)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/10">October 2012</a> <span class="blue">(10)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/09">September 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/09">September 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/08">August 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/08">August 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/07">July 2012</a> <span class="blue">(10)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/06">June 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/06">June 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/05">May 2012</a> <span class="blue">(10)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/05">May 2012</a> <span class="blue">(10)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/03">March 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/03">March 2012</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/02">February 2012</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/01">January 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2011/11">November 2011</a> <span class="blue">(1)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/10">October 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/09">September 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+ 
+ </ul>
+					</aside>
+				</div>
+			</div>	
+	</div>	
+	</section>	
+	<div class="clear"></div>
+	<!--Start Footer -->
+		<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="goPro.html">Enterprise Cloudify</a></li>
+						<li><a href="cloudifyrecipecatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="how.html">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="http://www.cloudifysource.org/terms_of_use">Terms of Use</a></li>
+						<li><a href="http://www.cloudifysource.org/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+			
+	</div>
+</body>
+</html>

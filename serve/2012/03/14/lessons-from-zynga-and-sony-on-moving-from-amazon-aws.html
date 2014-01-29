@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - Lessons from Zynga and Sony on moving from Amazon AWS</title>
+	<script src="//cdn.optimizely.com/js/59503762.js"></script>
+	
+	<link rel="canonical" href="http://www.cloudifysource.org/2012/03/14/lessons-from-zynga-and-sony-on-moving-from-amazon-aws.html"/>	
+	<!-- custom -->
+	<!--<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/atom.xml" />-->
+	<link rel="canonical" href="http://www.cloudifysource.org/index.html"/>	
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/x-icon" />
+	<!-- css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" />
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="/css/jcarousel.css" rel="stylesheet" />
+	<link href="/css/flexslider.css" rel="stylesheet" />
+	<link href="/css/cslider.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Theme skin -->
+	<link id="t-colors" href="/skins/blue.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="/bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="/ico/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="/js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body>
+<div class="WrapperBg">    
+    <div class="Wrapper">
+        <!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="/goPro"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/early_access" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/get_cloudify" data-toggle="tooltip" data-placement="bottom" title="Get Cloudify">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="/index"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="/index"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="/guide/2.6/qsg/qsg">Docs <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="/guide/2.3/qsg/quick_start_guide">2.3</a></li>
+											<li><a href="/guide/2.5/qsg/quick_start_guide">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg">2.6</a></li>
+											<li><a href="/guide/2.7/qsg/qsg">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="/blog">Blog</a></li>
+										<li><a href="cloudifyRecipeCatalog.html">The Cloudify Player</a></li>
+										<li><a href="CloudifysourceTV.html">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com<i class="icon-angle-down"></i></strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+		
+			<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2><i class="icon-edit"></i>Cloudifysource<strong> Blogs</strong></h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Blog</a><i class="icon-angle-right"></i></li>
+					<li class="active">Lessons from Zynga and Sony on moving from Amazon AWS</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+	<div class="container">
+			<div class="row">
+				<!-- Blog Right side posts -->
+				<div class="span9">
+					<div id="resultsDiv" class="DocumentsWrap"></div>
+					<div id="pageContent" class="DocumentsWrapRight">
+					
+					<h1 class="pageTitle">Lessons from Zynga and Sony on moving from Amazon AWS</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Nati Shalom</a>  on March 14, 2012  
+					  </span>
+					  <br/><br/><br/>
+					 
+                    	<p>Earlier this month Zynga announced its move from Amazon AWS to its own private Z-Cloud. Sony also started to move increasing parts of its workload from Amazon to Rackspace OpenStack.</p>
+	<p>There isn't so much in common between these different use cases, except for the fact that they may indicate the beginning of a trend (I&rsquo;ll get back to that toward the end) where companies start to take more control over their cloud infrastructure.<br />
+		<br />
+		So what really brought Zynga and Sony to make such a move?<br />
+		<br />
+		<strong>Zynga moves from Amazon to their own private cloud</strong></p>
+	<p> </p>
+	<p><a href="http://natishalom.typepad.com/.a/6a00d835457b7453ef0168e8c42d9f970c-pi" style="float: right;"><img alt="Zynga" border="0" class="asset  asset-image at-xid-6a00d835457b7453ef0168e8c42d9f970c" src="http://natishalom.typepad.com/.a/6a00d835457b7453ef0168e8c42d9f970c-800wi" style="margin: 0px 0px 5px 5px;" title="Zynga" /></a>Zynga ran their gaming services on Amazon for a while. It was noted that the cost of running these games on Amazon cost Zynga $63M annually. This cost and the continuous increase of their workload forced Zynga&rsquo;s management to look for ways to control their cloud operational costs. Zynga realized that at that scale, they are just better off building their own cloud infrastructure. By doing so, they could also optimize the cloud infrastructure for their own needs and reduce the operational cost margins substantially as a result.</p>
+	<p>According to Zynga their private cloud operation is reported to increase utilization by 3x, which means that they will need 1/3 of the servers that they would need from Amazon for the same workload, as noted by CTO Allan Leinwand on Zynga&rsquo;s engineering blog:</p>
+	<p>For social games specifically, zCloud offers 3x the efficiency of standard public cloud infrastructure. For example, where our games in the public cloud would require three physical servers, zCloud only uses one. We worked on provisioning and automation tools to make zCloud even faster and easier to set up. We&rsquo;ve optimized storage operations and networking throughput for social gaming. Systems that took us days to set up instead took minutes. zCloud became a sports car that&rsquo;s finely tuned for games.</p>
+	<p>What's interesting in this case, is the cost analysis. Quite often when we measure the cost of running machines, we don't measure what would be the cost of running a particular workload, which is a combination of many factors, not just the cost of servers. </p>
+	<p>The other thing that is interesting with Zynga&rsquo;s move is that they didn't make the move just to cut costs. The move was part of a more strategic direction to create a gaming platform for additional games. Apparently when your service becomes a platform, controlling your infrastructure becomes more strategic than just the cost factor. It&rsquo;s a big differentiator that can put Zynga in a completely different ball game than its competitors; it will also enable them to have better control over the dependency on Facebook and build their own independent ecosystem.</p>
+	<p>According to Dave Wehner, CFO at Zynga, the company will lower its cost of revenue over the next 18 to 24 months as third-party hosting costs decrease. Wehner said that Zynga plans to &ldquo;roll off the majority of those third-party hosting arrangements.&rdquo;<br />
+		Zynga&rsquo;s capital expenditures in the fourth quarter were $50 million, down from $63 million in the third quarter. Most of that spending is focused on zCloud. For 2011, capital investments were $238 million.</p>
+	<p><br />
+		The building of its own infrastructure will help the bottom line. Zynga can depreciate its gear and lower quarterly expenses. &ldquo;We believe this investment will have a short payback period and enable us to expand gross margins in the long term,&rdquo; said Wehner</p>
+	<p>The important thing to note is that Zynga&rsquo;s move wasn't because of Amazon&rsquo;s failure as it first reads. It&rsquo;s more of a natural evolution and maturity cycle of the company.</p>
+	<p><strong>Sony move from Amazon to Rackspace/OpenStack</strong></p>
+	<p><strong><br />
+		<a href="http://natishalom.typepad.com/.a/6a00d835457b7453ef0168e8c42e30970c-pi" style="float: left;"><img alt="Sonyoutage" border="0" class="asset  asset-image at-xid-6a00d835457b7453ef0168e8c42e30970c" src="http://natishalom.typepad.com/.a/6a00d835457b7453ef0168e8c42e30970c-800wi" style="margin: 0px 5px 5px 0px;" title="Sonyoutage" /></a> </strong>Sony&rsquo;s gaming arm faced a number of security breaches last year, as reported by <a href="http://www.networkworld.com/news/2012/030912-sony-openstack-257094.html">NetworkWorld</a>, which compromised the personal identity information of millions of players within Sony&rsquo;s gaming network. This event forced Sony to look for ways to have better control of their infrastructure exposure. Their approach was to move some of their workload to Rackspaces&rsquo; OpenStack.</p>
+	<p>By splitting their operations between Amazon and Racksapce they are able to have better control of a particular cloud failure. They are also better positioned to control their cloud infrastructure costs by reducing their dependency on a particular cloud provider, thus being in a stronger position to negotiate their cloud operational costs.</p>
+	<p><strong>My take:<br />
+		</strong><br />
+		We&rsquo;re often taught that infrastructure is a commodity that we shouldn't care much about, and should essentially outsource everything. It turns out, that as the cost of infrastructure get bigger, and as our needs become more unique, controlling the infrastructure becomes a critical part of our business. Controlling your infrastructure could mean having your own private cloud as is the case with Zynga, or minimizing your dependency on a particular cloud provider as is the case with Sony.  The good news is there are enough free OSS tools out there such as Chef, Puppet, and Cloudify that can help to reduce the complexity that is often involved with such a move.<br />
+		<br />
+		<strong>References:</strong></p>
+	<ul>
+		<li><a href="http://www.zdnet.com/blog/btl/zyngas-play-platform-a-big-test-for-its-cloud-computing-prowess/70695%0A">Zynga's play platform a big test for its cloud computing prowess</a></li>
+		<li><a href="http://gigaom.com/cloud/new-problem-for-amazon-sony-defects-to-openstack/">New problem for Amazon: Sony defects to OpenStack</a></li>
+		<li><a href="http://natishalom.typepad.com/nati_shaloms_blog/2011/11/public-vs-priavate-clouds-again-its-not-about-the-cost.html">Public vs Private cloud - its not about the cost.</a></li>
+		<li><a href="http://natishalom.typepad.com/nati_shaloms_blog/2011/11/five-misconceptions-on-cloud-portability.html">Five miss conceptions on cloud portability</a></li>
+		<li><a href="http://natishalom.typepad.com/nati_shaloms_blog/2011/12/making-cloud-portability-a-practical-reality.html">Making cloud portability a practical reality</a></li>
+		<li><a href="http://www.cloudifysource.org/">Cloudify community site</a></li>
+	</ul>
+	<p> </p>
+	<ul></ul>
+</div>
+<div class="feedflare"><a href="http://feeds.feedburner.com/~ff/NatiShalom?a=WBxRGPPfAew:NUWTtqUqCFA:yIl2AUoC8zA"><img border="0" src="http://feeds.feedburner.com/~ff/NatiShalom?d=yIl2AUoC8zA" /></a> <a href="http://feeds.feedburner.com/~ff/NatiShalom?a=WBxRGPPfAew:NUWTtqUqCFA:qj6IDK7rITs"><img border="0" src="http://feeds.feedburner.com/~ff/NatiShalom?d=qj6IDK7rITs" /></a></div>
+<p><img height="1" src="http://feeds.feedburner.com/~r/NatiShalom/~4/WBxRGPPfAew" width="1" /></p>
+
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/2012/03/14/lessons-from-zynga-and-sony-on-moving-from-amazon-aws.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+					
+					
+					</div>			
+				</div>	
+				
+				<!-- Blog Left side coll -->
+				<div class="span3">
+					<aside class="right-sidebar" >
+						<!--Event groups-->
+
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Recent Posts</h3>
+</div>
+
+
+<div class="leftContentBox blogLeftBox"> 
+   
+	<a href="/2014/01/23/intro_to_puppet_installing_your_first_mysql_service_in_5_minutes.html">Intro to Puppet, Installing your First MySQL Service in 5 Minutes 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">January 23, 2014</span>  
+	<br/><br/>
+  
+	<a href="/2013/12/23/setting_up_devstack_havana_on_your_local_network.html">Openstack in a Box - Setting Up Devstack Havana On Your Local Network 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">December 23, 2013</span>  
+	<br/><br/>
+  
+	<a href="/2013/12/07/eight_cloud_and_big_data_predictions_for_2014.html">Eight Cloud and Big Data Predictions for 2014 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">December  7, 2013</span>  
+	<br/><br/>
+		
+</div>
+
+               <!--start -->
+                 <div class="leftContentBox blogLeft-topTitle blog-left-title2 tumblr">
+                        <h3>CloudifySource on Tumblr</h3>
+                 </div>   
+                <div class="leftContentBox tumblrFeed">                     
+                
+                </div>
+<!--end-->
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Archived Posts</h3>
+</div>
+
+ <ul class="blog-archive-list">
+ 
+ 
+	
+	
+	
+	
+	
+	
+
+	
+<li><a href="/2014/01">January 2014</a> <span class="blue">(1)</span></li>
+
+	
+
+	
+		
+
+<li><a href="/2013/12">December 2013</a> <span class="blue">(2)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/11">November 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/10">October 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/09">September 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/08">August 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/07">July 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/06">June 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/05">May 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/04">April 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/03">March 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/02">February 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/01">January 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2012/12">December 2012</a> <span class="blue">(3)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/11">November 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/10">October 2012</a> <span class="blue">(5)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/09">September 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/08">August 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/07">July 2012</a> <span class="blue">(5)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/06">June 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/05">May 2012</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/03">March 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/02">February 2012</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/01">January 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2011/11">November 2011</a> <span class="blue">(1)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/10">October 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/09">September 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+ 
+ </ul>
+					</aside>
+				</div>
+			</div>	
+	</div>	
+	</section>	
+	<div class="clear"></div>
+	<!--Start Footer -->
+		<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="\about_us">About Us</a></li>
+						<li><a href="\goPro">Enterprise Cloudify</a></li>
+						<li><a href="\cloudifyRecipeCatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="\how">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="/terms_of_use">Terms of Use</a></li>
+						<li><a href="/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook" target="_blank"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter" target="_blank"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr" target="_blank"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube" target="_blank"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+			
+	</div>
+</body>
+</html>

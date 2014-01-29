@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - Tutorial - Developing a custom cloud driver using Maven</title>
+	<script src="//cdn.optimizely.com/js/59503762.js"></script>
+	
+	<link rel="canonical" href="http://www.cloudifysource.org/guide/2.2/clouddrivers/tutorial_maven.html"/>	
+	<!-- custom -->
+	<!--<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/atom.xml" />-->
+	<link rel="canonical" href="http://www.cloudifysource.org/index.html"/>	
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/x-icon" />
+	<!-- css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" />
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="/css/jcarousel.css" rel="stylesheet" />
+	<link href="/css/flexslider.css" rel="stylesheet" />
+	<link href="/css/cslider.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Theme skin -->
+	<link id="t-colors" href="/skins/blue.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="/bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="/ico/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="/js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+	<!-- start header -->
+	<!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="/goPro"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/early_access" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/get_cloudify" data-toggle="tooltip" data-placement="bottom" title="Get Cloudify">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="/index"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="/index"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="/guide/2.6/qsg/qsg">Docs <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="/guide/2.3/qsg/quick_start_guide">2.3</a></li>
+											<li><a href="/guide/2.5/qsg/quick_start_guide">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg">2.6</a></li>
+											<li><a href="/guide/2.7/qsg/qsg">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="/blog">Blog</a></li>
+										<li><a href="cloudifyRecipeCatalog.html">The Cloudify Player</a></li>
+										<li><a href="CloudifysourceTV.html">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com<i class="icon-angle-down"></i></strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+	<!-- end header -->
+	<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span8">
+				<div class="inner-heading">
+					<h2><strong>Tutorial - Developing a custom cloud driver using Maven</strong></h2>
+				</div>
+			</div>
+			<div class="span4">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Docs</a><i class="icon-angle-right"></i></li>
+					<li><a href="#">2.6</a><i class="icon-angle-right"></i></li>
+					<li class="active">Tutorial - Developing a custom cloud driver using Maven</li>
+				</ul>
+			</div>
+		</div>
+	<div>
+	</section>
+	<section id="content">
+	<div class="container ">
+		<div class="row">
+			<div class="span3">
+				<aside class="left-sidebar">
+								
+								
+									
+										<div class="leftContentBox">
+
+   <h5 class="widgetheading" id="todHdr">Cloudify 2.2</h2>
+   <div class="clear"></div>
+   <div id="sidebar" class="list-group docMenu"> 
+			
+		<!--<h5 class="widgetheading">Getting Started</h5>-->
+		 <a href="#Getting_Started" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Getting Started</a>
+		<div id="Getting_Started" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/qsg/quick_start_guide_helloworld">Quick Start Guide</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/qsg/quick_start_guide">Deploy a Simple App Locally</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/qsg/quick_start_guide_ec2">Deploy a Multi-Tier App on EC2</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Product Overview</h5>-->
+		 <a href="#Product_Overview" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Product Overview</a>
+		<div id="Product_Overview" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/overview/cloudify_intro">Cloudify - A Quick Introduction</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Release Notes</h5>-->
+		 <a href="#Release_Notes" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Release Notes</a>
+		<div id="Release_Notes" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/release_notes/release_notes">Release Notes</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Installation & Setup</h5>-->
+		 <a href="#Installation_&_Setup" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Installation & Setup</a>
+		<div id="Installation_&_Setup" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/setup/cloudify_prerequisites">Cloudify Shell Prerequisites</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/setup/installing_the_cloudify_client">Installing the Cloudify Shell</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/setup/post_installation_configuration">Post-Installation Configuration</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/setup/configuring_azure">Configuring Azure</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/setup/configuring_ec2">Configuring EC2</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/setup/configuring_openstack">Configuring HP OpenStack Cloud</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/setup/configuring_rsopenstack">Configuring RackSpace</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/setup/configuring_byon">Configuring a Traditional Data Center [BYON]</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Bootstrapping</h5>-->
+		 <a href="#Bootstrapping" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Bootstrapping</a>
+		<div id="Bootstrapping" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/bootstrapping/bootstrapping_process">The Bootstrapping Process</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/bootstrapping/bootstrapping_localcloud">Bootstrapping a Local Cloud</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/bootstrapping/bootstrapping_cloud">Bootstrapping Any Cloud</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/bootstrapping/bootstrapping_validations">Bootstrapping Validations</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Developing Recipes</h5>-->
+		 <a href="#Developing_Recipes" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Developing Recipes</a>
+		<div id="Developing_Recipes" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/recipes_overview">Anatomy of a Recipe</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/application_recipe">The Application Recipe</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/service_recipe">Service Recipes</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/lifecycle_events">Lifecycle Events</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/recipe_parameters">Recipe Parameterization</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/extending_recipes">Extending Service Recipes</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/the_service_context_api">The Service Context API</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/attributes_api">The Attributes API</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/custom_commands">Custom Commands</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/plugins">Probes</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/configuring_ui_section">Configuring the Web Management Console</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/sla_requirements">SLA Requirements</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/developing/scaling_rules">Scaling Rules</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Common Patterns</h5>-->
+		 <a href="#Common_Patterns" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Common Patterns</a>
+		<div id="Common_Patterns" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/common_patterns/file_examples">File management and manipulations in Groovy And in Cloudify</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Deploying Services & Applications</h5>-->
+		 <a href="#Deploying_Services_&_Applications" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Deploying Services & Applications</a>
+		<div id="Deploying_Services_&_Applications" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/deploying/deploying_srvs">Deploying Services</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/deploying/deploying_apps">Deploying Applications</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Monitoring Your Applications</h5>-->
+		 <a href="#Monitoring_Your_Applications" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Monitoring Your Applications</a>
+		<div id="Monitoring_Your_Applications" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/monitoring/the_web_management_console">Monitoring using the Web Management Console</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/monitoring/monitoring_app_post_deploy">Monitoring using the Cloudify Shell</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Developing Cloud Drivers</h5>-->
+		 <a href="#Developing_Cloud_Drivers" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Developing Cloud Drivers</a>
+		<div id="Developing_Cloud_Drivers" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/clouddrivers/cloud_driver">The Cloud Driver</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/clouddrivers/developing_custom_clouddriver">Developing Custom Cloud Drivers</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/clouddrivers/tutorial_maven">Tutorial - Developing a custom cloud driver using Maven</a>							   
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Plugins and Probes</h5>-->
+		 <a href="#Plugins_and_Probes" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Plugins and Probes</a>
+		<div id="Plugins_and_Probes" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/plugins_and_probes/probes">Using Probes For Monitoring</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/plugins_and_probes/develop_your_plugin">Develop a Custom Monitoring Plugin</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Integration</h5>-->
+		 <a href="#Integration" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Integration</a>
+		<div id="Integration" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/integrations/cloudify_chef_lifecycle_event_handlers">Cloudify-Chef Lifecycle Event Handlers</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/integrations/chef_tutorial">Cloudify Tutorial</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">REST API</h5>-->
+		 <a href="#REST_API" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>REST API</a>
+		<div id="REST_API" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/rest_api/rest_api_attributes">Cloudify Attributes Over REST</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Reference</h5>-->
+		 <a href="#Reference" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Reference</a>
+		<div id="Reference" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/recipe/app_recipe_ref">Application Descriptor Reference</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/recipe/service_recipe_ref">Service Descriptor Reference</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/recipe/cloud_driver_config_ref">Cloud Driver Configuration Reference</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/recipe/command_line_reference">Command Line Reference</a>							   
+				  			  
+			  
+			  			  
+				  <a   class="list-group-item" href="/guide/2.2/api">Cloudify API Reference</a></li>				 
+				  <a   class="list-group-item" href="/guide/2.2/restapi/restdoclet.html">Rest API Reference</a>			 
+             			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">Contributing</h5>-->
+		 <a href="#Contributing" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>Contributing</a>
+		<div id="Contributing" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/contribute/how_to">Contributing to the Cloudify Open Source Project</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+		<!--<h5 class="widgetheading">FAQ</h5>-->
+		 <a href="#FAQ" class="list-group-item"  data-parent="#sidebar"><i class="icon-caret-right"></i>FAQ</a>
+		<div id="FAQ" class="list-group subitem collapse" class="list-group-item"> 				 			
+			  				  
+				  			  
+			  				  
+				  		
+					<a  class="list-group-item" href="/guide/2.2/faq/faq">Frequently Asked Questions</a>							   
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  				  
+				  			  
+			  
+			  			  
+		</div>
+       		
+</div>
+</div>
+
+
+
+									
+															
+		
+				</aside>
+			</div>
+
+
+	<div class="span9">
+		<p>This tutorial explains how to develop a custom cloud driver using Maven.</p>
+<h2>Before You Start</h2>
+<p>Before you start developing you cloud driver, make sure you have the following:</p>
+<ul>
+	<li><a href="http://maven.apache.org/">Apache Maven</a></li>
+	<li><a href="../setup/installing_the_cloudify_client">Cloudify</a></li>
+	<li>The security credentials for your cloud&#8217;s <span class="caps">API</span> calls, for accessing your machines using <span class="caps">SSH</span>, and if required for accessing your cloud&#8217;s storage.<br />
+<h4 class="info">For example, to obtain security credetials for Openstack, perform the following steps:<br />
+<ol><li>Request a login, and its corresponding access key and secret key, from your Openstack administrator. In the <code>user</code> section of the cloud driver configuration file, the access key and secret key correspond to the <code>user</code> and the <code>apiKey</code> attributes respectively.</li><br />
+<li>Generate a <span class="caps">SSL</span> key pair file (required for bootstrapping machines) using <a href="http://code.google.com/p/hybridfox/">HybridFox</a>, and save it in the cloud driver&#8217;s <code>upload</code> folder. In the <code>user</code> section of the cloud driver configuration file, the <code>keyFile</code> attribute is set to the path of the <span class="caps">SSL</span> key pair file.<br />
+<img src="../../images/clouddrivers/cloud_driver_plugin.png"/></li></ol></h4></li>
+	<li><a href="../setup/post_installation_configuration#images">Create cloud images</a></li>
+</ul>
+<h2>Configure your Maven <code>pom</code> File</h2>
+<ol>
+	<li>Add the <code>jar</code> dependency<br />
+<script src="https://gist.github.com/3144045.js?file=pom_dependency.xml"></script></li>
+	<li>Add the Cloudify repository<br />
+<script src="https://gist.github.com/2070752.js?file=repo.xml"></script></li>
+</ol>
+<h2>Create your Cloud Driver</h2>
+<p>You are now ready to develop your cloud driver. Create a new Java class that implements the <em><a href="https://github.com/CloudifySource/cloudify/blob/master/esc/src/main/java/org/cloudifysource/esc/driver/provisioning/ProvisioningDriver.java">org.cloudifysource.esc.driver.provisioning.ProvisioningDriver</a></em> interface. For examples, see <a href="https://github.com/CloudifySource/cloudify/blob/master/esc/src/main/java/org/cloudifysource/esc/driver/provisioning/jclouds/DefaultProvisioningDriver.java">Default Cloud Driver</a> and <a href="https://github.com/CloudifySource/cloudify/blob/master/esc/src/main/java/org/cloudifysource/esc/driver/provisioning/openstack/OpenstackCloudDriver.java">Openstack Cloud Driver</a>.</p>
+<h2>Configure your Cloud Driver Configuration File</h2>
+<p>Next, configure the <a href="#user"><code>user</code></a> and management <a href="#management"><code>templates</code></a> sections of your cloud driver configuration file.</p>
+<h3 id="user">Configure the <code>user</code> section</h3>
+<p>Configure the user, apiKey, and keyFile for your cloud.<br />
+<script src="https://gist.github.com/2042919.js?file=driver_user.groovy"></script></p>
+<h3 id="management">Configure the <code>templates</code> section</h3>
+<p>Configure the management machines and their corresponding images for your cloud.<br />
+<script src="https://gist.github.com/2070794.js?file=templates.groovy"></script></p>
+<p>Next, configure the <code>managementMachineTemplate</code> attribute in your recipe to use the management machine templates:<br />
+<script src="https://gist.github.com/2070776.js?file=driver.groovy"></script></p>
+<h2>Packing and Adding to Cloudify</h2>
+<p>Finally, package your cloud driver class, and any additional classes and resources that it depends on, as a jar file and place it in the <code>&lt;cloudifyRoot&gt;/lib/platform/esm</code> folder. Additionally, place your cloud driver configuration file and security certificate in the <code>&lt;cloudifyRoot&gt;/tools/cli/plugins/esc</code> folder.</p>
+<p>To make your cloud driver available to the machines in your cloud, perform the following steps:</p>
+<ol>
+	<li>Repackage the Cloudify distribution file with your cloud driver files, and save it in a location that can be accessed by your cloud machine.</li>
+	<li>On the machine where Cloudify is installed, edit the cloud driver configuration file, and in the <code>provider</code> section, specify the <code>cloudifyUrl</code> attribute (Cloudify installation source) as the location of the Cloudify distribution file.<br />
+<h4 class="info">When you bootstrap your cloud, Cloudify uses the local cloud driver configuration file and passes it to the bootstrapped cloud for use when provisioning machines.</h4></li>
+</ol>
+<h2>Overrides</h2>
+<p>The cloud driver&#8217;s &#8220;upload&#8221; directory may include an optional &#8220;cloudify-overrides&#8221; sub-directory. <br />
+If exists, the contents of the overrides directory will be copied into the Cloudify installation directory. <br />
+This allows the cloud administrator to overwrite specific Cloudify files. <br />
+For instance, a specialized logging configuration file may be placed at &#8220;upload/cloudify-overrides/config/gs_logging.properties&#8221;.<br />
+This gs_logging.properties file will be copied to the management machine and will overwrite the default Cloudify logging configuration. <br />
+This file will also be copied to any service machine (when it starts), if its template uses the same upload directory.</p>
+<h4 class="info">To speed up the testing when developing cloud drivers, you can place the cloud driver jar files in the <code>&lt;cloudName&gt;/upload/Cloudify-overrides/lib/platform/esm</code> folder on your local machine and Cloudify will upload them to provisioned machines from your local machine.</h4>
+		</div>
+	</div>
+</div>
+	</section>
+	<!-- start footer-->
+		<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="\about_us">About Us</a></li>
+						<li><a href="\goPro">Enterprise Cloudify</a></li>
+						<li><a href="\cloudifyRecipeCatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="\how">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="/terms_of_use">Terms of Use</a></li>
+						<li><a href="/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook" target="_blank"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter" target="_blank"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr" target="_blank"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube" target="_blank"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+	<!-- end footer-->
+
+</div>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+
+<!-- javascript footer_scripts-->
+<!-- javascript footer_scripts
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/jcarousel/jquery.jcarousel.min.js"></script>
+<script src="/js/jquery.fancybox.pack.js"></script>
+<script src="/js/jquery.fancybox-media.js"></script>
+<script src="/js/google-code-prettify/prettify.js"></script>
+<script src="/js/portfolio/jquery.quicksand.js"></script>
+<script src="/js/portfolio/setting.js"></script>
+<script src="/js/tweet/jquery.tweet.js"></script>
+<script src="/js/jquery.flexslider.js"></script>
+<script src="/js/jquery.nivo.slider.js"></script>
+<script src="/js/modernizr.custom.79639.js"></script>
+<script src="/js/jquery.ba-cond.min.js"></script>
+<script src="/js/jquery.slitslider.js"></script>
+<script src="/js/jquery.cslider.js"></script>
+<script src="/js/animate.js"></script>
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.simplePagination.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<!-- custom -->
+<script type="text/javascript" src="/scripts/search.js"></script>
+<script type="text/javascript" src="/scripts/version.data.js"></script>
+<script type="text/javascript" src="/scripts/version.js"></script>
+<script type="text/javascript" language="javascript">llactid=12206</script>
+<script type="text/javascript" language="javascript" src="http://t6.trackalyzer.com/trackalyze.js"></script> 
+<script>
+	$(function() {
+		$('#da-slider').cslider();
+		
+		//for highlight current pages
+		//http://docs.shopify.com/support/configuration/store-customization/how-do-i-style-active-link-with-javascript-and-css
+		$('.nav li').each(function() {
+			var href = $(this).find('a').attr('href');
+			if (href === window.location.pathname) {
+				$(this).addClass('active');
+			}
+		});
+		
+		//highlight  docs menu links
+		$('a.list-group-item').each(function() {
+			if ($(this).attr('href')  ===  window.location.pathname) {
+				$(this).addClass('highlight');
+				$(this).parent().addClass("collapse");
+				$(this).parent().addClass("in");
+				var pathArray = window.location.pathname.split( '/' );
+				pathArray = pathArray[2];
+				
+				//highlight top menu when user click on docs menu links
+				$('.nav li').each(function() {
+					var href = $(this).find('a').attr('href');
+					var splitHref = href.split( '/' );
+					splitHref=splitHref[2];
+					if (splitHref === pathArray) {
+						$(this).addClass('active');
+						$(this).parent().parent().addClass('active');
+					}
+				});
+				
+				
+			}
+		});
+	});
+</script>
+
+
+
+<!-- includes -->
+<script type="text/javascript">
+
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-31930048-1']);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+	   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+
+</script>
+<script type="text/javascript">
+ var _gauges = _gauges || [];
+(function() {
+		var t   = document.createElement('script');
+		t.type  = 'text/javascript';
+		t.async = true;
+		t.id    = 'gauges-tracker';
+		t.setAttribute('data-site-id', '4fd5058b613f5d712200004f');
+		t.src = '//secure.gaug.es/track.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(t, s);
+})();
+</script> 
+
+<script type="text/javascript">
+<!-- start Mixpanel -->
+(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("96365f48f34c41c7b91e045b4f48d53d");
+<!-- end Mixpanel -->
+
+
+
+
+//mixpanel global page tracking:
+//mixpanel.track_forms('#ki_form', 'Qualaroo');
+mixpanel.track('Cloudify Community Page Views', {'page name' : document.title, 'url' : window.location.pathname});  
+$(function(){ 
+    // This sends us an event every time a user clicks the button
+	$("a.hp-btn-getCloudify").click(function() {
+	    mixpanel.track("Get Cloudify Button Clicks",{'page name' : document.title, 'url' : window.location.pathname}); 
+	});
+	
+	$("a.getCloudifyBtn").click(function() {
+	    mixpanel.track("Home Page Download Button Clicks",{'page name' : document.title, 'url' : window.location.pathname}); 
+	    mixpanel.track("Get Cloudify Button Clicks",{'page name' : document.title, 'url' : window.location.pathname}); 
+	});	//Try It Now Click
+	$("a.hp-tryItNow").click(function() {
+	    mixpanel.track("Try it Now HP Button Clicks",{'page name' : document.title, 'url' : window.location.pathname}); 
+	});
+});
+
+
+mixpanel.track_forms("#searchForm", "Search",{'page name' : document.title, 'url' :  window.location.pathname});
+$(function(){ 
+	$("#goBtn").click(function() {
+		
+	var value = $('#search').val();
+	    mixpanel.track("Search",{"keyword": value}); 
+
+	});
+});
+
+//track Cloudify Early Access Builds
+//mixpanel.track_links("a.eaTitle", "Product Download - Early Access Builds", {'referrer': document.referrer });
+
+
+// mixpanel- trakc only if email requested
+var currEmail="";
+$("body").live('change', function(){
+ $("#ki_form").live('change', function(){
+  if($("#ki_question_99437").length != 0) {
+	currEmail =  $("input.ki_explain_small").val();	
+	mixpanel.track_links("#ki_submit_button", "Qualaroo", function(ele) {
+	 if($('input').hasClass('ki_explain_small')){
+	  var currEmail =  $("input.ki_explain_small").val();	
+	  mixpanel.name_tag(currEmail);
+	  mixpanel.people.identify(currEmail);
+	  mixpanel.people.set({
+	  $email: currEmail,
+	  $first_name: currEmail,
+	  $created: new Date(),
+	  $last_seen:new Date(),
+	  });
+	} return { type: $(ele).attr('type'),email: currEmail}
+	});
+  }
+});
+
+});
+
+//
+//$("#ki_submit_button").click(function() {
+
+//if($('input').hasClass('ki_explain_small')){
+ // var currEmail =  $("input.ki_explain_small").val();	
+ // mixpanel.name_tag(currEmail);
+ // mixpanel.people.identify(currEmail);
+ // mixpanel.people.set({
+ // $email: currEmail,
+ // $first_name: currEmail,
+//  });
+//}
+//});
+</script>
+	
+<script type="text/javascript">var _kiq = _kiq || [];</script>
+<script type="text/javascript" src="//s3.amazonaws.com/ki.js/42111/87X.js" async="true"></script>
+	
+<script src="/js/cookie.js"></script>
+<script type="text/javascript">
+$(function() {
+$('#sidebar > a').on('click', function (e) {
+		e.preventDefault();
+
+		if(!$(this).hasClass("active")){
+			var lastActive = $(this).closest("#sidebar").children(".active");
+			lastActive.removeClass("active");
+			lastActive.next('div').collapse('hide');
+			$(this).addClass("active");
+			$(this).next('div').collapse('show');
+
+		}else{
+			//$(this).removeClass("active");
+			$(this).closest("#sidebar").children(".in").css("height","0px");
+			$(this).closest("#sidebar").children(".in").removeClass("in");
+			$(this).removeClass("active");
+		
+		}
+
+	});
+	
+	
+	
+		$("div.expand").hide();
+			$("span.inlineToggleExpandBtn").append("<span class='arrow arrowsDown'>&raquo;</span>").click(function(){
+				$(this).children('span.arrow').toggleClass('arrowsDown').toggleClass('arrowsUp');
+				$(this).parent().next("div.expand").slideToggle(500);
+			});
+			$("span.expandBtn,span.inlineExpandBtn").append("<span class='arrow arrowsDown'>&raquo;</span>").click(function(){
+				var elem = $(this),
+					divExpand = elem.children("div.expand"),
+					divExpandIframe = divExpand.children("iframe");
+				
+				elem.children('span.arrow').toggleClass('arrowsDown').toggleClass('arrowsUp');
+				if (divExpand.length==0) {
+					divExpand = $("<div class='expand'><span id='expandLoading'>Loading content ...</span></div>").hide().appendTo(elem);
+					divExpand.width(725).height(480).css("border", "none");
+				}
+				if (divExpandIframe.length==0) {
+					divExpandIframe = $("<iframe src='" + elem.attr("title") + "' />").css("opacity", 0).appendTo(divExpand);
+					divExpandIframe.width(725).height(480).css({"overflow-x":"hidden", "overflow-y":"auto", "border":"0"});
+					
+					var getContent = function(){
+							divExpandIframe.contents().find("html").css("background", "none");
+							divExpandIframe.contents().find("head").append('<link rel="stylesheet" href="/css/template.css" type="text/css"/>');
+							divExpandIframe.contents().find("head").append('<link rel="stylesheet" href="/css/jquery-ui-1.8.17.custom.css" type="text/css" media="all"/>');
+							divExpandIframe.contents().find("head").append('<link rel="stylesheet" type="text/css" href="/scripts/prettify/prettify.css">');
+							divExpandIframe.contents().find("body").css("background","none");
+							
+							var data = divExpandIframe.contents().find("#pageContent");
+
+							divExpandIframe.contents().find("body").html(data);
+							divExpandIframe.contents().find("#versionSelectionBottom").remove();
+							
+							divExpandIframe.contents().find("img").each(function(){
+								var maxWidth = 707;
+								
+								if ($(this).width() > (maxWidth - $(this).offset().left)) {
+									$(this).width(maxWidth - $(this).offset().left);
+								}
+							});
+							
+							$("#expandLoading").remove();
+							divExpandIframe.animate({"opacity":1}, 'slow');
+						};
+					
+					if ($.browser.webkit) {
+						var load = function(callback) {
+							(divExpandIframe.contents().find("#pageContent").html()) ? callback() : setTimeout(function() {load(callback);}, 500);
+						};
+						load(getContent);
+					}
+					else
+						divExpandIframe.load(getContent);
+				}
+				divExpand.slideToggle(500);
+			});
+			
+		
+		$("li.expandBtn").click(function(){	
+			$(this).next("div.expand").slideToggle(500);
+			if($(this).html()=="More..."){
+				$(this).html("Less...");	
+			}else{
+				$(this).html("More...");
+			}
+		});
+
+	
+});
+</script>
+
+<!-- javascript footer_scripts-->
+
+
+</body>
+</html>

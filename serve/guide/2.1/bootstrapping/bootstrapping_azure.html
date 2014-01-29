@@ -1,0 +1,17 @@
+<p>This topic provides instructions for bootstrapping Cloudify on Windows Azure.</p>
+<h2>Prerequisites</h2>
+<p>Before you bootstrap your Windows Azure cloud, make sure that your environment meets all the minimum requirements. For more information, see <a href="../bootstrapping/bootstrapping_process#prereqs">Bootstrapping Prerequisites</a> and <a href="../setup/configuring_azure">Configuring Azure</a>.</p>
+<h2>Bootstrapping</h2>
+<p>Bootstrapping on Windows Azure is a process where the Cloudify cloud driver on your machine interacts with the Windows Azure management <span class="caps">API</span> to create a new Azure deployment. Cloudify instructs Azure to perform the following tasks:</p>
+<ul>
+	<li>Create a management role with the Cloudify controller components</li>
+	<li>Create a webui role with the Cloudify web management console webserver</li>
+	<li>Create worker roles for each application service according to your recipe</li>
+</ul>
+<p>Currently, each application is deployed with its own Cloudify controller installation.</p>
+<p>Bootstrapping the Windows Azure cloud is extremely simple, just follow the <a href="../bootstrapping/bootstrapping_process#boot">bootstrapping</a> procedure, typing the following command in step 2: <a href="https://gist.github.com/1695721"><strong><code>azure:bootstrap-app</code></strong></a>.</p>
+<p>The following example shows the command for bootstrapping the Cloudify controller and the Cloudify agents for the travel application (tomcat and cassandra roles): <strong><code>azure:bootstrap-app</code></strong> <code>-azure-pwd 123456 -azure-svc mytraveldemo c:/cloudify/examples/azure/travel</code>. Once the bootstrapping is completed, the Windows Azure management portal displays the roles in the <strong>Hosted Services</strong> view.</p>
+<p><img src="../../images/azure/azure_after_bootstrap.png" alt="" /></p>
+<h2 id="tear">Teardown</h2>
+<p>To shut down the Windows Azure environment, at the Cloudify shell prompt, type: <strong><code>azure:teardown-app</code></strong> <code>&lt;appName&gt;</code></p>
+<h4 class="info">This uninstalls applications and shuts down all the management and service instance machines.</h4>

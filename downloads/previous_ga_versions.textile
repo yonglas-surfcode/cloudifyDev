@@ -89,7 +89,7 @@ cat: User Guide
 									<p class="name">
 										 <i class="icon-36 icon-github"></i>Fork the Code 
 									</p>
-									<span class="info"><a href="#">Download the latest stable version </a> </span>
+									<span class="info"><a class="dwnGoBtn" target="_blank"  href="https://github.com/CloudifySource/cloudify" >Download the latest stable version </a> </span>
 						
 							</div>
 						</div>
@@ -100,7 +100,7 @@ cat: User Guide
 									<p class="name"> 
 										<i class=" icon-36 icon-download"></i>Get the GA Release
 									</p>
-									<span class="info"><a href="#">Download the latest stable version</a></span>
+									<span class="info"><a class="dwnGoBtn" href="/downloads/get_cloudify">Download the latest stable version</a></span>
 							</div>
 						</div>
 						</div>
@@ -110,7 +110,7 @@ cat: User Guide
 									<p class="name"> 
 										<i class=" icon-36 fa-code"></i>Latest Build
 									</p>
-									<span class="info"><a href="#">Get the Latest Milestone Build</a></span>
+									<span class="info"><a class="dwnGoBtn" href="/downloads/early_access" >Get the Latest Milestone Build</a></span>
 							</div>
 						</div>
 					</div>
@@ -123,7 +123,6 @@ cat: User Guide
 
   
 
-<a href="/cloudify_software_license_agreement">Cloudify Software License</a>
 <div class="clear"></div>
 
 

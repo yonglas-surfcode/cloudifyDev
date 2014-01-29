@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - Carrier Grade Cloud/PaaS</title>
+	<script src="//cdn.optimizely.com/js/59503762.js"></script>
+	
+	<link rel="canonical" href="http://www.cloudifysource.org/2013/03/07/carrier_grade_cloud_paas.html"/>	
+	<!-- custom -->
+	<!--<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/atom.xml" />-->
+	<link rel="canonical" href="http://www.cloudifysource.org/index.html"/>	
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/x-icon" />
+	<!-- css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" />
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="/css/jcarousel.css" rel="stylesheet" />
+	<link href="/css/flexslider.css" rel="stylesheet" />
+	<link href="/css/cslider.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Theme skin -->
+	<link id="t-colors" href="/skins/blue.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="/bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="/ico/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="/js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body>
+<div class="WrapperBg">    
+    <div class="Wrapper">
+        <!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="/goPro"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/early_access" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/get_cloudify" data-toggle="tooltip" data-placement="bottom" title="Get Cloudify">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="/index"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="/index"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="/guide/2.6/qsg/qsg">Docs <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="/guide/2.3/qsg/quick_start_guide">2.3</a></li>
+											<li><a href="/guide/2.5/qsg/quick_start_guide">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg">2.6</a></li>
+											<li><a href="/guide/2.7/qsg/qsg">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="/blog">Blog</a></li>
+										<li><a href="cloudifyRecipeCatalog.html">The Cloudify Player</a></li>
+										<li><a href="CloudifysourceTV.html">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com<i class="icon-angle-down"></i></strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+		
+			<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2><i class="icon-edit"></i>Cloudifysource<strong> Blogs</strong></h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Blog</a><i class="icon-angle-right"></i></li>
+					<li class="active">Carrier Grade Cloud/PaaS</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+	<div class="container">
+			<div class="row">
+				<!-- Blog Right side posts -->
+				<div class="span9">
+					<div id="resultsDiv" class="DocumentsWrap"></div>
+					<div id="pageContent" class="DocumentsWrapRight">
+					
+					<h1 class="pageTitle">Carrier Grade Cloud/PaaS</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Nati Shalom</a>  on March  7, 2013  
+					  </span>
+					  <br/><br/><br/>
+					 
+                    <p>Cloud is becoming the next-generation backbone for running the web</p>
+<p>As the technology for building and running cloud infrastructure&nbsp;matures,&nbsp;it is starting to&nbsp;spread out into more industries and&nbsp;revolutionizing how even the most&nbsp;conservative&nbsp;organizations&nbsp;are running their entire operations.</p>
+<p>One of the&nbsp;areas&nbsp;undergoing a transformation&nbsp;is the carrier backbone services. For those who are not familiar, carrier backbone services includes services like&nbsp;cell and network services (<span class="caps"><span class="caps">DHCP</span></span>, <span class="caps"><span class="caps">DNS</span></span>,&#8230;),&nbsp;content serving (<span class="caps"><span class="caps">SMS</span></span>, <span class="caps"><span class="caps">MMS</span></span>, &#8230;),&nbsp;activation services,&nbsp;<span class="caps"><span class="caps">CRM</span></span>, call centers, etc. Moving these&nbsp;critical carrier&nbsp;services from the existing environment tends&nbsp;to be&nbsp;labor&nbsp;intensive and proprietary.&nbsp;Selecting to move applications&nbsp;into a more open and virtualised environment such as cloud could yield a significant cost saving.&nbsp;An open cloud environmentalso enables Carriers organisations to reduce their time to market for delivering new services.</p>
+<div>
+<p>At time where&nbsp;the&nbsp;Telco/Carrier market&nbsp;is increasingly&nbsp;competitive, moving to a cloud-based carrier backbone&nbsp;can be&nbsp;more than a cost saving initiative.&nbsp;It can be a differentiator from the competition and is&nbsp;critical for survivability and success of the business.</p>
+</div>
+<div>That said,&nbsp;running carrier grade services requires special care to meet the required SLAs in terms of&nbsp;&nbsp;latency, deterministic behaviour, performance, location awareness, etc.&nbsp;These challenges are unique&nbsp;enough not to fit into your mom-and-pop&nbsp;cloud.<br />
+<p>The purpose of the Carrier Grade Cloud and Carrier Grade PaaS is to address these gaps&nbsp;and challenges.</p>
+</div>
+<div>
+<p>In this post I&#8217;ll try to provide a more detailed overview on what Carrier Grade Cloud and PaaS actually means. I will use examples&nbsp;based on&nbsp;GigaSpaces&#8217;&nbsp;<a href="http://vmblog.com/archive/2013/02/27/alcatel-lucent-joins-forces-with-gigaspaces-to-accelerate-delivery-of-carrier-cloud-paas.aspx">joint work with Alcatel</a>.&nbsp;Alcatel-Lucent recently&nbsp;launched a new product in this space named CloudBand&nbsp;which&nbsp;is using Cloudify for its Carrier PaaS layer.</p>
+</div>
+<div>
+<p><strong>What does Carrier Grade mean? <br>Learning from the Weather Chanel experience during the Sandy super-storm</strong></p>
+</div>
+<div>
+<p>The Weather&nbsp;Channel&#8217;s&nbsp;experience during Sandy is an excellent&nbsp;example of the need for carrier grade services.&nbsp;Below&nbsp;is a list of some of the&nbsp;key&nbsp;statistics during&nbsp;Hurricane&nbsp;Sandy:</p>
+</div>
+<ul>
+<li>1000% &#8211; The Weather Company&#8217;s traffic increase during Hurricane Sandy</li>
+<li>110 GB- The amount of data, served every second during Sandy</li>
+<li>170,000 &#8211; Peak number of simultaneous streams of video served during Sandy</li>
+<li>1 &#8211; The amount of data centers that went bust during the storm</li>
+</ul>
+<div>To address this demand&nbsp;during the storm,&nbsp;the Weather Chanel was running from&nbsp;<em>13 Data&nbsp;</em><em>Centres</em>&nbsp;managed by Verizon across North America,&nbsp;all&nbsp;with load balancing between them. During the storm&nbsp;Verizon&nbsp;increased their bandwidth capacity to meet the peak demand.</div>
+<div>This&nbsp;sort of&nbsp;increased&nbsp;traffic&nbsp;behavior&nbsp;wasn&#8217;t unique to the weather channel,&nbsp;as noted&nbsp;below:</div>
+<div><p><img src="/images/twitter_usage.png" alt="image is missing"></p></div>
+<div><strong>So what can be learned from this process?</strong>&nbsp;<strong>What makes a service Carrier Grade?</strong></div>
+<div><strong><br></strong></div>
+<div>Learning from the Weather Channel experience we can define a Carrier Grade service as a service with the following attributes:</div>
+<ul>
+<li>Critical to the business function</li>
+<li>Designed for massive scale</li>
+<li>Designed to deal with major usage spikes</li>
+<li>Location sensitive</li>
+<li>Designed to provide deterministic response during extreme condition</li>
+</ul>
+<div>This is obviously a fairly&nbsp;simplistic&nbsp;definition,&nbsp;but for the sake of this discussion&nbsp;I think it will suffice.</div>
+<h3><strong>What Makes a Cloud/PaaS Carrier Grade?</strong></h3>
+<p>There are various attributes that makes a Cloud/PaaS carrier grade, as&nbsp;I&nbsp;noted earlier. The two most important attributes <span class="caps"><span class="caps">IMO</span></span> are the network and multi-site deployments. Let me explain&nbsp;why:</p>
+<h4><strong>The Network</strong></h4>
+<div>One of the main elements that is extremely important in in a Carrier Grade environment is the&nbsp;ability to assert&nbsp;control over the network.</div>
+<div>That include the control over:</div>
+<ul>
+<li>Isolation</li>
+<li>Bandwidth</li>
+<li>Latency</li>
+</ul>
+<h4><strong>Cross-Cloud/Data Center Deployments:</strong></h4>
+<div>Another&nbsp;critical&nbsp;element of a&nbsp;successful&nbsp;Carrier environment is the multi-site deployment.&nbsp;As seen with the Weather Channel&#8217;s use of 13 sites, multi-site deployment is important to address continues availability and scaling.&nbsp;Optimizing the latency by surveying the content closer to the location of the end user&nbsp;also helps to deal with challenges of data delivery.</div>
+<h3><strong>So how&nbsp;</strong><strong>are things done today?</strong></h3>
+<div>The current Carrier backbone runs on physical appliances which basically maps to lots of irons. In this environment scaling capacity means buying more appliances. While this model works,&nbsp;it has two main drawbacks:</div>
+<div><ol><br />
+<li>cost (infrastructure/operation)</li>
+<li>lack of agility&nbsp;(i.e. it takes months and sometimes years to launch new service in this environment).</li>
+<p></ol><p></div><br />
+<h3><strong>Alcatel CloudBand <del>- Carrier Grade IaaS/PaaS</strong></h3><br />
+<div>Alcatel CloudBand is a&nbsp;new platform &nbsp;that let Telco apps easily leverage the carrier cloud services.</div><br />
+<div>It&nbsp;is&nbsp;comprised of&nbsp;a&nbsp;few main elements.</div><br />
+<div><br />
+<p><strong>Multi node/site IaaS</strong>&nbsp;</del>- a multi-site/Cloud infrastructure. The CloudBand infrastructure is essentially a policy based management on large numbers of cloud nodes. Each cloud node can run either an OpenStack or CloudStack-based infrastructure. These&nbsp;nodes can live in many disparate data centers. Alcatel CloudBand glues&nbsp;all&nbsp;of the disparate&nbsp;nodes together into a single big cloud&nbsp;that&nbsp;is accessible through an OpenStack <span class="caps"><span class="caps">API</span></span>.</p></p></p>
+</div>
+<div><p><img src="/images/shop.png" alt="image is missing"></p></div>
+<div>
+<p><strong>CPaaS</strong>&nbsp;&#8212; Stands for Carrier Grade PaaS,&nbsp;which is essentially the framework&nbsp;enabling&nbsp;the on-boarding of the carrier services into the CloudBand infrastructure via a simple click and run user interface. Cloudify is integrated into this this&nbsp;as an integral&nbsp;part of the CloudBand offering.</p>
+</div>
+<div><img src="/images/dns.png" alt="image is missing"></div>
+<div><strong><br>CloudBand&#8217;s Unique Approach: Putting Network and Application Together</strong></div>
+<div><strong><br></strong></div>
+<div>One of the unique aspects&nbsp;of the CloudBand architecture is&nbsp;its&nbsp;holistic approach to&nbsp;Network&nbsp;and Application.&nbsp;Standard cloud infrastructures&nbsp;tend to&nbsp;look at the two&nbsp;pieces&nbsp;as separate black boxes that run one on top of the other.</div>
+<h4><strong>What does this</strong><strong>&nbsp;</strong><strong>new approach to Network and Applications</strong><strong>&nbsp;really means?</strong></h4>
+<p><span style="font-size: 1em;">Two example scenarios that&nbsp;I&nbsp;often use to describe the value of putting network and application together is&nbsp;in the areas of&nbsp;Disaster Recovery and Cloud Bursting. In today&#8217;s&nbsp;cloud,&nbsp;DR involves lots of wiring&nbsp;in which i need to explicitly point a segment of the application into a particular cloud zone and the other to another zone.&nbsp;Beyond the complexity of setting&nbsp;these zones&nbsp;up,&nbsp;it also means that there is a good degree of manual intervention required to handle a recovery or a scaling process in this environment.</span></p>
+<h4><strong>Taking an automated <span class="caps"><span class="caps">SLA</span></span>-driven approach to IaaS</strong></h4>
+<p>Instead of identifying explicitly the zones in our cloud,&nbsp;with automated <span class="caps"><span class="caps">SLA</span></span>&nbsp;we can simply ask the cloud to figure out the right zone for the job based on our application <span class="caps"><span class="caps">SLA</span></span>. For example,&nbsp;a user&nbsp;could simply say something like &#8220;deploy RingTone service&#8221; where continuous availability=true redundancy=3 and distance between sites=100km&quot;. Most of that information is known to the CloudBand management at the time of deployment and it can therefore allocate machine instances not&nbsp;solely&nbsp;on image&nbsp;ID and zone ID,&nbsp;but&nbsp;also&nbsp;based on those <span class="caps"><span class="caps">SLA</span></span> requirements.</p>
+<h4><strong>Integrating the PaaS with the network</strong></h4>
+<p>Many of the current PaaS&nbsp;solutions were&nbsp;designed to work with a simple cloud infrastructure.</p>
+<div>If we&nbsp;design&nbsp;our&nbsp;PaaS&nbsp;solutions&nbsp;to work on top of a more intelligent infrastructure, like CloudBand, that can accept <span class="caps"><span class="caps">SLA</span></span>-driven calls to&nbsp;coordinate infrastructure management, a revolution will happen. We can start looking at&nbsp;&nbsp;offloading some of the responsibility for allocating the right machine instance&nbsp;to&nbsp;a particular application tier to the infrastructure.&nbsp;The infrastructure could be made aware that we&#8217;re deploying a data service and would therefore ensure that the nodes of that database don&#8217;t reside on the same physical machine or even data center. Another area where the responsibility&nbsp;could be delegated&nbsp;to the infrastructure is the network isolation.&nbsp;Instead of dealing with security groups,&nbsp;the system&nbsp;can attach a particular network for a given application or a tier within that application and the infrastructure will make sure that any machine that is allocated for this service would be attached to this network.</div>
+<h3><strong>Final Words</strong></h3>
+<p><span style="font-size: 10pt;">For years there has been discussion on the missing piece in the cloud puzzle &#8211; the network.&nbsp;Today were at a point where this gap is starting to be filled up by projects like Quantum in OpenStack. In addition to OpenStack the Telco industry is also launching a new initiative titled <span class="caps"><span class="caps">NFV</span></span> which stand for&nbsp;<a style="font-size: 1.17em;" href="http://en.wikipedia.org/wiki/Network_Functions_Virtualization">Network Function Virtualization</a>.&nbsp;<span class="caps"><span class="caps">NFV</span></span> was born in October of 2012 when AT&amp;T, BT, China Mobile, Deutsche Telekom and many&nbsp;other&nbsp;Telcos introduced the <span class="caps"><span class="caps">NFV</span></span> Call to Action document. It&nbsp;basically aimes to combine&nbsp;new network <span class="caps"><span class="caps">API</span></span> with Virtulization and thus provide a a standard model for a Virtulized Carrier Cloud.</span></p>
+<div><img src="/images/classical_network.jpg" alt="image is missing"></div>
+<div>
+<p>While it seems that the industry is moving in the right direction toward the Virtualization of the backbone systems, most of the effort seem to be focused on standardisation at the lower level of stack. Very little has been done to draw the&nbsp;real end game i.e. how would an end to end Carrier backbone would look like given that new virtualized infrastructure in place. More importantly we haven&#8217;t yet began to think of what would be the implication of that infrastructure change on the application and services ontop of it.</p>
+</div>
+<div>
+<p>This is what excites me in the CloudBand project. CloudBand doesn&#8217;t just end up with yet another&nbsp;fancy infrastructure piece that we don&#8217;t necessarily know how and what do with it. It actually takes the holistic approach and maps those fancy features into a real end to end solution which at the most basic level maps&nbsp;to the fact that setting up data and network clusters, disaster recovery or cloud bursting scenarios can now be fully automated in a much simpler fashion than in most of the current cloud infrastructure environment.</p>
+</div>
+<div>
+<p>At a more strategic level that means that Carrier can now rely on the the cloud as an infrastructure that could manage their backbone services and thus leverage the cloud economics to meet their cost and business&nbsp;challenges.</p>
+</div>
+<div>
+<p><strong>References</strong></p>
+</div>
+<ul>
+<li><a href="http://www.slideshare.net/uri1803/carrier-paas-cloudstack-collaboration-event-2012">Carrier Grade PaaS presentation</a>&nbsp;by Uri Cohen</li>
+<li><a href="http://wikibon.org/wiki/v/Network_Function_Virtualization_or_NFV_Explained">Network Function Virtualization or <span class="caps"><span class="caps">NFV</span></span> Explained</a></li>
+<li><a href="http://vmblog.com/archive/2013/02/27/alcatel-lucent-joins-forces-with-gigaspaces-to-accelerate-delivery-of-carrier-cloud-paas.aspx">Alcatel &amp; Gigaspaces Joint partnership</a></li>
+<li><a href="http://www.cloudifysource.org/">GigaSpaces Cloudify</a></li>
+<li><a href="http://www.alcatel-lucent.com/solutions/carrier-cloud">Alcatel Carrier Cloud</a></li>
+<p></ul><p></div><div class="feedflare"><br />
+<a href="http://feeds.feedburner.com/~ff/NatiShalom?a=Aspp8Vog_ko:wAbHG6KKVx4:yIl2AUoC8zA"><img border="0" src="http://feeds.feedburner.com/~ff/NatiShalom?d=yIl2AUoC8zA"></a> <a href="http://feeds.feedburner.com/~ff/NatiShalom?a=Aspp8Vog_ko:wAbHG6KKVx4:qj6IDK7rITs"><img border="0" src="http://feeds.feedburner.com/~ff/NatiShalom?d=qj6IDK7rITs"></a></p><br />
+<p></div><img height="1" width="1" src="http://feeds.feedburner.com/~r/NatiShalom/~4/Aspp8Vog_ko">				</div><!--end entry--></p><br />
+				<div class="clear">&nbsp;</div><br />
+<p><!--End @Core index loop hook--></p><br />
+<p><!--Begin @Core link pages hook--><br />
+									<!--End @Core link pages hook--></p><br />
+<p><!--Begin @Core post edit link hook--><br />
+									<!--End @Core post edit link hook--></p><br />
+<p><!--Begin @Core FB like hook--></p><br />
+<div class="gplusone"><br />
+			<div style="height: 24px; width: 106px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline;" id="___plusone_0"><iframe scrolling="no" frameborder="0" width="100%" hspace="0" marginheight="0" marginwidth="0" style="position: static; top: 0px; width: 106px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" id="I0_1362655738387" name="I0_1362655738387" src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;count=true&amp;size=standard&amp;hl=en-US&amp;origin=http%3A%2F%2Fblog.gigaspaces.com&amp;url=http%3A%2F%2Fblog.gigaspaces.com%2Fcarrier-grade-cloudpaas%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.qW-NiyIsF84.O%2Fm%3D__features__%2Fam%3DqQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTNe22To3iKox_0kC8HT5rVwTSPrXg#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled&amp;id=I0_1362655738387&amp;parent=http%3A%2F%2Fblog.gigaspaces.com&amp;rpctoken=41457471" allowtransparency="true" data-gapiattached="true" title="+1"></iframe></div></p>
+</div>
+<p></p>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/2013/03/07/carrier_grade_cloud_paas.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+					
+					
+					</div>			
+				</div>	
+				
+				<!-- Blog Left side coll -->
+				<div class="span3">
+					<aside class="right-sidebar" >
+						<!--Event groups-->
+
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Recent Posts</h3>
+</div>
+
+
+<div class="leftContentBox blogLeftBox"> 
+   
+	<a href="/2014/01/23/intro_to_puppet_installing_your_first_mysql_service_in_5_minutes.html">Intro to Puppet, Installing your First MySQL Service in 5 Minutes 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">January 23, 2014</span>  
+	<br/><br/>
+  
+	<a href="/2013/12/23/setting_up_devstack_havana_on_your_local_network.html">Openstack in a Box - Setting Up Devstack Havana On Your Local Network 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">December 23, 2013</span>  
+	<br/><br/>
+  
+	<a href="/2013/12/07/eight_cloud_and_big_data_predictions_for_2014.html">Eight Cloud and Big Data Predictions for 2014 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">December  7, 2013</span>  
+	<br/><br/>
+		
+</div>
+
+               <!--start -->
+                 <div class="leftContentBox blogLeft-topTitle blog-left-title2 tumblr">
+                        <h3>CloudifySource on Tumblr</h3>
+                 </div>   
+                <div class="leftContentBox tumblrFeed">                     
+                
+                </div>
+<!--end-->
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Archived Posts</h3>
+</div>
+
+ <ul class="blog-archive-list">
+ 
+ 
+	
+	
+	
+	
+	
+	
+
+	
+<li><a href="/2014/01">January 2014</a> <span class="blue">(1)</span></li>
+
+	
+
+	
+		
+
+<li><a href="/2013/12">December 2013</a> <span class="blue">(2)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/11">November 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/10">October 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/09">September 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/08">August 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/07">July 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/06">June 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/05">May 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/04">April 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/03">March 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/02">February 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/01">January 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2012/12">December 2012</a> <span class="blue">(3)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/11">November 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/10">October 2012</a> <span class="blue">(5)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/09">September 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/08">August 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/07">July 2012</a> <span class="blue">(5)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/06">June 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/05">May 2012</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/03">March 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/02">February 2012</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/01">January 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2011/11">November 2011</a> <span class="blue">(1)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/10">October 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/09">September 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+ 
+ </ul>
+					</aside>
+				</div>
+			</div>	
+	</div>	
+	</section>	
+	<div class="clear"></div>
+	<!--Start Footer -->
+		<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="\about_us">About Us</a></li>
+						<li><a href="\goPro">Enterprise Cloudify</a></li>
+						<li><a href="\cloudifyRecipeCatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="\how">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="/terms_of_use">Terms of Use</a></li>
+						<li><a href="/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook" target="_blank"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter" target="_blank"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr" target="_blank"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube" target="_blank"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+			
+	</div>
+</body>
+</html>

@@ -1,0 +1,625 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - Cloudifysource TV</title>
+    <script src="//cdn.optimizely.com/js/59503762.js"></script>
+    <link rel="stylesheet" href="/css/template.css" type="text/css"/>
+	<link rel="canonical" href="http://www.cloudifysource.org/cloudifysourcetv_old.html"/>	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="scripts/jquery-1.7.1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/scripts/search.js"></script>
+	<script src="http://www.youtube.com/player_api"></script>
+    <script src="/scripts/www-widgetapi-vfll_Uq2Q.js" async=""></script>
+	<script src="/scripts/videoPlayer.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/scripts/jquery.pajinate.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+<script type="text/javascript" >
+(function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {
+            //form validation rules
+
+            $("#contactUs").validate({
+                rules: {
+                    last_name: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                },
+                messages: {
+                    last_name: "Please enter your first name",
+                    email: "Please enter a valid email address",
+                },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });
+        }
+    }
+
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+//start captcha Code
+	function randomgen()
+	{
+    var rannumber='';
+		for(ranNum=1; ranNum<=6; ranNum++){
+			rannumber+=Math.floor(Math.random()*10).toString();
+		}
+		$('#verifyNum').html(rannumber);
+		$('#verifyNumHidden').val(rannumber);
+	}
+	randomgen();
+//Verification number generate code Ends here
+  
+//Validation Starts Here    
+	$('#contactUs').submit(function() {
+		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+			//$('form').attr('action', 'https://example.com/MyForm');
+			return true;
+		}
+		else
+		{
+			alert("Please Enter Correct Verification Number");
+			randomgen();
+			$('#enterVerify').select();
+			$('#enterVerify').focus();
+			return false;
+		}
+	});
+//end captcha Code;        
+    });
+
+})(jQuery, window, document);
+</script>			
+    <script type="text/ecmascript">
+	window.onload = function () {
+	$('body').addClass("bodyClass");
+	}	
+		$(function() {
+
+	//popup contact form
+	$("li.contactUs,div.contactUsWrapper").mouseenter(function(){
+		$("div.contactUsWrapper").css("visibility","visible");
+		$("a.contactUsLink").css("visibility","hidden");
+	});
+	$("input.cuSend").click(function(){
+		$('.cuValid').hide();
+	});
+	$("input.cuSend").submit(function(){
+		$("div.contactUsWrapper").css("visibility","hidden")
+		$("a.contactUsLink").css("visibility","visible");
+
+	});
+	$("a.contactUsWrapperClose").click(function(){
+			$("div.contactUsWrapper").css("visibility","hidden")
+			$("a.contactUsLink").css("visibility","visible");
+		});
+		
+
+//end popup contact form
+
+	<!--this code make the playlist-->		
+        var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/D470957921551B9A?&max-results=50&v=2&alt=json&callback=?';
+//	var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/B2A4E1367126848D?&max-results=50&v=2&alt=json&callback=?';
+	var videoURL= 'http://www.youtube.com/watch?v=';
+	$.getJSON(playListURL, function(data) {
+		var list_data="";
+		var showDescription="";
+		var movieTitle="";
+		var updated="";
+		$.each(data.feed.entry, function(i, item) {
+			var feedTitle = item.title.$t;
+			var deScrip = item.media$group.media$description.$t;
+			var upDate = item.published.$t;
+			var feedURL = item.link[1].href;
+			var fragments = feedURL.split("/");
+			var videoID = fragments[fragments.length - 2];
+			var url = videoURL + videoID;
+			var thumb = "http://img.youtube.com/vi/"+ videoID +"/0.jpg";
+			//var description = item.description.$s;
+			var dateFor = new Date(upDate);
+			list_data += '<li id="'+videoID+'" class="videoThumbBox"><div class="vidThumb"><a href="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'"></a></div> <h4>'+feedTitle+'</h4><span class="mainVidDate">'+dateFor.toDateString('dd')+'</span><div class="clear"></div></li>';
+			showDescription += '<p class="'+videoID+'" style="display:none" >'+deScrip+'</p>';
+			movieTitle += '<h3 class="'+videoID+'" style="display:none"> '+feedTitle+'</h3>';
+			updated += '<span class="'+videoID+'" style="display:none">'+dateFor.toDateString('dd')+'</span>';
+		});
+		
+		
+		$(list_data).appendTo(".videoThumbs");<!-- push li to ul.videoThumbs -->
+		
+		<!--make the prev next pageination-->
+		$('#paging_container3').pajinate({
+			num_page_links_to_display : 10,
+			items_per_page : 5,
+			wrap_around: true,
+			show_first_last: false,
+			item_container_id : '.videoThumbs',
+			nav_panel_id : '.alt_page_navigation'
+
+		});
+		
+		
+		
+		
+		$('.videoDesc').empty();
+		$(showDescription).appendTo(".videoDesc");<!-- push movie description  -->
+		$(movieTitle).appendTo("div.clipTitle");<!-- push movie title  -->
+		$(updated).appendTo(".mainVidDate div");<!-- push movie title  -->
+			
+       	//load the first description	
+		 var currentId;	
+		 if(document.location.hash != "")
+		 {
+            currentId = document.location.hash.replace('#','');
+         }else{
+			currentId = $('li.videoThumbBox').attr('id');
+         }		 
+		//var currentId = $('li.videoThumbBox').attr('id');
+		$('p.'+currentId+'').show();
+		$('h3.'+currentId+'').show();
+        	$('span.'+currentId+'').show();
+
+	
+	//this code load the player
+	$("ul.videoThumbs").ytplaylist({addThumbs:true, autoPlay: true,allowFullScreen:true,showRelated:true, holderId: 'ytvideo2'});
+	//
+	
+	//this code show the right description after we click on playlist link
+	$('li.videoThumbBox a').click(function() {
+		$('p , div.clipTitle h3 , div.mainVidDate span ').hide();
+		var currentId = $(this).parent().parent().attr('id');
+		 document.location.hash = currentId;
+		$('p.'+currentId+' , div.clipTitle h3.'+currentId+' , div.mainVidDate span.'+currentId+'' ).show(); 
+                var mixPanelVideoTitle = $(this).attr('title');
+		mixpanel.track("Watched Video",{'page name' : document.title, 'url' : mixPanelVideoTitle });
+	});
+	
+	
+	
+	
+	
+//for top menu current
+
+
+    	var url = window.location.pathname, 
+        urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
+        // now grab every link from the navigation
+        $('li.topmenuli a').each(function(){
+            // and test its normalized href against the url pathname regexp
+            if(urlRegExp.test(this.href.replace(/\/$/,''))){
+                $(this).parent().addClass('active');
+            }
+        });	
+	
+	
+	
+	
+	
+	
+});
+
+
+		});
+		
+		
+		
+		
+		
+	
+		
+	
+	</script>
+    
+    
+    <script type="text/javascript">
+
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-31930048-1']);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+	   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+
+</script>
+	
+    
+    <script type="text/javascript">
+              
+       	 $(this).removeClass("current");
+    	 $(function(){
+            $("div.ui-accordion").find("a").each(function(){
+            if( location.href.indexOf(this.location.href) != -1) {
+            $(this).addClass("current");
+             
+            }
+   
+            });
+            
+  
+            
+        });
+    </script>
+
+
+       
+	<script type="text/javascript">
+ var _gauges = _gauges || [];
+(function() {
+		var t   = document.createElement('script');
+		t.type  = 'text/javascript';
+		t.async = true;
+		t.id    = 'gauges-tracker';
+		t.setAttribute('data-site-id', '4fd5058b613f5d712200004f');
+		t.src = '//secure.gaug.es/track.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(t, s);
+})();
+</script> 
+	
+<script type="text/javascript">
+<!-- start Mixpanel -->
+(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("96365f48f34c41c7b91e045b4f48d53d");
+<!-- end Mixpanel -->
+
+
+
+
+//mixpanel global page tracking:
+//mixpanel.track_forms('#ki_form', 'Qualaroo');
+mixpanel.track('Cloudify Community Page Views', {'page name' : document.title, 'url' : window.location.pathname});  
+$(function(){ 
+    // This sends us an event every time a user clicks the button
+	$("a.hp-btn-getCloudify").click(function() {
+	    mixpanel.track("Get Cloudify Button Clicks",{'page name' : document.title, 'url' : window.location.pathname}); 
+	});
+	
+	$("a.getCloudifyBtn").click(function() {
+	    mixpanel.track("Home Page Download Button Clicks",{'page name' : document.title, 'url' : window.location.pathname}); 
+	    mixpanel.track("Get Cloudify Button Clicks",{'page name' : document.title, 'url' : window.location.pathname}); 
+	});	//Try It Now Click
+	$("a.hp-tryItNow").click(function() {
+	    mixpanel.track("Try it Now HP Button Clicks",{'page name' : document.title, 'url' : window.location.pathname}); 
+	});
+});
+
+
+mixpanel.track_forms("#searchForm", "Search",{'page name' : document.title, 'url' :  window.location.pathname});
+$(function(){ 
+	$("#goBtn").click(function() {
+		
+	var value = $('#search').val();
+	    mixpanel.track("Search",{"keyword": value}); 
+
+	});
+});
+
+//track Cloudify Early Access Builds
+//mixpanel.track_links("a.eaTitle", "Product Download - Early Access Builds", {'referrer': document.referrer });
+
+
+// mixpanel- trakc only if email requested
+var currEmail="";
+$("body").live('change', function(){
+ $("#ki_form").live('change', function(){
+  if($("#ki_question_99437").length != 0) {
+	currEmail =  $("input.ki_explain_small").val();	
+	mixpanel.track_links("#ki_submit_button", "Qualaroo", function(ele) {
+	 if($('input').hasClass('ki_explain_small')){
+	  var currEmail =  $("input.ki_explain_small").val();	
+	  mixpanel.name_tag(currEmail);
+	  mixpanel.people.identify(currEmail);
+	  mixpanel.people.set({
+	  $email: currEmail,
+	  $first_name: currEmail,
+	  $created: new Date(),
+	  $last_seen:new Date(),
+	  });
+	} return { type: $(ele).attr('type'),email: currEmail}
+	});
+  }
+});
+
+});
+
+//
+//$("#ki_submit_button").click(function() {
+
+//if($('input').hasClass('ki_explain_small')){
+ // var currEmail =  $("input.ki_explain_small").val();	
+ // mixpanel.name_tag(currEmail);
+ // mixpanel.people.identify(currEmail);
+ // mixpanel.people.set({
+ // $email: currEmail,
+ // $first_name: currEmail,
+//  });
+//}
+//});
+</script>
+	  
+	<script type="text/javascript">var _kiq = _kiq || [];</script>
+<script type="text/javascript" src="//s3.amazonaws.com/ki.js/42111/87X.js" async="true"></script>
+		
+</head>
+
+<body>
+<a class="fork-guide" target="_blank" href="https://github.com/CloudifySource/cloudify"></a>
+<div class="WrapperBg">
+    	
+    <div class="Wrapper">
+        <!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="/goPro"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/early_access" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/get_cloudify" data-toggle="tooltip" data-placement="bottom" title="Get Cloudify">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="/index"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="/index"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="/guide/2.6/qsg/qsg">Docs <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="/guide/2.3/qsg/quick_start_guide">2.3</a></li>
+											<li><a href="/guide/2.5/qsg/quick_start_guide">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg">2.6</a></li>
+											<li><a href="/guide/2.7/qsg/qsg">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="/blog">Blog</a></li>
+										<li><a href="cloudifyRecipeCatalog.html">The Cloudify Player</a></li>
+										<li><a href="CloudifysourceTV.html">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com<i class="icon-angle-down"></i></strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+        <div class="contentWrap  cloudifysourcetv">
+			<div class="breadcrumbs">Home Page > Cloudifysource TV</div>            
+            <div class="clear"></div>
+			
+
+            <!--Search-->			
+	
+			
+            
+ 
+
+<div class="learnFrom">
+    <h2>Watch and Learn</h2>
+
+    <div class="searchWrap">
+        <form id="searchForm" action="#" method="get">
+            <input id="search" class="searchTxt" type="text" placeholder="Search..."/>
+            <input id="goBtn" class="searchBtn" type="button" value="Go"/>
+        </form>
+    </div>
+</div>
+ 
+<div class="hp-right-col">
+ 		<a class="hp-btn-getCloudify" href="/downloads/get_cloudify">Get Cloudify!</a>
+</div>
+
+
+
+
+            
+                <!--Start left content -->                 		
+		<h1 class="pageTitle">Cloudifysource TV</h1>
+		<div id="alTag_videoTopText"></div>
+		    <div id="resultsDiv" class="DocumentsWrap"></div> 
+                    <div class="rightVideoThumbs">
+<div id="paging_container3">
+<ul class="videoThumbs">
+</ul>
+	    <div class="alt_page_navigation"></div>
+            <div class="info_text"></div>
+</div>
+</div>
+<div class="contentNoRight bg-videoContent">
+<div class="inside">
+<div class="mainVideo-box">
+<div class="clipTitle">
+
+</div>
+
+                            <div class="mainVidDate"><b></b><div></div></div>
+<div class="videoMain" id="ytvideo2">
+<img src="images/videoMain-plcholder.jpg" />
+</div>
+                            <div class="videoDesc"> </div>
+<p><!-- div class="btn-vidSeeAll">See all</div --><br />
+                             <div class="clear"></div></p>
+</div>
+
+</div>
+</div>
+                    <div id="alTag_videoBottomText"></div>
+                <div class="clear"></div>
+                
+        </div>
+        <!--Start pagination -->
+
+        <div class="clear"></div>
+
+        <!--Start Footer -->
+
+        	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="\about_us">About Us</a></li>
+						<li><a href="\goPro">Enterprise Cloudify</a></li>
+						<li><a href="\cloudifyRecipeCatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="\how">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="/terms_of_use">Terms of Use</a></li>
+						<li><a href="/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook" target="_blank"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter" target="_blank"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr" target="_blank"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube" target="_blank"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+
+    </div>
+    <!--End site wrapper -->
+
+
+</div>
+<!--End site bg top wrapper -->
+</body>
+</html>

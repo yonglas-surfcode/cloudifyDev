@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<title>Cloudify - Moving Enterprise Workloads to the Cloud on a Massive Scale</title>
+	<script src="//cdn.optimizely.com/js/59503762.js"></script>
+	
+	<link rel="canonical" href="http://www.cloudifysource.org/2012/10/30/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale.html"/>	
+	<!-- custom -->
+	<!--<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/atom.xml" />-->
+	<link rel="canonical" href="http://www.cloudifysource.org/index.html"/>	
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/x-icon" />
+	<!-- css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" />
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="/css/jcarousel.css" rel="stylesheet" />
+	<link href="/css/flexslider.css" rel="stylesheet" />
+	<link href="/css/cslider.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Theme skin -->
+	<link id="t-colors" href="/skins/blue.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="/bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="/ico/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="/js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body>
+<div class="WrapperBg">    
+    <div class="Wrapper">
+        <!-- toggle top area -->
+	<div class="hidden-top">
+		<div class="hidden-top-inner container">
+			<div class="row">
+				<div class="span12">
+					<ul>
+						<li><strong><i class="icon-briefcase"></i>Go Pro! Find out about</strong><a class="black" href="/goPro"> Enterprise Cloudify</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end toggle top area -->
+	<!-- start header -->
+	<header class=" grayGrediant ">
+	<div class="container ">
+	
+		<!-- hidden top area toggle link -->
+		<div id="header-hidden-link">
+			<a href="#" class="toggle-link" title="Go Pro with Enterprise Cloudify" data-target=".hidden-top">
+			<i class="fa fa-plus"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/early_access" data-toggle="tooltip" data-placement="bottom" title="Get the Latest Milestone Build"><i class="fa-cloud-download"></i></a>
+			<a class="toggle-link dwnBtn" href="/downloads/get_cloudify" data-toggle="tooltip" data-placement="bottom" title="Get Cloudify">
+				<i class="fa-download"></i></a>
+			<div class="widget cdsearch">
+			<form id="searchForm" class="form-search" action="#" method="get">
+				<input placeholder="Search..." type="text" class="input-medium search-query ">
+				<button id="goBtn" type="submit" class=" btn goBtn"><i class="iconsearch"></i></button>
+			</form>
+		</div>	
+		</div>
+		<!-- end toggle link -->
+		
+			
+				
+			
+				
+		
+		
+			
+				<div class="logo navbar-toggle">
+					<a href="/index"><img src="/img/logo.png" alt="" class="logo" /></a>
+				</div>
+			
+			  <nav class="navbar navbar-default" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                  </div>		
+					<!--<<div class="cdnavbar navbar  navbar-default" role="navigation">
+							
+								<div class="navigation navigation-bottom">
+								nav>-->
+									<!-- <ul class="nav topnav bold">-->
+                    <div class="cdnavbar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="cloudifyLogo"><a href="/index"><img src="/img/logoSmall.png" alt=""  /></a></li>
+										<li class="dropdown">
+										<a href="https://cloudifysource.zendesk.com/forums" target="_blank">Support Forums <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="/guide/2.6/qsg/qsg">Docs <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold" style="display: none;">
+											<li><a href="/guide/2.3/qsg/quick_start_guide">2.3</a></li>
+											<li><a href="/guide/2.5/qsg/quick_start_guide">2.5</a></li>
+											<li><a href="/guide/2.6/qsg/qsg">2.6</a></li>
+											<li><a href="/guide/2.7/qsg/qsg">2.7</a></li>
+										</ul>
+										</li>
+										<li>
+											<a href="/how/index.html">How it Works <i class="icon-angle-down"></i></a>
+										</li>
+										<li class="dropdown">
+										<a href="#">Blog + Other Stuff <i class="icon-angle-down"></i></a>
+										<ul class="dropdown-menu bold">
+										<li><a href="/blog">Blog</a></li>
+										<li><a href="cloudifyRecipeCatalog.html">The Cloudify Player</a></li>
+										<li><a href="CloudifysourceTV.html">Videos & Tutorials</a></li>
+										<li><a href="participate.htm">Events</a></li>
+										</ul>
+										</li>
+										
+										<li>
+											<a href="http://www.gigaspaces.com/cloudify" target="_blank"><strong>.Com<i class="icon-angle-down"></i></strong></a>
+										</li>
+										
+									</ul>
+				</div> 
+        <!-- /.navbar-collapse -->
+</nav>
+</div>
+		
+</header>	
+<!-- end header -->	
+		
+			<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="inner-heading">
+					<h2><i class="icon-edit"></i>Cloudifysource<strong> Blogs</strong></h2>
+				</div>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+					<li><a href="#">Blog</a><i class="icon-angle-right"></i></li>
+					<li class="active">Moving Enterprise Workloads to the Cloud on a Massive Scale</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+	<div class="container">
+			<div class="row">
+				<!-- Blog Right side posts -->
+				<div class="span9">
+					<div id="resultsDiv" class="DocumentsWrap"></div>
+					<div id="pageContent" class="DocumentsWrapRight">
+					
+					<h1 class="pageTitle">Moving Enterprise Workloads to the Cloud on a Massive Scale</h1>
+					 
+					  <span class="blogPostInfo">Posted By: <a href="#">Nati Shalom</a>  on October 30, 2012  
+					  </span>
+					  <br/><br/><br/>
+					 
+                    <p><img style="margin: 0px 10px 0px 5px; display: inline; float: left" alt="" align="left" src="http://www.busmanagement.com/media/article-images/article-image/BMUS/issue-18/Enterprise_cloud_Now_Later_Never_LRG.jpg" width="350" height="250" /></p>
+<p>Cloud has quickly become a disruptive technology, with the main disruption being a revolution in the way in which organizations run their IT.</p>
+<p>The poster child for these cloud discussions was often the new Web 2.0 companies such as Google and Amazon who have been true pioneers in this new and emerging world. Quite often enterprises were used as the reference for how bad IT can get, and quickly became the representation of the antithesis for IT in these cloud discussions and conferences.</p>
+<p>Two weeks ago I was at the OpenStack conference and other meetups that took place around the same time. The thing that was pretty apparent is that the large majority of the audiences in each room were from the enterprise world. What&#8217;s more, a quick look at the OpenStack foundation shows that those leading one some of the most trendy technologies in the cloud space are run by Enterprise HW and Software companies such as HP, <span class="caps">IBM</span>, Dell, Red Hat, among others.</p>
+<p>Could this mark the beginning of a new era for enterprise and the cloud? </p>
+<p>- A series of recent surveys on the subject seems to indicate that this is indeed the case:</p>
+<blockquote>
+  <p><a href="http://www.cloudpro.co.uk/cloud-essentials/hybrid-cloud/2629/companies-nearing-mission-critical-apps-cloud">Research conducted by HP</a> found that the majority of businesses in the <span class="caps">EMEA</span> region are planning to move their mission-critical apps to the cloud. Of the 940 respondents, 80 percent revealed plans to move mission-critical apps at some point over the next two to five years.</p>
+  <p>A more recent <a href="http://ht.ly/eP9YN">survey, by research firm MeriTalk</a> and sponsored by VMware and <span class="caps">EMC</span> (<span class="caps">NYSE</span>:<a href="http://www.crn.com/stock-quotes-financial-data/index.htm?Page=QUOTE&amp;Ticker=EMC"><span class="caps">EMC</span></a>), showed that one-third of respondents say they plan to move some mission-critical applications to the cloud in the next year. Within two years, the IT managers said they will move 26 percent of their mission-critical apps to the cloud, and in five years, they expect 44 percent of their mission-critical apps to run in the cloud.<span style="text-align: left; line-height: 0px"></span></p>
+</blockquote>
+<p>This shouldn&#8217;t come as a surprise as&#160; most enterprises are using the cloud today but don&#8217;t necessarily know they are doing so, and getting huge benefits from it (<a href="http://salesforce.com/">SalesForce.com</a>, ServiceNow)</p>
+<p><strong>The Cloud needs Enterprises just as Enterprises need the Cloud?</strong></p>
+<p>As I was sharing this observation with a few of the folks during the conference, I heard an interesting comment by one HP Executive <a href="http://www.linkedin.com/in/thomasryan">Thomas Ryan</a> who made an interesting statement: &quot;Linux wouldn&#8217;t be where it is today if enterprises wouldn&#8217;t have adopted it&quot;. Quite often we look at the cloud (OpenStack in particular) as the new Linux. If that&#8217;s true, then it looks like we&#8217;re reaching the point where for cloud to remain a viable technology it needs enterprise adoption just as enterprises needs the benefits the cloud brings.</p>
+<h2><strong>The Renaissance of Enterprises in the Cloud</strong></h2>
+<p>So are we seeing the renaissance of enterprises in the cloud? It&#8217;s a bit too early to say, but there are clear indicators that this is where the market is heading. There are a couple of reasons for this:</p>
+<p><strong>1. IT is becoming a new manufacturing pipeline for enterprises in the new information era</strong></p>
+<p>It&#8217;s clear today, that in this data driven world, the ability of any business to survive is determined by how agile they can be, how quickly they can respond to change, and react accordingly. In this context, it becomes more apparent for many enterprises that their ability to reach this level of agility is dependent on how well they are running their IT. At the same it becomes clear that cloud is just a better way of running their IT, and in this context it&#8217;s pretty much a no brainer.</p>
+<p>2. <strong>Cloud technology is maturing </strong></p>
+<p>Many of the technology gaps that prevented enterprises from adopting cloud technology such as security, complexity, and more, have been addressed or are in the process of being addressed. There are many options today including private cloud, hybrid cloud, with different degrees of SLAs and cost that make it easier to run enterprise workloads in the cloud. </p>
+<p>3. <strong>Strong business incentive</strong></p>
+<p>Enterprise applications tend to be one of the more costly workloads today in terms of IT infrastructure and resources, due to both the size and the complexity involved with running these systems. Any savings with running these systems would yield a significant impact to an organization&#8217;s bottom line, as indicated in <a href="http://ht.ly/eP9YN">MeriTalk research</a>:</p>
+<blockquote>
+  <p>Enterprises can save $16.6B, or 21% if they moved just three mission-critical apps to the cloud.</p>
+</blockquote>
+<h2><strong>The Challenge &#8211; How to bring Hundreds of Enterprise Apps to the Cloud</strong></h2>
+<p>All that, of course, is great, but the reality is that cloud economics only start making sense when there are true workloads that utilize the cloud infrastructure.</p>
+<p>If the large majority of your apps fall outside of this category, then you&#8217;re not going to benefit much from the cloud. In fact, you&#8217;re probably going to lose money, rather than save money.<strong>&#160;</strong></p>
+<h2><strong>The Current Approach </strong></h2>
+<ul>
+  <li><strong>Focus on building IaaS</strong> &#8211; Current cloud strategies of many enterprises has been centered on making the infrastructure cloud ready. This basically means ensuring that they are able to spawn machines more easily than they were before. A quick look at many initiatives of this nature shows that there is still only a small portion of enterprises whose applications run on such new systems. </li>
+  <li><strong>Build a new PaaS</strong> &#8211; PaaS has been taught as the answer to run apps on the cloud. The reality however, is that most of the existing PaaS solutions only cater to new apps and quite often the small, and &#8220;non&#8221; mission-critical share of our enterprise applications, which still leaves the majority of our enterprise workload outside of our cloud infrastructure. </li>
+  <li><strong>App Migration as a One Off Project -</strong> The other approach for migrating applications to the cloud has been to select a small group of applications, and then migrate these one by one to the cloud. Quite often the thought behind this approach has been that application migration is a one-off project. The reality is that applications are more of a living organism &#8211; things fail, are moved, or need to be added and removed over time. Therefore it&#8217;s not enough to move apps to the cloud using some sort of virtualization technique, it&#8217;s critical that the way they&#8217;re run and maintained will also fit the dynamic nature of the cloud. </li>
+</ul>
+<h2><strong>Why is This not Going to Work?</strong></h2>
+<p>Simple math shows that if you apply this model to the rest of your apps, it&#8217;s probably going to take years of effort to migrate all your apps to the cloud. The cost of doing so is going to be extremely high, not to mention the time to market issue which can be even an even greater risk in the end, as it will reflect on cost of operation, profit margins and even the ability to survive in this an extremely competitive market, if it is too long.</p>
+<h2><strong>What&#8217;s missing?</strong></h2>
+<p>What we&#8217;re missing is a simple and systematic way to brings all these hundreds and thousands of apps to the cloud.</p>
+<h2><strong>Moving Enterprise Workloads to the Cloud at a Massive Scale</strong></h2>
+<p>Instead of thinking of cloud migration as a one-off thing, we need to think of cloud migration on a massive scale.</p>
+<p>Thinking in such terms drives a fairly different approach. </p>
+<p>I&#8217;ve listed the principles, that <span class="caps">IMO</span>, are the crux to such a strategy, below:</p>
+<ul>
+  <li><strong>No Code Change</strong> &#8211; Any change, even the slightest one, to our existing apps will slow down our migration efforts substantially. Furthermore, many of the apps are third-party apps, where we often times don&#8217;t even have control over the application code, so changing the app is likely not an option. There are many things that we can benefit from by moving our apps to the cloud, such as automation, ease of change, and configuration. We can obviously benefit more if we change our apps to take better advantage of the cloud infrastructure, but the right order would be to do this after we&#8217;ve already migrated the app to the cloud in the first place. There, of course, will still be many cases where just automating the way we run our apps and make them available on-demand would be sufficient enough. </li>
+  <li><strong>Plug-in to the Current Way of Running Apps</strong> &#8211; The common way for running apps today is either through custom shell scripts in the simple case, or through configuration management tools such as Chef or Puppet in the more advanced case. If we want to migrate apps at a massive scale, we need to be able to plug-in to the most common environments, and make it possible to import them almost as is. In this way, we could leverage the knowledge and know-how that has already been invested into these systems and make the migration process vastly shorter. </li>
+  <li><strong>Use Shared Infrastructure Across the Stack Regardless of the Language</strong> &#8211; Using different frameworks for each element of our application stack based on the language and environment in not going to scale for obvious reasons, such as complexity, a large number of moving parts, inconsistency, among other reasons. </li>
+  <li><strong>Add Cloud Properties from the Outside</strong> &#8211; There are many cloud properties that we can apply to our existing apps without forcing any changes. For example, we can automate the scaling from small to bigger machines, we can also automate the configuration, and setup. We can significantly simplify the way we run the app by making it available on-demand. All these cloud properties can be plugged into almost any existing app without forcing a real change, as noted in the <a href="http://natishalom.typepad.com/nati_shaloms_blog/2012/06/lessons-from-amazon-rds-on-bringing-existing-apps-to-the-cloud.html">MySQL example</a>. </li>
+  <li><strong>Use the Baby Steps Approach</strong> &#8211; One of the main inhibitors to migrating apps was the <em>all or nothing </em>approach. There are many risks involved in migrating apps that go well beyond the technology challenge. The easiest way to mitigate such risks is by taking them one at a time. For example, we can first make our apps cloud ready, in which case we will abstract the automation part from the target infrastructure. By doing so, the decision where to run our app becomes tactical and less strategic. We can choose to run our production in our private data center, and run only testing and demos on the cloud. In this way, we can also make the migration gradual and smoother. </li>
+  <li><strong>Incorporate Bare-Metal into our Cloud</strong> &#8211; One of the main challenges that I&#8217;ve seen for moving true enterprise workloads to the cloud wasn&#8217;t necessarily related to the cloud, but to the virtualization overhead that is often used as the underlying infrastructure of many clouds. Today it is possible, to gain access to bare metal clouds&#160; which make it possible to run almost any workload including I/O intensive ones without any performance overhead, as I noted in my post about the emergence of <a href="http://natishalom.typepad.com/nati_shaloms_blog/2012/05/bare-metal-paas.html">bare-metal clouds</a>. </li>
+</ul>
+<h2><strong>Final Notes</strong></h2>
+<p>I often like to compare the revolution that we&#8217;re experiencing right now in the IT industry to a similar revolution that happened in the automotive industry few decades ago.</p>
+<p>You probably know what I&#8217;m referring to. The automotive industry experienced a similar revolution when Henry Ford came up with his Model-T car. The change wasn&#8217;t so much in the engine or other parts of the car, but rather in the scale and cost in which cars could now be produced. As I noted earlier, in many aspects cloud is the IT industry manufacturing assembly line.</p>
+<p>As with cars, it doesn&#8217;t make sense to run only 10% of our cars on the new manufacturing assembly line, and build the rest in the traditional way. So is the case with our IT. Now the question becomes how to make the move. </p>
+<p>In this post I outlined what I believe should be the principles to migrate apps at a massive scale. In the next post I&#8217;ll describe more specifically the Cloudify way of doing this &#8211; stay tuned&#8230;</p>
+<p><a href="http://natishalom.typepad.com/.a/6a00d835457b7453ef017c329cd14f970b-pi"><img style="display: inline; float: left" title="1311765722_picons03" alt="1311765722_picons03" align="left" src="http://natishalom.typepad.com/.a/6a00d835457b7453ef017c329cd14f970b-75wi" width="42" height="42" /></a> <br />
+<br />
+  <br /><a href="https://twitter.com/intent/follow?screen_name=natishalom">Follow Nati </a>on Twitter!</p>
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cloudifysource'; // required: replace example with your forum shortname
+    var disqus_identifier = '/2012/10/30/moving_enterprise_workloads_to_the_cloud_on_a_massive_scale.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+					
+					
+					</div>			
+				</div>	
+				
+				<!-- Blog Left side coll -->
+				<div class="span3">
+					<aside class="right-sidebar" >
+						<!--Event groups-->
+
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Recent Posts</h3>
+</div>
+
+
+<div class="leftContentBox blogLeftBox"> 
+   
+	<a href="/2014/01/23/intro_to_puppet_installing_your_first_mysql_service_in_5_minutes.html">Intro to Puppet, Installing your First MySQL Service in 5 Minutes 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">January 23, 2014</span>  
+	<br/><br/>
+  
+	<a href="/2013/12/23/setting_up_devstack_havana_on_your_local_network.html">Openstack in a Box - Setting Up Devstack Havana On Your Local Network 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">December 23, 2013</span>  
+	<br/><br/>
+  
+	<a href="/2013/12/07/eight_cloud_and_big_data_predictions_for_2014.html">Eight Cloud and Big Data Predictions for 2014 
+	 <img class="noMargin" src="/images/arrow-right-blue.png" /></a><br />
+	<span class="date">December  7, 2013</span>  
+	<br/><br/>
+		
+</div>
+
+               <!--start -->
+                 <div class="leftContentBox blogLeft-topTitle blog-left-title2 tumblr">
+                        <h3>CloudifySource on Tumblr</h3>
+                 </div>   
+                <div class="leftContentBox tumblrFeed">                     
+                
+                </div>
+<!--end-->
+
+
+<div class="leftContentBox blogLeft-topTitle">
+	<h3>Archived Posts</h3>
+</div>
+
+ <ul class="blog-archive-list">
+ 
+ 
+	
+	
+	
+	
+	
+	
+
+	
+<li><a href="/2014/01">January 2014</a> <span class="blue">(1)</span></li>
+
+	
+
+	
+		
+
+<li><a href="/2013/12">December 2013</a> <span class="blue">(2)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/11">November 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/10">October 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/09">September 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/08">August 2013</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/07">July 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/06">June 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/05">May 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/04">April 2013</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/03">March 2013</a> <span class="blue">(4)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/02">February 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2013/01">January 2013</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2012/12">December 2012</a> <span class="blue">(3)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/11">November 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/10">October 2012</a> <span class="blue">(5)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/09">September 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/08">August 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/07">July 2012</a> <span class="blue">(5)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/06">June 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/05">May 2012</a> <span class="blue">(6)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/03">March 2012</a> <span class="blue">(3)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/02">February 2012</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2012/01">January 2012</a> <span class="blue">(2)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+
+<li><a href="/2011/11">November 2011</a> <span class="blue">(1)</span></li>
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/10">October 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+		
+			
+<li><a href="/2011/09">September 2011</a> <span class="blue">(1)</span></li>
+
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+ 
+ </ul>
+					</aside>
+				</div>
+			</div>	
+	</div>	
+	</section>	
+	<div class="clear"></div>
+	<!--Start Footer -->
+		<footer>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Browse pages</h5>
+					<ul class="link-list">
+						<li><a href="\about_us">About Us</a></li>
+						<li><a href="\goPro">Enterprise Cloudify</a></li>
+						<li><a href="\cloudifyRecipeCatalog.html">Cloudify Test Drive</a></li>
+						<li><a href="\how">How it Works</a></li>
+						<li><a href="#">Get in touch with us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Important stuff</h5>
+					<ul class="link-list">
+						<li><a href="#">Press & Coverage</a></li>
+						<li><a href="/terms_of_use">Terms of Use</a></li>
+						<li><a href="/privacy_policy">Privacy policy</a></li>
+						<li><a href="#">Github Repo</a></li>
+						<li><a href="https://cloudifysource.zendesk.com/home" target="_blank">Support forums</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<!--<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>-->
+			</div>
+			<div class="span3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<strong>Where to get support</strong><br>
+					 	<p>
+						<i class="icon-comments-alt"></i><a href="https://cloudifysource.zendesk.com/home" target="_blank"> Support forums</a><br>
+						<i class="icon-envelope-alt"></i> info@cloudifysource.org<br>
+						<i class="fa fa-stack-overflow"></i><a href="http://stackoverflow.com/questions/tagged/cloudify"target="_blank"> Stack Overflow</a><br>
+						<i class="icon-user"></i><a href="https://cloudifysource.zendesk.com/login?return_to=https%3A//cloudifysource.zendesk.com/home" target="_blank">Login</a> / <a href="https://cloudifysource.zendesk.com/registration" target="_blank">Register</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Flattern 2013 All right reserved. Designed by</span><a href="http://iweb-studio.com" target="_blank">iweb-studio</a>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/GigaSpaces?sk=app_201742856511228" data-placement="bottom" title="Facebook" target="_blank"><i class="icon-facebook icon-square"></i></a></li>
+						<li><a href="https://twitter.com/intent/follow?screen_name=cloudifysource" data-placement="bottom" title="Twitter" target="_blank"><i class="icon-twitter icon-square"></i></a></li>
+						<li><a href="http://www.tumblr.com/follow/cloudifysource" data-placement="bottom" title="Tumblr" target="_blank"><i class="fa-tumblr icon-square"></i></a></li>
+						<li><a href="http://www.youtube.com/cloudifysource" data-placement="bottom" title="YouTube" target="_blank"><i class="fa-youtube icon-square"></i></a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</footer>
+
+
+
+
+			
+	</div>
+</body>
+</html>
