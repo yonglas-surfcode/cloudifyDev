@@ -107,6 +107,8 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+.overviewtable img{ max-width: none !important;}
+
 #map_canvas img,
 .google-maps img {
   max-width: none;
@@ -2026,7 +2028,7 @@ padding: 8px;
 line-height: 20px;
 text-align: left;
 vertical-align: top;
-border:solid 1px #656565;
+/*border:solid 1px #656565;*/
 }
 
 

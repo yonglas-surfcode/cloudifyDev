@@ -1,5 +1,5 @@
 ---
-layout: layoutBasic
+layout: bt_wiki
 title: Bootstrapping Azure
 category: Bootstrapping
 publish: true

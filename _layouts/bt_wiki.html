@@ -3,6 +3,7 @@
 {% assign needVersions="needVersions" %}
 {% assign needExpandBtn="needExpandBtn" %}
 {% include head_section.html %}
+{% capture currentVersion %}{{ page.url | remove: "/guide/" | split:"/" | first }}{% endcapture %}
 <body>
 <div id="wrapper">
 	<!-- start header -->
@@ -20,7 +21,7 @@
 				<ul class="breadcrumb">
 					<li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
 					<li><a href="#">Docs</a><i class="icon-angle-right"></i></li>
-					<li><a href="#">2.6</a><i class="icon-angle-right"></i></li>
+					<li><a href="#"> {{currentVersion}}</a><i class="icon-angle-right"></i></li>
 					<li class="active">{{ page.title }}</li>
 				</ul>
 			</div>
