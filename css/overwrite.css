@@ -1218,6 +1218,12 @@ transform: rotate(90deg);
 .pagination-right {
   float: right;
 }
+
+.pagination .active_page,.pagination .activePage {
+background: #0FB7DB;
+color: white;
+border-color: #0FB7DB;
+}
 .pager li > a,
 .pager li > span {
   -webkit-border-radius: 2px;

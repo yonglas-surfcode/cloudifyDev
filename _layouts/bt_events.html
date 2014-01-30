@@ -9,7 +9,7 @@
 		<div class="row">
 			<div class="span8">
 				<div class="inner-heading">
-					<h2><i class="fa fa-calendar-o"></i>Upcoming <strong>Events</strong></h2>
+					<h2><i class="fa fa-calendar-o"></i> Upcoming <strong>Events</strong></h2>
 				</div>
 			</div>
 			<div class="span4">
@@ -57,7 +57,7 @@
 <script>
 $(function() {    
 //how much items per page to show
-    var show_event_per_page = 2; 
+    var show_event_per_page = 3; 
     //getting the amount of elements inside content div
     var number_of_items = $('#eventsWrapper').children().size();
     //calculate the number of pages we are going to have
@@ -93,11 +93,20 @@ $(function() {
     
     //and show the first n (show_event_per_page) elements
     $('#eventsWrapper').children().slice(0, show_event_per_page).css('display', 'block');
+	
+	 if($('.active_page').parent().prev().children('.page_link').length!=true){
+		$('.span8 .previous_link').hide();
+		$('.span8 .next_link').show();
+	}
+	  if($('.active_page').parent().next().children('.page_link').length!=true){
+		$('.span8 .next_link').hide();
+		$('.span8 .previous_link').show();
+	}
     
 });
  
 function previous(){
-    
+    $('.span8 .next_link').show();
     new_page = parseInt($('#current_page').val()) - 1;
     //if there is an item before the current active link run the function
     if($('.active_page').parent().prev().children('.page_link').length==true){
@@ -107,6 +116,7 @@ function previous(){
 }
  
 function next(){
+	$('.span8 .previous_link').show();
     new_page = parseInt($('#current_page').val()) + 1;
     //if there is an item after the current active link run the function
     if($('.active_page').parent().next().children('.page_link').length==true){
@@ -134,12 +144,25 @@ function go_to_page(page_num){
     
     //update the current page input field
     $('#current_page').val(page_num);
+	
+	 if($('.active_page').parent().prev().children('.page_link').length!=true){
+		$('.span8 .previous_link').hide();
+		$('.span8 .next_link').show();
+	}else{
+	$('.span8 .previous_link').show();
+	}
+	  if($('.active_page').parent().next().children('.page_link').length!=true){
+		$('.span8 .next_link').hide();
+		$('.span8 .previous_link').show();
+	}else{
+	$('.span8 .next_link').show();
+	}
 }
    
 </script> 
 <script> 
 var listElement = $('.watchWrapper');
-var perPage = 1; 
+var perPage = 3; 
 var numItems = listElement.children().size();
 var numPages = Math.ceil(numItems/perPage);
 
