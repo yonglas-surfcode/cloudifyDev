@@ -2146,7 +2146,7 @@ a.scrollup i:hover {
 .aligncenter {
 	text-align:center;
 }
-
+.error{color:red}
 /* --- Image allignment style --- */
 
 img.pull-left, .align-left{

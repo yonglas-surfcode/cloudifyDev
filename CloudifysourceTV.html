@@ -577,11 +577,12 @@ Vous pouvez t?l?charger Cloudify sur http://www.gigaspaces.com/cloudify">
     
     //and show the first n (show_per_page) elements
     $('#thumbs').children().slice(0, show_per_page).css('display', 'block');
+	
     
 });
  
 function previous(){
-    
+    $('.next_link').show();
     new_page = parseInt($('#current_page').val()) - 1;
     //if there is an item before the current active link run the function
     if($('.active_page').parent().prev().children('.page_link').length==true){
@@ -591,6 +592,7 @@ function previous(){
 }
  
 function next(){
+	$('.previous_link').show();
     new_page = parseInt($('#current_page').val()) + 1;
     //if there is an item after the current active link run the function
     if($('.active_page').parent().next().children('.page_link').length==true){
@@ -600,16 +602,16 @@ function next(){
 }
 function go_to_page(page_num){
     //get the number of items shown per page
-    var show_per_page = parseInt($('#show_per_page').val());
+    var show_event_per_page = parseInt($('#show_event_per_page').val());
     
     //get the element number where to start the slice from
-    start_from = page_num * show_per_page;
+    start_from = page_num * show_event_per_page;
     
     //get the element number where to end the slice
-    end_on = start_from + show_per_page;
+    end_on = start_from + show_event_per_page;
     
     //hide all children elements of content div, get specific items and show them
-    $('#thumbs').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
+    $('#eventsWrapper').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
     
     /*get the page link that has longdesc attribute of the current page and add active_page class to it
     and remove that class from previously active page link*/
@@ -618,6 +620,19 @@ function go_to_page(page_num){
     
     //update the current page input field
     $('#current_page').val(page_num);
+	
+	 if($('.active_page').parent().prev().children('.page_link').length!=true){
+		$('.previous_link').hide();
+		$('.next_link').show();
+	}else{
+	$('.span8 .previous_link').show();
+	}
+	  if($('.active_page').parent().next().children('.page_link').length!=true){
+		$('.next_link').hide();
+		$('.previous_link').show();
+	}else{
+	$('.next_link').show();
+	}
 }
    
 </script>

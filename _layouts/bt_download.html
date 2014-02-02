@@ -36,6 +36,11 @@ strVar += "			<div style=\"position:relative\">";
 strVar += "				<input  id=\"email\" name=\"email\"  type=\"text\"  placeholder=\"Your Email\"\/>";
 strVar += "				<div class=\"cuValid\"><\/div>";
 strVar += "			<\/div>";
+strVar += "			<div style=\"position:relative\">";
+strVar += "           <label for=\"agree\">Please agree to our policy<\/label>";
+strVar += "           <input type=\"checkbox\" class=\"checkbox\" id=\"agree\" name=\"agree\">";
+strVar += "				<div class=\"cuValid\"><\/div>";
+strVar += "			<\/div>";
 strVar +="          <input id=\"website\" name=\"website\" type=\"text\" value=\"\"  \/>";
 strVar += "			<input type=\"submit\" class=\"cuSendGatting btn btn-info\" name=\"submit\" value=\"Download\" \/>";
 strVar += "			<\/form>";
@@ -160,8 +165,8 @@ function downloadValid(){
 			email: {
                 required: true,
                 email: true
-            }
-
+            },
+			agree: "required"
 			},
         messages: {
             last_name: {
@@ -170,8 +175,8 @@ function downloadValid(){
             email: {
                 required: "Please specify your email",
                 email: "Correct format is name@domain.com"
-            }
-
+            },
+			agree: "Please accept our policy"
         },
         submitHandler: function (form,e) { // for demo
             

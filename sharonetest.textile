@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: bt_about
 title: Take the Cloudify Challenge
 category: About Us
 ---
